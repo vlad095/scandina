@@ -1,0 +1,336 @@
+/*-----------------------------------------------------*/
+/*-------------- Scandina CSS stylesheet --------------*/
+/*----------- mobile_devices.css stylesheet -----------*/
+/*-------------- Author: Vladimir Maric ---------------*/
+/*-----------------------------------------------------*/
+
+@media screen and (max-width: 1200px) {
+    
+    /************** LANDING PAGE **************/
+    
+    .landing-page h1 { font-size: 5.5em; }
+    .landing-page h3 { font-size: 1.4em; }
+    .btn-primary { font-size: 1.1em; }
+    
+    /* Landing page scroll down arrow */
+    .go-down-arrow img {
+        width: 35px;
+        height: auto;
+    }
+    
+    /************ END LANDING PAGE ************/
+    
+    /*************** MAIN ABOUT ***************/
+
+    /*** Section 2 ***/
+
+    .partner img {
+        width: 192px;
+        height: auto;
+    }
+
+    /*** End section 2 ***/
+
+    /************* END MAIN ABOUT *************/
+    
+}
+
+@media screen and (max-width: 990px) {
+    
+    body { font-size: 16px; }
+    
+    /*************** TOP BAR *****************/
+    
+    #top-bar { display: none; }
+    
+    /************* END TOP BAR ***************/
+    
+    /**************** HEADER *****************/
+    
+    /* Logo */
+    #navbar .navbar-brand img {
+        width: 180px;
+    }
+    
+    /* Navbar menu dropdown button */
+    .icon-bar {
+        background-color: #fff;
+        display: block;
+	width: 26px; 
+	height: 3px;
+	transition: all 0.2s;
+	margin-top: 4px
+    }
+ 
+    .navbar-toggler {
+        background: transparent !important;
+        margin-top: -4px;
+        border: none;
+    }
+    
+    .navbar-toggler .top-bar {
+        transform: rotate(45deg);
+        transform-origin: 10% 10%;
+    }
+ 
+    .navbar-toggler .middle-bar { opacity: 0; }
+ 
+    .navbar-toggler .bottom-bar {
+        transform: rotate(-45deg);
+        transform-origin: 10% 90%;
+    }
+ 
+    .navbar-toggler.collapsed .top-bar { transform: rotate(0); }
+    .navbar-toggler.collapsed .middle-bar { opacity: 1; }
+    .navbar-toggler.collapsed .bottom-bar { transform: rotate(0); }
+    
+    /* Navbar menu */
+    #navbar ul { margin-top: 10px; }
+    #navbar ul li { padding: 5px 0; }
+    #navbar ul li .active { border: none; }
+    #navbar ul li a:hover { color: #fff; }
+    
+    /* Navbar menu dropdown item */
+    .dropdown-menu {
+        background-color: #80101e;
+        margin-bottom: 10px;
+        border: 1px solid #fff;
+        border-radius: 8px;
+    }
+    
+    .dropdown-menu a:hover { background-color: #80101e; }
+    
+    /************** END HEADER ***************/
+    
+    /************** LANDING PAGE **************/
+    
+    .landing-page { margin-top: -62px; }
+    
+    /* Landing page scroll down arrow */
+    .go-down-arrow { display: none; }
+    
+    /************ END LANDING PAGE ************/
+    
+    /*************** MAIN ABOUT ***************/
+
+    /*** Section 1 ***/
+    .wrapper-about-infobox { flex-direction: column; }
+
+    /* YouTube video */
+    .wrapper-video { 
+        width: 100%; 
+        height: 400px;
+    }
+
+    /* Infobox about page */
+    .infobox-about {
+        width: 100%;
+        margin: 40px 0 0 0;
+    }
+    
+    /*** End section 1 ***/
+
+    /************* END MAIN ABOUT *************/
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+    /************** LANDING PAGE **************/
+    
+    .landing-page h1 { font-size: 5em; }
+    .landing-page h3 { font-size: 1.2em; }
+    .btn-primary { font-size: 1em; }
+    
+    /************ END LANDING PAGE ************/
+    
+    /******************************************/
+    /****************** MAIN ******************/
+    /******************************************/
+    
+    .container { padding: 80px 0; }
+    
+    /*************** MAIN INDEX ***************/
+    
+    .counter .counter-value {
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+
+    .counter i { font-size: 4.5em; }
+    .counter p { font-size: 16px; }
+    
+    /************* END MAIN INDEX *************/
+    
+    /************** MAIN CONTACT **************/
+
+    /*** Section 1 ***/
+
+    /* Contact info */
+    .contact-info-box { padding: 40px; }
+    .contact-info-box i { font-size: 24px; }
+
+    #contact-info-box-2,
+    #contact-info-box-3
+    {
+        padding-top: 0;
+    }
+    
+    /* Contact form */
+
+
+    /*** End section 1 ***/
+
+    /*** Section 2 ***/
+
+    /* Embedded google map */
+    .map-wrapper {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    #map-canvas {
+        width: 100%;
+        height: 400px;
+        margin-bottom: -6px;
+        border: none;
+    }
+
+    /*** End section 2 ***/
+
+    /************ END MAIN CONTACT ************/
+    
+    /******************************************/
+    /**************** END MAIN ****************/
+    /******************************************/
+    
+    /******************************************/
+    /***************** FOOTER *****************/
+    /******************************************/
+    
+    .footer-top { display: inline; }
+    
+    /* Footer Navigation */
+    .footer-top-nav { display: none; }
+
+    /* Footer social */
+    .footer-top-social { 
+        text-align: center; 
+        margin-bottom: 40px;
+    }
+    
+    .footer-top-social img {
+        width: 42px;
+        height: 42px;
+    }
+    
+    .footer-top-social ul { padding-left: 0; }
+    .footer-top-social ul li:first-child { margin-left: 0 }
+
+    /* Footer-lower desktop version */
+    .footer-lower-desktop { text-align: center; }
+    
+    /******************************************/
+    /*************** END FOTTER ***************/
+    /******************************************/
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+    body { font-size: 14px; }
+    
+    h2 { 
+        font-size: 24px;
+        margin-bottom: 20px;   
+    }
+    
+    h4 { font-size: 18px; }
+    
+    /************** LANDING PAGE **************/
+    
+    .landing-page h1 { font-size: 5.6em; }
+    .landing-page h3 { font-size: 1.3em; }
+    .btn-primary { font-size: 1.1em; }
+    
+    /************ END LANDING PAGE ************/
+    
+    /******************************************/
+    /****************** MAIN ******************/
+    /******************************************/
+    
+    .container { padding: 60px 10%; }
+    
+    /*************** MAIN INDEX ***************/
+    
+    /* Section 1 */
+    .infobox { width: 100%; }
+    
+    #index-section2-infobox-left { 
+        margin-right: 0; 
+        margin-bottom: 30px;
+    }
+    #index-section2-infobox-right { 
+        margin-top: 30px;
+        margin-left: 0; 
+    }
+    
+    .btn-outline-primary { font-size: 16px; }
+    
+    /* Section 2 */
+    #wrapper-counter { flex-direction: column; }
+    
+    .counter { margin: 3% 0; }
+    
+    /************* END MAIN INDEX *************/
+    
+    /*************** MAIN ABOUT ***************/
+    
+    /*** Section 1 ***/
+    
+    /* Infobox about page */
+    .infobox-about { margin-bottom: 20px; }
+    
+    /* YouTube video */
+    .wrapper-video { height: 320px; }
+    
+    /*** End section 1 ***/
+
+    /*** Section 2 ***/
+    #wrapper-partner { margin-bottom: 32px; }
+
+    .partner img {
+        width: 132px;
+        height: auto;
+    }
+
+    /*** End section 2 ***/
+
+    /************* END MAIN ABOUT *************/
+    
+    /******************************************/
+    /**************** END MAIN ****************/
+    /******************************************/
+
+    /******************************************/
+    /***************** FOOTER *****************/
+    /******************************************/
+    
+    /* Horizontal separation line */
+    .footer-spearation-line { width: 80%; }
+    
+    /* Footer-lower desktop version */
+    .footer-lower-desktop { display: none; }
+    
+    /* Footer-lower mobile version */
+    .footer-lower-mobile { 
+        display: inline; 
+        text-align: center;
+    }
+    
+    /******************************************/
+    /*************** END FOTTER ***************/
+    /******************************************/
+    
+}
