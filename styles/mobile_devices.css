@@ -4,40 +4,11 @@
 /*-------------- Author: Vladimir Maric ---------------*/
 /*-----------------------------------------------------*/
 
-@media screen and (max-width: 1200px) {
-    
-    /************** LANDING PAGE **************/
-    
-    .landing-page h1 { font-size: 5.5em; }
-    .landing-page h3 { font-size: 1.4em; }
-    .btn-primary { font-size: 1.1em; }
-    
-    /* Landing page scroll down arrow */
-    .go-down-arrow img {
-        width: 35px;
-        height: auto;
-    }
-    
-    /************ END LANDING PAGE ************/
-    
-    /*************** MAIN ABOUT ***************/
-
-    /*** Section 2 ***/
-
-    .partner img {
-        width: 192px;
-        height: auto;
-    }
-
-    /*** End section 2 ***/
-
-    /************* END MAIN ABOUT *************/
-    
-}
-
 @media screen and (max-width: 990px) {
-    
+
     body { font-size: 16px; }
+    h2 { font-size: 32px; }
+    h4 { font-size: 20px; }
     
     /*************** TOP BAR *****************/
     
@@ -89,6 +60,7 @@
     #navbar ul li { padding: 5px 0; }
     #navbar ul li .active { border: none; }
     #navbar ul li a:hover { color: #fff; }
+    #navbar ul li:first-child { margin: 10px 0 0 10px;} 
     
     /* Navbar menu dropdown item */
     .dropdown-menu {
@@ -106,108 +78,88 @@
     
     .landing-page { margin-top: -62px; }
     
+    .landing-page h1 { font-size: 5.5em; }
+    .landing-page h3 { font-size: 1em; }
+    .btn-primary { font-size: 1em; }
+    
     /* Landing page scroll down arrow */
     .go-down-arrow { display: none; }
     
     /************ END LANDING PAGE ************/
     
-    /*************** MAIN ABOUT ***************/
-
-    /*** Section 1 ***/
-    .wrapper-about-infobox { flex-direction: column; }
-
-    /* YouTube video */
-    .wrapper-video { 
-        width: 100%; 
-        height: 400px;
-    }
-
-    /* Infobox about page */
-    .infobox-about {
-        width: 100%;
-        margin: 40px 0 0 0;
-    }
+    /****************** MAIN ******************/
     
-    /*** End section 1 ***/
+    .container { padding: 120px 0; }
+    
+    /*** SECTION 1 ***/
+    
+    /* Infobox btn */
+    .btn-outline-primary { font-size: 16px; }
+    
+    /*** END SECTION 1 ***/
+    
+    /*** SECTION 2 ***/
+    
+    /* Animated social counter */
+    .counter i { font-size: 5em; }
+    .counter p { font-size: 18px; }
+    
+    /*** END SECTION 2 ***/
+    
+    /*** SECTION 3 ***/
+    
+    .wrapper-content-section3 h4 { font-size: 20px; }
+    
+    /* YouTube video */
+    .wrapper-video { height: 480px; }
+    
+    /*** END SECTION 3 ***/
+    
+    /*** SECTION 4 ***/
+    
+    /* Embedded google map */
+    #canvas-map { height: 480px; }
+    
+    /*** END SECTION 4 ***/
 
-    /************* END MAIN ABOUT *************/
+    /**************** END MAIN ****************/
     
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     
-    /************** LANDING PAGE **************/
+    h4 { font-size: 18px; }
     
-    .landing-page h1 { font-size: 5em; }
-    .landing-page h3 { font-size: 1.2em; }
-    .btn-primary { font-size: 1em; }
-    
-    /************ END LANDING PAGE ************/
-    
-    /******************************************/
     /****************** MAIN ******************/
-    /******************************************/
     
-    .container { padding: 80px 0; }
+    .container { padding: 100px 0; }
     
-    /*************** MAIN INDEX ***************/
+    /*** SECTION 1 ***/
     
-    .counter .counter-value {
-        margin-bottom: 10px;
-        font-size: 28px;
-    }
-
-    .counter i { font-size: 4.5em; }
-    .counter p { font-size: 16px; }
+    /* Infobox btn */
+    .btn-outline-primary { font-size: 15px; }
     
-    /************* END MAIN INDEX *************/
+    /*** END SECTION 1 ***/
     
-    /************** MAIN CONTACT **************/
-
-    /*** Section 1 ***/
-
+    /*** SECTION 2 ***/
+    
+    /* Animated social counter */
+    .counter .counter-value { font-size: 32px; }
+    .counter i { font-size: 4em; }
+    
+    /*** END SECTION 2 ***/
+    
+    /*** SECTION 5 ***/
+    
     /* Contact info */
-    .contact-info-box { padding: 40px; }
-    .contact-info-box i { font-size: 24px; }
-
-    #contact-info-box-2,
-    #contact-info-box-3
-    {
-        padding-top: 0;
-    }
+    .infobox-section5 { padding: 50px 0; }
+    #infobox-section5-2 { padding: 0; }
     
-    /* Contact form */
-
-
-    /*** End section 1 ***/
-
-    /*** Section 2 ***/
-
-    /* Embedded google map */
-    .map-wrapper {
-        position: relative;
-        width: 100%;
-        height: auto;
-    }
-
-    #map-canvas {
-        width: 100%;
-        height: 400px;
-        margin-bottom: -6px;
-        border: none;
-    }
-
-    /*** End section 2 ***/
-
-    /************ END MAIN CONTACT ************/
+    /*** END SECTION 5 ***/
     
-    /******************************************/
     /**************** END MAIN ****************/
-    /******************************************/
     
-    /******************************************/
     /***************** FOOTER *****************/
-    /******************************************/
     
     .footer-top { display: inline; }
     
@@ -231,91 +183,70 @@
     /* Footer-lower desktop version */
     .footer-lower-desktop { text-align: center; }
     
-    /******************************************/
     /*************** END FOTTER ***************/
-    /******************************************/
     
 }
 
 @media screen and (max-width: 600px) {
     
     body { font-size: 14px; }
-    
-    h2 { 
-        font-size: 24px;
-        margin-bottom: 20px;   
-    }
-    
-    h4 { font-size: 18px; }
+    h2 { font-size: 26px; }
+    h4 { font-size: 20px; }
     
     /************** LANDING PAGE **************/
     
-    .landing-page h1 { font-size: 5.6em; }
-    .landing-page h3 { font-size: 1.3em; }
-    .btn-primary { font-size: 1.1em; }
+    .landing-page h1 { font-size: 5em; }
     
     /************ END LANDING PAGE ************/
     
-    /******************************************/
     /****************** MAIN ******************/
-    /******************************************/
     
-    .container { padding: 60px 10%; }
+    .container { padding: 100px 10%; }
     
-    /*************** MAIN INDEX ***************/
+    /*** SECTION 1 ***/
     
-    /* Section 1 */
-    .infobox { width: 100%; }
+    /* Infobox */
+    .infobox-section1 { width: 100%; }
     
-    #index-section2-infobox-left { 
-        margin-right: 0; 
-        margin-bottom: 30px;
-    }
-    #index-section2-infobox-right { 
-        margin-top: 30px;
-        margin-left: 0; 
-    }
+    #infobox-section1-left { margin: 0 0 35px 0; }
+    #infobox-section1-right { margin: 35px 0 0 0; }
     
-    .btn-outline-primary { font-size: 16px; }
+    /*** END SECTION 1 ***/
     
-    /* Section 2 */
+    /*** SECTION 2 ***/
+    
+    /* Animated social counter */
     #wrapper-counter { flex-direction: column; }
     
-    .counter { margin: 3% 0; }
+    .counter { margin: 4% 0; }
+    .counter:first-child { margin-top: 0; }
+    .counter:last-child { margin-bottom: 0; }
     
-    /************* END MAIN INDEX *************/
+    /*** END SECTION 2 ***/
     
-    /*************** MAIN ABOUT ***************/
+    /*** SECTION 3 ***/
     
-    /*** Section 1 ***/
-    
-    /* Infobox about page */
-    .infobox-about { margin-bottom: 20px; }
+    .wrapper-content-section3 h4 { font-size: 17px; }
     
     /* YouTube video */
-    .wrapper-video { height: 320px; }
+    .wrapper-video { height: 400px; }
     
-    /*** End section 1 ***/
-
-    /*** Section 2 ***/
-    #wrapper-partner { margin-bottom: 32px; }
-
-    .partner img {
-        width: 132px;
-        height: auto;
-    }
-
-    /*** End section 2 ***/
-
-    /************* END MAIN ABOUT *************/
+    /*** END SECTION 3 ***/
     
-    /******************************************/
+    /*** SECTION 4 ***/
+    
+    /* Embedded google map */
+    #canvas-map { height: 400px; }
+    
+    /*** END SECTION 4 ***/
+    
+    /*** SECTION 5 ***/
+    
+    /*** END SECTION 5 ***/
+    
     /**************** END MAIN ****************/
-    /******************************************/
 
-    /******************************************/
     /***************** FOOTER *****************/
-    /******************************************/
     
     /* Horizontal separation line */
     .footer-spearation-line { width: 80%; }
@@ -329,8 +260,6 @@
         text-align: center;
     }
     
-    /******************************************/
     /*************** END FOTTER ***************/
-    /******************************************/
     
 }

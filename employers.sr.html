@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="sr">
     <head>
-        <title>Scandina | Kontakt</title>
+        <title>Scandina | Poslodavci</title>
         
         <!-- Meta tags -->
         <meta charset="UTF-8">
@@ -32,11 +32,11 @@
             <div class="container-fluid">
                 <ul class="navbar-nav mr-auto" id="top-bar-left">
                     <li class="nav-item"><i class="far fa-envelope"></i></li>
-                    <li class="nav-item">new_email@mail.no</li>
+                    <li class="nav-item">info@scandina.rs</li>
                 </ul>
                 <ul class="navbar-nav ml-auto" id="top-bar-right">
                     <li class="nav-item">
-                        <a href="https://www.facebook.com/Scandinaorganisation/">
+                        <a href="https://www.facebook.com/Scandina.Consulting.Agency/">
                             <i class="fab fa-facebook-square"></i>
                         </a>
                     </li>
@@ -46,7 +46,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="https://www.linkedin.com/in/scandina-organisation-5044a6159/">
+                        <a href="https://www.linkedin.com/company/scandina-consulting-agency">
                             <i class="fab fa-linkedin"></i>   
                         </a>
                     </li>
@@ -76,16 +76,13 @@
                 <!-- Navbar menu -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto w-100 justify-content-end">
-                        <li class="nav-item active">
+                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                             <a class="nav-link" href="index.sr.html">Naslovna</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.sr.html">O nama</a>
                         </li>
                         
                         <!-- Navbar menu dropdown item -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" 
                             role="button" data-toggle="dropdown" aria-haspopup="true" 
                             aria-expanded="false">
                                 Usluge
@@ -93,14 +90,18 @@
                             
                             <div class="dropdown-menu dropdown-menu-right" 
                                 aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="services-emp.sr.html">Poslodavci</a>
+                                <a class="dropdown-item" href="employers.sr.html">Poslodavci</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="services-cand.sr.html">Kandidati</a>
+                                <a class="dropdown-item" href="candidates.sr.html">Kandidati</a>
                             </div>
                         </li>
                         
-                        <li class="nav-item">
-                            <a class="nav-link active" href="contact.sr.html">Kontakt</a>
+                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <a class="nav-link" href="index.sr.html#about">O nama</a>
+                        </li>
+                        
+                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            <a class="nav-link" href="index.sr.html#contact">Kontakt</a>
                         </li>
                         
                         <!-- Navbar menu dropdown item -->
@@ -126,109 +127,11 @@
                 <!-- End navbar -->
             </div>
         </nav>
-        <!-- END HEADER -->        
-
-        <!-- MAIN CONTACT -->
-        <!-- Section 1 -->
-        <div class="section" id="contact-section1">
-            <div class="container" id="container-contact-section1">
-                <h2>Kontaktirajte nas</h2>
-                <hr class="underline">
-                <p> Možete nas kontaktirati putem naše digitalne forme ispod, a mi ćemo vam
-                    odgovoriti u najbržem mogućem roku</p>
-                
-                <div class="row">
-                    <div class="col-xl-8 offset-xl-2 py-5">
-                        <!-- Contact info -->
-                        <div class="row" id="contact-info">
-                            <div class="col-md-4 contact-info-box" id="contact-info-box-1">
-                                <i class="far fa-envelope"></i>
-                                <p>new_email@mail.no</p>
-                            </div>
-                            <div class="col-md-4 contact-info-box" id="contact-info-box-2">
-                                <i class="fas fa-phone"></i>
-                                <p>011 2476 581</p>
-                                <p>065 6355 875</p>
-                                <p>+47 459 10 991</p>
-                            </div>
-                            <div class="col-md-4 contact-info-box" id="contact-info-box-3">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <p>Mosorska 13</p>
-                                <p>11000 Belgrade</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Contact form -->
-                        <form action="contact.php" method="post" id="contact-form" role="form">
-                            <div class="controls">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-title">
-                                            <label>Ime</label>
-                                            <input type="text" name="fornavn" class="form-control" id="form-fornavn"
-                                                placeholder="Vaše ime" required="required" data-error="Ime je obavezno">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-title">
-                                            <label>Prezime</label>
-                                            <input type="text" name="etternavn" class="form-control" id="form-etternavn"
-                                                placeholder="Vaše prezime" required="required" data-error="Prezime je obavezno"> 
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-title">
-                                            <label>E-mail</label>
-                                            <input type="email" name="epost" class="form-control" id="form-epost"
-                                                placeholder="Vaša e-mail adresa" required="required" data-error="E-mail je obavezan">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-title">
-                                            <label>Povodom čega nas kontaktirate?</label>
-                                            <input type="text" name="emne" class="form-control" id="form-emne">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label>Poruka</label>
-                                            <textarea name="melding" rows="5" class="form-control" id="form-melding" 
-                                                      placeholder="Unesite vašu poruku..."  required="required" data-error="Ovo polje je obavezno"></textarea>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input type="submit" name="send" value="Pošalji" class="btn btn-success">
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End section 1 -->
+        <!-- END HEADER -->
         
-        <!-- Section 2 -->
-        <div class="section" id="contact-section2">
-            <!-- Embedded google map -->
-            <div class="map-wrapper">
-                <iframe id="map-canvas" scrolling="no" 
-                    src="https://maps.google.com/maps?q=mosorska%2013%20beograd&t=&z=13&ie=UTF8&iwloc=&output=embed">   
-                </iframe>
-            </div>  
-        </div>        
-        <!-- End Section 2 -->
-        <!-- END MAIN CONTACT -->
-
+        <!-- MAIN -->
+        <!-- END MAIN -->
+        
         <!-- FOOTER -->
         <footer class="page-footer">
             <div class="container" id="container-footer">
@@ -238,18 +141,18 @@
                         <h5>Navigacioni meni</h5>
                         <ul class="list-inline">
                             <li class="list-inline-item"><a href="index.sr.html">Naslovna</a></li>
-                            <li class="list-inline-item"><a href="about.sr.html">O nama</a></li>
+                            <li class="list-inline-item"><a href="index.sr.html#about">O nama</a></li>
                             <li class="list-inline-item">
-                                <a href="services-emp.sr.html">
+                                <a href="employers.sr.html">
                                     Poslodavci
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="services-cand.sr.html">
+                                <a href="candidates.sr.html">
                                     Kandidati
                                 </a>
                             </li>
-                            <li class="list-inline-item"><a href="contact.sr.html">Kontakt</a></li>
+                            <li class="list-inline-item"><a href="index.sr.html#contact">Kontakt</a></li>
                         </ul>
                     </div>
                 
@@ -258,7 +161,7 @@
                         <h5>Zapratite nas</h5>
                         <ul>
                             <li>
-                                <a href="https://www.facebook.com/Scandinaorganisation/">
+                                <a href="https://www.facebook.com/Scandina.Consulting.Agency/">
                                     <img class="zoom" src="images/icon_face.png" alt="Facebook" />
                                 </a>
                             </li>
@@ -268,7 +171,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/in/scandina-organisation-5044a6159/">
+                                <a href="https://www.linkedin.com/company/scandina-consulting-agency">
                                     <img class="zoom" src="images/icon_linked.png" alt="LinkedIn" />
                                 </a>
                             </li>
@@ -282,12 +185,12 @@
                 <div class="footer-lower">
                     <!-- Footer-lower desktop version -->
                     <div class="footer-lower-desktop">
-                        <p>Copyright © 2019 Scandina | Sva prava su zadržana</p>
+                        <p>Copyright © 2020 Scandina | Sva prava su zadržana</p>
                     </div>
                     
                     <!-- Footer-lower mobile version -->
                     <div class="footer-lower-mobile">
-                        <p>Copyright © 2019 Scandina</p>
+                        <p>Copyright © 2020 Scandina</p>
                         <p>Sva prava su zadržana</p>
                     </div>
                 </div>
@@ -299,6 +202,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <!-- My linked script files -->
+        <script type="text/javascript" src="scripts/counter.js"></script>
     </body>
-
 </html>
