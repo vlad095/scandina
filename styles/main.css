@@ -422,6 +422,7 @@ btn:active
 .wrapper-video iframe {
     width: 100%;
     height: 100%;
+    border: none;
 }
 
 /************* END SECTION 3 **************/
