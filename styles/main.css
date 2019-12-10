@@ -335,7 +335,6 @@ btn:active
 /* Infobox btn */
 .btn-outline-primary {
     background-color: #b8172b !important;
-    display: relative;
     margin: 20px auto 30px;
     border: 1px solid #b8172b !important;
     font-size: 18px;
