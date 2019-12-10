@@ -74,8 +74,8 @@ h5 {
     text-align: center;
 }
 
-button:focus,
-button:active
+btn:focus,
+btn:active
 {
    outline: none !important;
 }
@@ -241,7 +241,6 @@ button:active
     background-color: #80101e !important;
     border: 2px solid #80101e !important;
     outline: none;
-    box-shadow: none !important;
 }
 
 /* Landing page scroll down arrow */
@@ -349,8 +348,6 @@ button:active
     background-color: transparent !important;
     border: 1px solid #b8172b !important;
     color: #b8172b;
-    outline: none;
-    box-shadow: none !important;
 }
 
 /************* END SECTION 1 **************/
@@ -437,6 +434,7 @@ button:active
     width: 100%;
     height: auto;
     margin-bottom: -2px;
+    overflow: hidden;
 }
 
 #canvas-map {

@@ -138,9 +138,7 @@
 
                 <!-- Landing page button -->
                 <div class="wrapper-btn" id="wrapper-btn-landing-page">
-                    <a href="#about"> 
-                        <button class="btn btn-primary" type="submit">Finn ut mer</button>
-                    </a>
+                    <a class="btn btn-primary" role="button" href="#about">Finn ut mer</a>  
                 </div>
             </div>
         </div>
@@ -172,11 +170,9 @@
                         <h4>Søker du jobb?</h4>
                         <!-- Infobox btn -->
                         <div class="wrapper-btn" id="section1-btn-1">
-                            <a href="candidates.no.html">
-                                <button class="btn btn-outline-primary" type="button">
-                                    Kandidater
-                                </button>
-                            </a>
+                            <a class="btn btn-outline-primary" role="button" href="candidates.no.html">
+                                Kandidater
+                            </a>       
                         </div>
                     </div>
         
@@ -185,10 +181,8 @@
                         <h4>Behov for ansatte?</h4>
                         <!-- Infobox btn -->
                         <div class="wrapper-btn" id="section1-btn-2">
-                            <a href="employers.no.html">
-                                <button class="btn btn-outline-primary" type="button">
-                                    Arbeidsgivere
-                                </button>
+                            <a class="btn btn-outline-primary" role="button" href="employers.no.html">
+                                Arbeidsgivere
                             </a>
                         </div>
                     </div>
@@ -282,7 +276,7 @@
         <div class="section" id="section4">
             <!-- Embedded google map -->
             <div class="wrapper-map">
-                <iframe id="canvas-map" scrolling="no" 
+                <iframe id="canvas-map"
                     src="https://maps.google.com/maps?q=mosorska%2013%20beograd&t=&z=13&ie=UTF8&iwloc=&output=embed">   
                 </iframe>
             </div>  
@@ -319,7 +313,7 @@
                         </div>
                         
                         <!-- Contact form -->
-                        <form action="contact.php" method="post" id="contact-form" role="form">
+                        <form action="contact.php" method="post" id="contact-form">
                             <div class="controls">
                                 <div class="row">
                                     <div class="col-md-6">
@@ -449,6 +443,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         
         <!-- My linked script files -->
-        <script type="text/javascript" src="scripts/counter.js"></script>
+        <script src="scripts/counter.js"></script>
     </body>
 </html>
