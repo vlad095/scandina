@@ -44,7 +44,7 @@ h1 {
 h2 {
     margin-top: 0;
     margin-bottom: 25px;
-    font-size: 36px;
+    font-size: 38px;
     text-align: center;
 }
 
@@ -74,10 +74,11 @@ h5 {
     text-align: center;
 }
 
-btn:focus,
-btn:active
+.btn:focus, .btn:active,
+button:focus, button:active
 {
    outline: none !important;
+   box-shadow: none !important;
 }
 
 /*****************************************/
@@ -228,19 +229,16 @@ btn:active
 
 .btn-primary {
     background-color: #b8172b !important;
-    padding: 10px 12px;
     border: 2px solid #80101e !important;
+    padding: 10px 12px;
     border-radius: 8px;
     color: #fff;
     font-size: 1.1em;
-    outline: none;
-    box-shadow: none !important;
 }
 
 .btn-primary:hover {
     background-color: #80101e !important;
     border: 2px solid #80101e !important;
-    outline: none;
 }
 
 /* Landing page scroll down arrow */
@@ -273,8 +271,8 @@ btn:active
 /******************************************/
 
 .container {
-    padding: 150px 0;
     color: #282828;
+    padding: 150px 0;
 }
 
 .underline {
@@ -287,12 +285,19 @@ btn:active
     border: 0;
 }
 
+.second-title {
+    font-style: italic;
+    font-size: 19px;
+}
+
 .wrapper {
     width: 100%;
     display: inline-flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
+
+.wrapper-infobox { padding: 20px 0 10px 0; }
 
 .section {
     width: 100%;
@@ -308,9 +313,7 @@ btn:active
 
 #container-section1 { margin-bottom: 20px; }
 
-.wrapper-infobox { padding: 20px 0 10px 0; }
-
-/* Infobox */
+/* Info-box */
 .infobox-section1 {
     width: 48%;
     height: auto;
@@ -333,21 +336,20 @@ btn:active
 #infobox-section1-left { margin-right: 2%; }
 #infobox-section1-right { margin-left: 2%; }
 
-/* Infobox btn */
+/* Info-box btn */
 .btn-outline-primary {
     background-color: #b8172b !important;
-    margin: 20px auto 30px;
     border: 1px solid #b8172b !important;
-    font-size: 18px;
     color: #fff;
-    outline: none;
-    box-shadow: none !important;
+    margin: 20px auto 30px;
+    font-size: 18px;
+    
 }
 
 .btn-outline-primary:hover {
     background-color: transparent !important;
     border: 1px solid #b8172b !important;
-    color: #b8172b;
+    color: #b8172b !important;
 }
 
 /************* END SECTION 1 **************/
@@ -516,7 +518,7 @@ btn:active
 }
 
 form .btn-success {
-    background-color: #b8172b;
+    background-color: #b8172b !important;
     width: 100%;
     border: none;
     margin-bottom: 15px;
@@ -524,13 +526,72 @@ form .btn-success {
 }
 
 form .btn-success:hover {
-    background-color: #80101e;
+    background-color: #80101e !important;
 }
 
 /************* END SECTION 5 **************/
 
+/*************** CANDIDATES ***************/
+
+/* Info-box */
+.infobox-candidates {
+    width: 32%;
+    height: auto;
+    padding: 30px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.infobox-candidates img {
+    width: 100px;
+    height: auto;
+}
+
+.infobox-candidates p {
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+#infobox-candidates-1,
+#infobox-candidates-2,
+#infobox-candidates-4,
+#infobox-candidates-5
+{
+    margin-right: 2%;
+}
+
+/************* END CANDIDATES *************/
+
+/**************** EMPLOYEES ***************/
+/************** END EMPLOYEES *************/
+
 /******************************************/
 /**************** END MAIN ****************/
+/******************************************/
+
+/******************************************/
+/************ PAGE REDIRECTION ************/
+/******************************************/
+
+.redirection-btn { 
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+
+.btn-info {
+    background-color: #b8172b !important;
+    border: none;
+    width: 70%;
+    padding: 25px 50px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.btn-info:hover { background-color: #80101e !important; }
+
+/******************************************/
+/********** END PAGE REDIRECTION **********/
 /******************************************/
 
 /******************************************/

@@ -7,7 +7,7 @@
 @media screen and (max-width: 990px) {
 
     body { font-size: 16px; }
-    h2 { font-size: 32px; }
+    h2 { font-size: 34px; }
     h4 { font-size: 20px; }
     
     /*************** TOP BAR *****************/
@@ -90,6 +90,7 @@
     /****************** MAIN ******************/
     
     .container { padding: 120px 0; }
+    .second-title { font-size: 17px; }
     
     /*** SECTION 1 ***/
     
@@ -121,8 +122,26 @@
     #canvas-map { height: 480px; }
     
     /*** END SECTION 4 ***/
+    
+    /*** CANDIDATES ***/
+
+    /* Info-box */
+    .infobox-candidates { 
+        margin-top: 10px; 
+        margin-bottom: 10px;
+    }
+    
+    .infobox-candidates p { font-size: 14px; }
+
+    /*** END CANDIDATES ***/
 
     /**************** END MAIN ****************/
+    
+    /************ PAGE REDIRECTION ************/
+    
+    .btn-info { width: 80%; }
+
+    /********** END PAGE REDIRECTION **********/
     
 }
 
@@ -131,8 +150,6 @@
     h4 { font-size: 18px; }
     
     /****************** MAIN ******************/
-    
-    .container { padding: 100px 0; }
     
     /*** SECTION 1 ***/
     
@@ -157,7 +174,37 @@
     
     /*** END SECTION 5 ***/
     
+    /*** CANDIDATES ***/
+
+    /* Info-box */
+    .infobox-candidates { width: 48%; }
+    
+    #infobox-candidates-1,
+    #infobox-candidates-3,
+    #infobox-candidates-5
+    {
+        margin-right: 4%;
+    }
+
+    
+    #infobox-candidates-2,
+    #infobox-candidates-4
+    {
+        margin-right: 0;
+    }
+
+    /*** END CANDIDATES ***/
+    
     /**************** END MAIN ****************/
+    
+    /************ PAGE REDIRECTION ************/
+    
+    .btn-info { 
+        padding: 20px 50px; 
+        font-size: 16px;
+    }
+
+    /********** END PAGE REDIRECTION **********/
     
     /***************** FOOTER *****************/
     
@@ -190,7 +237,7 @@
 @media screen and (max-width: 600px) {
     
     body { font-size: 14px; }
-    h2 { font-size: 26px; }
+    h2 { font-size: 28px; }
     h4 { font-size: 20px; }
     
     /************** LANDING PAGE **************/
@@ -202,6 +249,7 @@
     /****************** MAIN ******************/
     
     .container { padding: 100px 10%; }
+    .second-title { font-size: 16px; }
     
     /*** SECTION 1 ***/
     
@@ -240,11 +288,31 @@
     
     /*** END SECTION 4 ***/
     
-    /*** SECTION 5 ***/
-    
-    /*** END SECTION 5 ***/
+    /*** CANDIDATES ***/
+
+    /* Info-box */
+    .infobox-candidates { 
+        width: 100%; 
+        margin-right: 0;
+    }
+
+    /*** END CANDIDATES ***/
     
     /**************** END MAIN ****************/
+    
+    /************ PAGE REDIRECTION ************/
+    
+    .redirection-btn { width: 100%; }
+    
+    #redirection-btn-left { margin-bottom: 8px; }
+    #redirection-btn-right { margin-top: 8px; }
+    
+    .btn-info {
+        width: 90%;
+        font-size: 16px; 
+    }
+    
+    /********** END PAGE REDIRECTION **********/
 
     /***************** FOOTER *****************/
     
