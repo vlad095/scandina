@@ -66,6 +66,31 @@ h5 {
     text-transform: uppercase;
 }
 
+.underline {
+    background: #b8172b;
+    display: block; 
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 80px;
+    height: 3px;
+    border: 0;
+}
+
+.second-title {
+    font-style: italic;
+    font-size: 19px;
+}
+
+.wrapper {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.wrapper-infobox { padding: 20px 0 10px 0; }
+
+/* Buttons */
 .wrapper-btn {
     display: flex;
     justify-content: center;
@@ -74,11 +99,62 @@ h5 {
     text-align: center;
 }
 
-.btn:focus, .btn:active,
+.btn:focus, .btn:active, 
 button:focus, button:active
 {
    outline: none !important;
    box-shadow: none !important;
+}
+
+/* Forms */
+::-webkit-input-placeholder {
+  color: #ccc;
+  font-size: 13px;
+}
+::-moz-placeholder {
+  color: #ccc;
+  font-size: 13px;
+}
+:-ms-input-placeholder {
+  color: #ccc;
+  font-size: 13px;
+}
+::placeholder {
+  color: #ccc;
+  font-size: 13px;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #b8172b;
+}
+
+form .btn-success {
+    background-color: #b8172b !important;
+    width: 100%;
+    border: none;
+    margin-bottom: 15px;
+    padding: 12px 0;
+}
+
+form .btn-success:hover {
+    background-color: #80101e !important;
+}
+
+.container {
+    color: #282828;
+    padding: 150px 0;
+}
+
+.section {
+    width: 100%;
+    height: auto;
+}
+.section p {
+    text-align: center;
+    line-height: 2;
+    margin: 0 0 40px 0;
 }
 
 /*****************************************/
@@ -270,45 +346,6 @@ button:focus, button:active
 /****************** MAIN ******************/
 /******************************************/
 
-.container {
-    color: #282828;
-    padding: 150px 0;
-}
-
-.underline {
-    background: #b8172b;
-    display: block; 
-    margin: 0 auto;
-    margin-bottom: 40px;
-    width: 80px;
-    height: 3px;
-    border: 0;
-}
-
-.second-title {
-    font-style: italic;
-    font-size: 19px;
-}
-
-.wrapper {
-    width: 100%;
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.wrapper-infobox { padding: 20px 0 10px 0; }
-
-.section {
-    width: 100%;
-    height: auto;
-}
-.section p {
-    text-align: center;
-    line-height: 2;
-    margin: 0 0 40px 0;
-}
-
 /*************** SECTION 1 ****************/
 
 #container-section1 { margin-bottom: 20px; }
@@ -452,11 +489,11 @@ button:focus, button:active
 /*************** SECTION 5 ****************/
 
 .pb-5, .py-5 { 
-    padding-top: 5px!important; 
+    padding-top: 20px!important; 
     padding-bottom: 0!important;
 }
 
-#myForm { margin-bottom: 40px; }
+#conact-info { margin-bottom: 40px; }
 
 /* Contact info */
 #contact-info { padding: 0 15px; }
@@ -483,55 +520,36 @@ button:focus, button:active
 }
 
 /* Contact form */
-.controls {
+.contact-form-controls {
     padding: 20px 30px;
     -webkit-box-shadow: 0 0 20px 0 rgba(79, 79, 79, 0.7);
     -moz-box-shadow: 0 0 20px 0 rgba(79, 79, 79, 0.7);
     box-shadow: 0 0 20px 0 rgba(79, 79, 79, 0.7);
 }
 
-.form-title, .form-group {
+.contact-form-title, .contact-form-group {
     padding: 15px 0;
 }
 
-.form-title label,
-.form-group label
+.contact-form-title label,
+.contact-form-group label
 {
     font-size: 16px;
 }
 
-::-webkit-input-placeholder {
-  color: #ccc;
-  font-size: 13px;
-}
-::-moz-placeholder {
-  color: #ccc;
-  font-size: 13px;
-}
-:-ms-input-placeholder {
-  color: #ccc;
-  font-size: 13px;
-}
-::placeholder {
-  color: #ccc;
-  font-size: 13px;
-}
-
-form .btn-success {
-    background-color: #b8172b !important;
-    width: 100%;
-    border: none;
-    margin-bottom: 15px;
-    padding: 12px 0;
-}
-
-form .btn-success:hover {
-    background-color: #80101e !important;
-}
-
 /************* END SECTION 5 **************/
 
+/******************************************/
+/**************** END MAIN ****************/
+/******************************************/
+
+/******************************************/
 /*************** CANDIDATES ***************/
+/******************************************/
+
+/*************** SECTION 1 ****************/
+
+#container-section1-candidates { padding: 100px 0; }
 
 /* Info-box */
 .infobox-candidates {
@@ -560,13 +578,65 @@ form .btn-success:hover {
     margin-right: 2%;
 }
 
-/************* END CANDIDATES *************/
+/************* END SECTION 1 **************/
 
-/**************** EMPLOYEES ***************/
-/************** END EMPLOYEES *************/
+/*************** SECTION 2 ****************/
+
+#section2-candidates { 
+    background-image: url('../images/candidate1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+/* File upload form */
+.file-upload-form {
+    background-color: rgba(0,0,0,0.7);
+    margin: 0px auto;
+    width: 100%;
+    height: auto;
+    padding: 60px 60px 50px 60px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.file-upload-form h4 {
+    font-size: 24px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.file-upload-form p {
+    margin-bottom: 10px;
+    text-align: left; 
+    font-style: italic;
+}
+
+.upload-form-title { padding: 20px 0; }
+.upload-form-title label { font-size: 16px; }
+
+#form-upload { 
+    background-color: transparent; 
+    border: none;
+    color: #fff;
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+#form-upload:focus { box-shadow: none !important; }
+
+/************* END SECTION 2 **************/
 
 /******************************************/
-/**************** END MAIN ****************/
+/************* END CANDIDATES *************/
+/******************************************/
+
+/******************************************/
+/**************** EMPLOYEES ***************/
+/******************************************/
+
+/******************************************/
+/************** END EMPLOYEES *************/
 /******************************************/
 
 /******************************************/

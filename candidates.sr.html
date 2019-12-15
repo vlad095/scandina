@@ -129,9 +129,10 @@
         </nav>
         <!-- END HEADER -->
         
-        <!-- MAIN -->
-        <div class="section" id="candidates">
-            <div class="container" id="container-candidates">
+        <<!-- CANDIDATES -->
+        <!-- Section 1 -->
+        <div class="section" id="section1-candidates">
+            <div class="container" id="container-section1-candidates">
                 <h2>Usluge</h2>
                 <hr class="underline">
                 <p class="second-title">
@@ -162,9 +163,10 @@
                         </p>
                     </div> 
                     <div class="infobox infobox-candidates" id="infobox-candidates-4">
-                        <img src="" alt="Box 4" />
+                        <img src="images/services-can-progress.png" alt="Box 4" />
                         <p>
-                            
+                            Nudimo profesionalnu orijentaciju i savetovanje o planiranju vaše 
+                            poslovne karijere. Kontaktirajte nas ukoliko želite više informacija. 
                         </p>
                     </div> 
                     <div class="infobox infobox-candidates" id="infobox-candidates-5">
@@ -184,7 +186,82 @@
                 </div>
             </div>
         </div>
-        <!-- END MAIN -->
+        <!-- End section 1 -->
+        
+        <!-- Section 2 -->
+        <div class="section" id="section2-candidates">
+            <div class="container" id="container-section2-candidates">
+                
+                <!-- File upload form -->
+                <div class="wrapper wrapper-upload-form">
+                    <div class="file-upload-form">
+                        <h4>Registrujte vaš CV</h4>
+                        <p>
+                            Upotrebite formu ispod kako bi ste uploadovali vaš CV. 
+                            Prihvacćeni formati fajlova su PDF i DOC/DOCKS.  
+                        </p>
+                        
+                        <form action="contact.php" method="post">
+                            <div class="controls">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-title upload-form-title">
+                                            <label>Ime</label>
+                                            <input type="text" name="firstname" class="form-control" id="form-name"
+                                                placeholder="Vaše ime" required="required" data-error="Ime je obavezno">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-title upload-form-title">
+                                            <label>Prezime</label>
+                                            <input type="text" name="surname" class="form-control" id="form-surname"
+                                                placeholder="Vaše prezime" required="required" data-error="Prezime je obavezno"> 
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-title upload-form-title">
+                                            <label>E-mail</label>
+                                            <input type="email" name="email" class="form-control" id="form-email"
+                                                placeholder="Vaša e-mail adresa" required="required" data-error="E-mail je obavezan">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-title upload-form-title">
+                                            <label>Broj telefona</label>
+                                            <input type="text" name="tlf" class="form-control" id="form-tlf"
+                                                placeholder="Vaš broj telefona" required="required" data-error="Broj telefona je obavezan">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-title upload-form-title">
+                                            <label><i class="fas fa-cloud-upload-alt"></i> Izaberite fajl za upload</label>
+                                            <input type="file" name="upload" class="form-control" id="form-upload"
+                                                required="required" data-error="Izmeni kasnije"
+                                                accept="application/pdf,application/msword,
+                                                application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="submit" name="upload" value="Upload" class="btn btn-success">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <!-- End Section 2 -->
+        <!-- END CANDIDATES -->
         
         <!-- PAGE REDIRECTION -->
         <div class="section" id="page-redirection">

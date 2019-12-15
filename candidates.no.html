@@ -129,9 +129,10 @@
         </nav>
         <!-- END HEADER -->
         
-        <!-- MAIN -->
-        <div class="section" id="candidates">
-            <div class="container" id="container-candidates">
+        <!-- CANDIDATES -->
+        <!-- Section 1 -->
+        <div class="section" id="section1-candidates">
+            <div class="container" id="container-section1-candidates">
                 <h2>Tjenester</h2>
                 <hr class="underline">
                 <p class="second-title">
@@ -162,9 +163,10 @@
                         </p>
                     </div> 
                     <div class="infobox infobox-candidates" id="infobox-candidates-4">
-                        <img src="" alt="Box 4" />
+                        <img src="images/services-can-progress.png" alt="Box 4" />
                         <p>
-                            
+                            Scandina tilbyr karriereveiledning og profesjonell rådgivning for våre 
+                            kunder. Du kan kontakte oss når som helst for mer informasjon.
                         </p>
                     </div> 
                     <div class="infobox infobox-candidates" id="infobox-candidates-5">
@@ -184,7 +186,82 @@
                 </div>
             </div>
         </div>
-        <!-- END MAIN -->
+        <!-- End section 1 -->
+        
+        <!-- Section 2 -->
+        <div class="section" id="section2-candidates">
+            <div class="container" id="container-section2-candidates">
+                
+                <!-- File upload form -->
+                <div class="wrapper wrapper-upload-form">
+                    <div class="file-upload-form">
+                        <h4>Registrer din CV</h4>
+                        <p>
+                            Bruk skjemaet under for å laste opp din CV.
+                            De aksepterte filformatene er PDF og DOC/DOCX. 
+                        </p>
+                        
+                        <form action="contact.php" method="post">
+                            <div class="controls">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-title upload-form-title">
+                                            <label>Fornavn</label>
+                                            <input type="text" name="firstname" class="form-control" id="form-name"
+                                                placeholder="Skriv ditt fornavn" required="required" data-error="Obligatorisk felt">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-title upload-form-title">
+                                            <label>Etternavn</label>
+                                            <input type="text" name="surname" class="form-control" id="form-surname"
+                                                placeholder="Skriv ditt etternavn" required="required" data-error="Obligatorisk felt"> 
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-title upload-form-title">
+                                            <label>E-post</label>
+                                            <input type="email" name="email" class="form-control" id="form-email"
+                                                placeholder="Skriv din e-post adresse" required="required" data-error="Obligatorisk felt">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-title upload-form-title">
+                                            <label>Telefonnummer</label>
+                                            <input type="text" name="tlf" class="form-control" id="form-tlf"
+                                                placeholder="Skriv ditt telefonnummer" required="required" data-error="Obligatorisk felt">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-title upload-form-title">
+                                            <label><i class="fas fa-cloud-upload-alt"></i> Velg fil du vil laste opp </label>
+                                            <input type="file" name="upload" class="form-control" id="form-upload"
+                                                required="required" data-error="Endre senere"
+                                                accept="application/pdf,application/msword,
+                                                application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <input type="submit" name="upload" value="Last opp" class="btn btn-success">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <!-- End Section 2 -->
+        <!-- END CANDIDATES -->
         
         <!-- PAGE REDIRECTION -->
         <div class="section" id="page-redirection">
