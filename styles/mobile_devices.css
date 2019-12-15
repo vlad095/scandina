@@ -128,6 +128,7 @@
     /*************** CANDIDATES ***************/
     
     /*** Section 1 ***/
+    #container-section1-candidates { padding-bottom: 55px; }
     
     /* Info-box */
     .infobox-candidates { 
@@ -301,6 +302,7 @@
     /*************** CANDIDATES ***************/
     
     /*** Section 1 ***/
+    #container-section1-candidates { padding-bottom: 30px; }
 
     /* Info-box */
     .infobox-candidates { 

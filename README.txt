@@ -13,7 +13,6 @@ INDEX:
 
 SERVICES:
 - Dovrsiti kada dobijes content od Vuka
-- Omoguciti download PDF verzije CV-templatea
 
 GENERALNO:
 - Dodati Cookie Notice (istraziti dobro)

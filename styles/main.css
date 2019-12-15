@@ -32,7 +32,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* Makes unordered list without any bullets */
 ul { list-style-type: none; }
 
 h1 {
@@ -549,7 +548,7 @@ form .btn-success:hover {
 
 /*************** SECTION 1 ****************/
 
-#container-section1-candidates { padding: 100px 0; }
+#container-section1-candidates { padding-bottom: 100px; }
 
 /* Info-box */
 .infobox-candidates {
