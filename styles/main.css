@@ -147,6 +147,7 @@ form .btn-success:hover {
 }
 
 .section {
+    background-color: #fff;
     width: 100%;
     height: auto;
 }
@@ -631,11 +632,65 @@ form .btn-success:hover {
 /******************************************/
 
 /******************************************/
-/**************** EMPLOYEES ***************/
+/**************** EMPLOYERS ***************/
 /******************************************/
 
+/*************** SECTION 1 ****************/
+
+#container-section1-employers { padding-bottom: 90px; }
+
+/* Info-box */
+.infobox-employers {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 80px 0;
+    padding: 0 30px;
+}
+
+.infobox-employers:first-child { margin-top: 40px; }
+.infobox-employers:last-child { margin-bottom: 0; }
+
+.infobox-employers-img {
+    width: 40%;
+    height: auto;
+    text-align: left;
+}
+
+#infobox-employers-4 { text-align: right; }
+
+.infobox-employers-img img {
+    width: 200px;
+    height: auto;
+}
+
+.infobox-employers-txt {
+    width: 60%;
+    height: auto;
+}
+
+.infobox-employers h5 {
+    margin-bottom: 12px;
+    color: #b8172b;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.infobox-employers p {
+    font-size: 16px;
+    text-align: left;
+}
+
+/************* END SECTION 1 **************/
+
+/*************** SECTION 2 ****************/
+
+/************* END SECTION 2 **************/
+
 /******************************************/
-/************** END EMPLOYEES *************/
+/************** END EMPLOYERS *************/
 /******************************************/
 
 /******************************************/
