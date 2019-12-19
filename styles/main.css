@@ -103,6 +103,7 @@ button:focus, button:active
 {
    outline: none !important;
    box-shadow: none !important;
+   -webkit-appearance: none;
 }
 
 /* Forms */
