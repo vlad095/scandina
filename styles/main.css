@@ -205,9 +205,10 @@ form .btn-success:hover {
 #navbar {
     background-color: #b8172b;
     top: 0;
-    position: -webkit-user-sticky;
-    position: -moz-user-sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
     position: sticky;
+    display: block;
     text-transform: uppercase;
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
@@ -285,7 +286,7 @@ form .btn-success:hover {
     width: 100%;
     height: 100vh;
     color: #fff;
-    z-index: -1;
+    z-index: -1000;
 }
 
 .landing-page-content {
