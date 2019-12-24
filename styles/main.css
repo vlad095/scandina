@@ -150,6 +150,7 @@ form .btn-success:hover {
 
 .section {
     background-color: #fff;
+    position: relative;
     width: 100%;
     height: auto;
 }
@@ -204,11 +205,8 @@ form .btn-success:hover {
 
 #navbar {
     background-color: #b8172b;
-    top: 0;
-    position: -webkit-sticky;
-    position: -moz-sticky;
-    position: sticky;
-    display: block;
+    position: fixed;
+    width: 100%;
     text-transform: uppercase;
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
@@ -282,7 +280,6 @@ form .btn-success:hover {
     display: flex;
     justify-content: center; /* horizontal align */
     align-items: center; /* vertical align */
-    margin-top: -99px;
     width: 100%;
     height: 100vh;
     color: #fff;

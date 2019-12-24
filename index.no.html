@@ -318,11 +318,14 @@
                         
                         <!-- Contact form -->
                         <form action="contact.php" method="post" id="contact-form">
+                            
+                            <div class="messages"></div>
+                            
                             <div class="controls contact-form-controls">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-title contact-form-title">
-                                            <label>Fornavn</label>
+                                            <label for="form-fornavn">Fornavn</label>
                                             <input type="text" name="fornavn" class="form-control" id="form-fornavn"
                                                 placeholder="Skriv ditt fornavn" required="required" data-error="Obligatorisk felt">
                                             <div class="help-block with-errors"></div>
@@ -330,7 +333,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-title contact-form-title">
-                                            <label>Last name</label>
+                                            <label for="form-etternavn">Etternavn</label>
                                             <input type="text" name="etternavn" class="form-control" id="form-etternavn"
                                                 placeholder="Skriv ditt etternavn" required="required" data-error="Obligatorisk felt"> 
                                             <div class="help-block with-errors"></div>
@@ -340,7 +343,7 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-title contact-form-title">
-                                            <label>E-post</label>
+                                            <label for="form-epost">E-post</label>
                                             <input type="email" name="epost" class="form-control" id="form-epost"
                                                 placeholder="Skriv din e-post adresse" required="required" data-error="Obligatorisk felt">
                                             <div class="help-block with-errors"></div>
@@ -348,7 +351,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-title contact-form-title">
-                                            <label>Hva gjelder din henvendelse?</label>
+                                            <label for="form-emne">Hva gjelder din henvendelse?</label>
                                             <input type="text" name="emne" class="form-control" id="form-emne">
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -357,9 +360,9 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group contact-form-group">
-                                            <label>Melding</label>
+                                            <label for="form-melding">Melding</label>
                                             <textarea name="melding" rows="5" class="form-control" id="form-melding" 
-                                                      placeholder="Skriv din melding her..."  required="required" data-error="Obligatorisk felt"></textarea>
+                                                placeholder="Skriv din melding her..."  required="required" data-error="Obligatorisk felt"></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -449,5 +452,6 @@
         
         <!-- My linked script files -->
         <script src="scripts/counter.js"></script>
+        <script src="scripts/nav_scroll.js"></script>
     </body>
 </html>
