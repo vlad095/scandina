@@ -9,7 +9,7 @@ var counterValue = 0;
 $(window).scroll(function() {
     var myHeight = $('.counter').offset().top - window.innerHeight;
     
-    if (counterValue === 0 && $(window).scrollTop() > myHeight) {
+    if(counterValue === 0 && $(window).scrollTop() > myHeight) {
         $('.counter-value-number').each(function() {
             var $this = $(this), 
             countTo = $this.attr('data-count');

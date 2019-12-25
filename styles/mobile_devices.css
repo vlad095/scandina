@@ -433,4 +433,20 @@
     
     /*************** END FOTTER ***************/
     
+    /************* COOKIE BANNER **************/
+
+    #container-cookie-banner { padding: 40px 8%; }
+
+    .cookie-banner p { font-size: 12px; }
+    .cookie-banner h5 { font-size: 14px; }
+    
+    .cookie-banner-btn { padding-top: 40px; }
+
+    .cookie-banner-btn .btn-basic {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    /*********** END COOKIE BANNER ************/
+    
 }
