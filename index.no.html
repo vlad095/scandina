@@ -317,53 +317,51 @@
                         </div>
                         
                         <!-- Contact form -->
-                        <form action="contact.php" method="post" id="contact-form">
-                            
-                            <div class="messages"></div>
-                            
+                        <form action="contact.php" method="post" name="contactForm" id="contact-form" onsubmit="return validate_all()" >
                             <div class="controls contact-form-controls">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-title contact-form-title">
-                                            <label for="form-fornavn">Fornavn</label>
-                                            <input type="text" name="fornavn" class="form-control" id="form-fornavn"
-                                                placeholder="Skriv ditt fornavn" required="required" data-error="Obligatorisk felt">
-                                            <div class="help-block with-errors"></div>
+                                            <label for="form-name">Fornavn</label>
+                                            <input type="text" name="name" class="form-control" id="form-name"
+                                                placeholder="Skriv ditt fornavn" onchange="validate_name()">
+                                            <div class="error error-name" id="error-name-no"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-title contact-form-title">
-                                            <label for="form-etternavn">Etternavn</label>
-                                            <input type="text" name="etternavn" class="form-control" id="form-etternavn"
-                                                placeholder="Skriv ditt etternavn" required="required" data-error="Obligatorisk felt"> 
-                                            <div class="help-block with-errors"></div>
+                                            <label for="form-surname">Etternavn</label>
+                                            <input type="text" name="surname" class="form-control" id="form-surname"
+                                                placeholder="Skriv ditt etternavn" onchange="validate_surname()" > 
+                                            <div class="error error-surname" id="error-surname-no"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-title contact-form-title">
-                                            <label for="form-epost">E-post</label>
-                                            <input type="email" name="epost" class="form-control" id="form-epost"
-                                                placeholder="Skriv din e-post adresse" required="required" data-error="Obligatorisk felt">
-                                            <div class="help-block with-errors"></div>
+                                            <label for="form-email">E-post</label>
+                                            <input type="text" name="email" class="form-control" id="form-email"
+                                                placeholder="Skriv din e-post adresse" onchange="validate_email()">
+                                            <div class="error error-email" id="error-email-no"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-title contact-form-title">
-                                            <label for="form-emne">Hva gjelder din henvendelse?</label>
-                                            <input type="text" name="emne" class="form-control" id="form-emne">
-                                            <div class="help-block with-errors"></div>
+                                            <label for="form-subject">Hva gjelder din henvendelse?</label>
+                                            <input type="text" name="subject" class="form-control" id="form-subject"
+                                                onchange="validate_subject()">
+                                            <div class="error error-subject" id="error-subject-no"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group contact-form-group">
-                                            <label for="form-melding">Melding</label>
-                                            <textarea name="melding" rows="5" class="form-control" id="form-melding" 
-                                                placeholder="Skriv din melding her..."  required="required" data-error="Obligatorisk felt"></textarea>
-                                            <div class="help-block with-errors"></div>
+                                            <label for="form-message">Melding</label>
+                                            <textarea  onchange="validate_message()" placeholder="Skriv din melding her..." 
+                                                name="message" rows="5" class="form-control" id="form-message"></textarea>
+                                            <div class="error error-message" id="error-message-no"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
@@ -477,5 +475,6 @@
         <script src="scripts/counter.js"></script>
         <script src="scripts/nav_scroll.js"></script>
         <script src="scripts/cookie_notice.js"></script>
+        <script src="scripts/client_validation.js"></script>
     </body>
 </html>

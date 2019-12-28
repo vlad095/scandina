@@ -317,53 +317,51 @@
                         </div>
                         
                         <!-- Contact form -->
-                        <form action="contact.php" method="post" id="contact-form">
-                            
-                            <div class="messages"></div>
-                            
+                        <form action="contact.php" method="post" name="contactForm" id="contact-form" onsubmit="return validate_all()" >
                             <div class="controls contact-form-controls">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-title contact-form-title">
-                                            <label for="form-fornavn">Name</label>
-                                            <input type="text" name="fornavn" class="form-control" id="form-fornavn"
-                                                placeholder="Enter your first name" required="required" data-error="Name is required">
-                                            <div class="help-block with-errors"></div>
+                                            <label for="form-name">First name</label>
+                                            <input type="text" name="name" class="form-control" id="form-name"
+                                                placeholder="Enter your first name" onchange="validate_name()">
+                                            <div class="error error-name" id="error-name-en"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-title contact-form-title">
-                                            <label for="form-etternavn">Surname</label>
-                                            <input type="text" name="etternavn" class="form-control" id="form-etternavn"
-                                                placeholder="Enter your surname" required="required" data-error="Surname is required"> 
-                                            <div class="help-block with-errors"></div>
+                                            <label for="form-surname">Last name</label>
+                                            <input type="text" name="surname" class="form-control" id="form-surname"
+                                                placeholder="Enter your surname" onchange="validate_surname()" > 
+                                            <div class="error error-surname" id="error-surname-en"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-title contact-form-title">
-                                            <label for="form-epost">E-mail</label>
-                                            <input type="email" name="epost" class="form-control" id="form-epost"
-                                                placeholder="Enter your e-mail address" required="required" data-error="E-mail is required">
-                                            <div class="help-block with-errors"></div>
+                                            <label for="form-email">E-mail</label>
+                                            <input type="text" name="email" class="form-control" id="form-email"
+                                                placeholder="Enter your e-mail address" onchange="validate_email()">
+                                            <div class="error error-email" id="error-email-en"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-title contact-form-title">
-                                            <label for="form-emne">What concerns your inquiry?</label>
-                                            <input type="text" name="emne" class="form-control" id="form-emne">
-                                            <div class="help-block with-errors"></div>
+                                            <label for="form-subject">What concerns your inquiry?</label>
+                                            <input type="text" name="subject" class="form-control" id="form-subject"
+                                                onchange="validate_subject()">
+                                            <div class="error error-subject" id="error-subject-en"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group contact-form-group">
-                                            <label for="form-melding">Message</label>
-                                            <textarea name="melding" rows="5" class="form-control" id="form-melding" 
-                                                placeholder="Write your message..."  required="required" data-error="This field is required"></textarea>
-                                            <div class="help-block with-errors"></div>
+                                            <label for="form-message">Message</label>
+                                            <textarea  onchange="validate_message()" placeholder="Write your message here..." 
+                                                name="message" rows="5" class="form-control" id="form-message"></textarea>   
+                                            <div class="error error-message" id="error-message-en"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
@@ -478,5 +476,6 @@
         <script src="scripts/counter.js"></script>
         <script src="scripts/nav_scroll.js"></script>
         <script src="scripts/cookie_notice.js"></script>
+        <script src="scripts/client_validation.js"></script>
     </body>
 </html>

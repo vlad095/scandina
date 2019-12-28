@@ -318,6 +318,14 @@
     h2 { font-size: 28px; }
     h4 { font-size: 20px; }
     
+    /* Forms */
+    ::-webkit-input-placeholder { font-size: 12px; }
+    :-moz-placeholder { font-size: 12px; }
+    ::-moz-placeholder { font-size: 12px; }
+    :-ms-input-placeholder { font-size: 12px; }
+    ::placeholder { font-size: 12px; }
+    .error { font-size: 12px; }
+    
     .container { padding: 100px 10%; }
     .second-title { font-size: 16px; }
     

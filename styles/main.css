@@ -112,6 +112,10 @@ button:focus, button:active,
   color: #ccc;
   font-size: 13px;
 }
+:-moz-placeholder {
+  color: #ccc;
+  font-size: 13px;
+}
 ::-moz-placeholder {
   color: #ccc;
   font-size: 13px;
@@ -139,8 +143,14 @@ form .btn-success {
     padding: 12px 0;
 }
 
-form .btn-success:hover {
-    background-color: #80101e !important;
+.error {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #b8172b;
+}
+
+.error p {
+    margin-top: 20px;
 }
 
 .container {
@@ -685,10 +695,6 @@ form .btn-success:hover {
 }
 
 /************* END SECTION 1 **************/
-
-/*************** SECTION 2 ****************/
-
-/************* END SECTION 2 **************/
 
 /******************************************/
 /************** END EMPLOYERS *************/
