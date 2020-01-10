@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="nb">
     <head>
         <title>Scandina</title>
         
@@ -62,7 +62,7 @@
             <div class="container-fluid">
                 
                 <!-- Logo -->
-                <a class="navbar-brand" href="index.sr.html">
+                <a class="navbar-brand" href="index_no.php">
                     <img class="logo" src="images/logo.png" alt="logo" />
                 </a>
                 
@@ -79,7 +79,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto w-100 justify-content-end">
                         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="#home">Naslovna</a>
+                            <a class="nav-link" href="#home">Hjem</a>
                         </li>
                         
                         <!-- Navbar menu dropdown item -->
@@ -87,19 +87,19 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" 
                             role="button" data-toggle="dropdown" aria-haspopup="true" 
                             aria-expanded="false">
-                                Usluge
+                                Tjenester
                             </a>
                             
                             <div class="dropdown-menu dropdown-menu-right" 
                                 aria-labelledby="navbarDropdown1">
-                                <a class="dropdown-item" href="employers.sr.html">Poslodavci</a>
+                                <a class="dropdown-item" href="employers_no.html">Arbeidsgivere</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="candidates.sr.html">Kandidati</a>
+                                <a class="dropdown-item" href="candidates_no.php">Kandidater</a>
                             </div>
                         </li>
                         
                         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="#about">O nama</a>
+                            <a class="nav-link" href="#about">Om oss</a>
                         </li>
                         
                         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
@@ -115,12 +115,12 @@
                             </a>
                             
                             <div class="dropdown-menu dropdown-menu-right" id="lang-menu" aria-labelledby="navbarDropdown2">
-                                <a class="dropdown-item" href="index.html">
+                                <a class="dropdown-item" href="index.php">
                                     <img src="images/lang/icon_en.png" alt="english" />English
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="index.no.html">
-                                    <img src="images/lang/icon_no.png" alt="norsk" />Norsk
+                                <a class="dropdown-item" href="index_sr.php">
+                                    <img src="images/lang/icon_sr.png" alt="srpski" />Srpski
                                 </a>
                             </div>
                         </li>
@@ -136,11 +136,11 @@
         <div class="landing-page" id="home">
             <div class="landing-page-content">
                 <h1>Scandina</h1>
-                <h3>Kvalitet je naš glavni prioritet</h3>
+                <h3>Kvalitet er vår høyeste prioritet</h3>
 
                 <!-- Landing page button -->
                 <div class="wrapper-btn" id="wrapper-btn-landing-page">
-                    <a class="btn btn-primary" role="button" href="#about">Saznaj više</a>
+                    <a class="btn btn-primary" role="button" href="#about">Finn ut mer</a>  
                 </div>
             </div>
         </div>
@@ -157,34 +157,34 @@
         <!-- Section 1 -->
         <div class="section" id="section1">
             <div class="container" id="container-section1">
-                <h2>Budite deo pobedničkog tima</h2>
+                <h2>Bli med på det vinnende laget</h2>
                 <hr class="underline">
                 <p class="second-title"> 
-                    Scandina je konsultantska kompanija koja stvara profesionalne odnose između 
-                    predanih radnika i pouzdanih poslodavaca u nordijskim zemljama. Naša vizija je 
-                    da postanemo jedna od vodećih kadrovskih agencija u Evropi.
+                    Scandina er et konsulentselskap som skaper profesjonelle forhold mellom
+                    dedikerte arbeidere og pålitelige arbeidsgivere i hele Norden. Vår 
+                    visjon er å bli et av de ledende rekrutteringsbyråene i Europa.
                 </p>
                 
                 <!-- Info-box -->
                 <div class="wrapper wrapper-infobox">
                     <div class="infobox infobox-section1" id="infobox-section1-left">
                         <img src="images/infobox_left.jpg" alt="section1_image_left" />
-                        <h4>Tražite posao?</h4>
+                        <h4>Søker du jobb?</h4>
                         <!-- Info-box btn -->
                         <div class="wrapper-btn" id="section1-btn-1">
-                            <a class="btn btn-outline-primary" role="button" href="candidates.sr.html">
-                                Kandidati
-                            </a> 
+                            <a class="btn btn-outline-primary" role="button" href="candidates_no.php">
+                                Kandidater
+                            </a>       
                         </div>
                     </div>
         
                     <div class="infobox infobox-section1" id="infobox-section1-right">
                         <img src="images/infobox_right.jpg" alt="section1_image_right" />
-                        <h4>Potrebni su vam radnici?</h4>
+                        <h4>Behov for ansatte?</h4>
                         <!-- Info-box btn -->
                         <div class="wrapper-btn" id="section1-btn-2">
-                            <a class="btn btn-outline-primary" role="button" href="employers.sr.html">
-                                Poslodavci
+                            <a class="btn btn-outline-primary" role="button" href="employers_no.html">
+                                Arbeidsgivere
                             </a>
                         </div>
                     </div>
@@ -205,7 +205,7 @@
                             <span class="counter-value-number" data-count="100">0</span> 
                             <span>+</span>
                         </div>
-                        <p>Zadovoljnih klijenata</p>
+                        <p>Fornøyde klienter</p>
                     </div>
                 
                     <div class="counter" id="counter-center">
@@ -213,7 +213,7 @@
                         <div class="counter-value">
                             <span class="counter-value-number" data-count="1963">0</span>
                         </div>
-                        <p>Facebook pratilaca</p>
+                        <p>Facebook følgere</p>
                     </div>
                 
                     <div class="counter" id="counter-right">
@@ -221,7 +221,7 @@
                         <div class="counter-value">
                             <span class="counter-value-number" data-count="1899">0</span>
                         </div>
-                        <p>Facebook lajkova</p>
+                        <p>Facebook likerklikk</p>
                     </div>
                 </div> 
             </div>
@@ -231,7 +231,7 @@
         <!-- Section 3 -->
         <div class="section" id="about">
             <div class="container" id="container-section3">
-                <h2>O nama</h2>
+                <h2>Om oss</h2>
                 <hr class="underline">
                 
                 <div class="wrapper wrapper-content-section3">
@@ -242,32 +242,32 @@
                         </iframe>
                     </div>
                     
-                    <h4>Istorija</h4>
+                    <h4>Historie</h4>
                     <p> 
-                        Naša priča počinje 2016 godine kada Vuk Simić i Nikola Milosavljević, 
-                        sa svojim nacionalnim i međunarodnim iskustvom u ugostiteljstvu i 
-                        hotelijerstvu, zajedno dolaze na ideju da otvore konsultantsku kompaniju 
-                        koja nudi pomoć ugostiteljima i hotelijerima oko zapošljavanja u skandinavskim 
-                        zemljama. Nakon 3 godine razvijanja naše ideje i upoznavanja radnog  tržišta, 
-                        kao i skandinavskih kultura, 2019 godine otvaramo kompaniju za konsultacije 
-                        sa sedištem u Beogradu.
+                        Vår historie begynner i 2016 da Vuk Simić og Nikola Milosavljević, 
+                        som begge har en omfattende nasjonal og internasjonal erfaring innen 
+                        gjestfrihet, kommer på ideen å åpne et konsulentselskap som skaper 
+                        profesjonelle forhold mellom dedikerte arbeidere og pålitelige 
+                        arbeidsgivere i Norden. Etter 3 år med ideutvikling og godt kjennskap 
+                        til nordiske kulturer, etablerer vi selskapet i 2019 med 
+                        hovedkontor i Beograd, Serbia. 
                     </p>
                     
-                    <h4>Naš rad</h4>
+                    <h4>Vårt arbeid</h4>
                     <p> 
-                        Ono što nas čini drugačijim od drugih jeste to što svakom klijentu 
-                        pružamo maksimalan kvalitet i sigurnost. Mi posedujemo potrebno iskustvo 
-                        i sposobnost kako bi našim klijentima pružili usluge najvišeg nivoa. 
-                        Scandina se podjednako brine o svojim saradnicima koji nude posao, kao 
-                        i o svim kandidatima koji su u potrazi za istim.
+                        Det som gjør Scandina forskjellig fra andre er at vi behandler hver 
+                        klient med høy kvalitet og maksimal sikkerhet. Vi har nødvendig erfaring 
+                        og kunnskapsevne til å gi våre kunder service på høyeste nivå. Scandina 
+                        bryr seg like godt om våre klienter som vi har partnerskap med, samtidig 
+                        som vi tar godt vare på alle kandidater som søker jobb via oss.
                     </p>
                     
-                    <h4>Scandina u budućnosti</h4>
+                    <h4>Scandina i fremtiden</h4>
                     <p> 
-                        Naša vizija je da postanemo vodeća konsultantska kompanija za ugostiteljstvo 
-                        i hotelijerstvo u Evropi. Mi u Scandini želimo da kvalitetnim radom i sigurnim 
-                        poslovanjem zadovoljimo potrebe naših klijenata. Takođe, cilj nam je da stvorimo 
-                        vrednost za naše klijente kroz usluge, partnerstva i znanje koje posedujemo.    
+                        Vår visjon er å bli det ledende konsulentselskapet for gjestfrihet i Europa. 
+                        Scandina vil alltid imøtekomme behovene til alle våre klienter ved å tilby 
+                        service av høy kvalitet og en sikker virksomhet. Vi ønsker å tilføre klientene 
+                        våre verdi gjennom tjenester, partnerskap og kunnskap som vi besitter.  
                     </p>
                 </div>
             </div>
@@ -278,7 +278,7 @@
         <div class="section" id="section4">
             <!-- Embedded google map -->
             <div class="wrapper-map">
-                <iframe id="canvas-map" title="Scandina Location" 
+                <iframe id="canvas-map" title="Scandina Location"
                     src="https://maps.google.com/maps?q=mosorska%2013%20beograd&t=&z=13&ie=UTF8&iwloc=&output=embed">   
                 </iframe>
             </div>  
@@ -288,11 +288,11 @@
         <!-- Section 5 -->
         <div class="section" id="contact">
             <div class="container" id="container-section5">
-                <h2>Kontaktirajte nas</h2>
+                <h2>Kontakt oss</h2>
                 <hr class="underline">
                 <p class="second-title"> 
-                    Možete nas kontaktirati putem naše digitalne forme ispod, a mi ćemo vam
-                    odgovoriti u najbržem mogućem roku
+                    Bruk kontaktskjemaet under for å komme i kontakt med oss, så svarer vi 
+                    deg så snart som mulig 
                 </p>
                 
                 <div class="row" id="myForm">
@@ -317,56 +317,58 @@
                         </div>
                         
                         <!-- Contact form -->
-                        <form action="contact.php" method="post" name="contactForm" id="contact-form" onsubmit="return validate_all()" >
-                            <div class="controls contact-form-controls">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-title contact-form-title">
-                                            <label for="form-name">Ime</label>
-                                            <input type="text" name="name" class="form-control" id="form-name"
-                                                placeholder="Unesite vaše ime" onchange="validate_name()">
-                                            <div class="error error-name" id="error-name-sr"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-title contact-form-title">
-                                            <label for="form-surname">Prezime</label>
-                                            <input type="text" name="surname" class="form-control" id="form-surname"
-                                                placeholder="Unesite vaše prezime" onchange="validate_surname()" > 
-                                            <div class="error error-surname" id="error-surname-sr"></div>
-                                        </div>
+                        <form action="<?= $_SERVER['PHP_SELF'] . '?#infobox-section5-3'; ?>" method="post" name="contactForm" 
+                            id="contact-form" onsubmit="return validate_all_no()">
+                            
+                            <?php include('php/contact_no.php') ?>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-title contact-form-title">
+                                        <label for="form-name">Fornavn</label>
+                                        <input type="text" name="name" class="form-control" id="form-name"
+                                            placeholder="Skriv ditt fornavn" onchange="validate_name_no()">
+                                        <div class="error error-name" id="error-name-no"></div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-title contact-form-title">
-                                            <label for="form-email">E-mail</label>
-                                            <input type="text" name="email" class="form-control" id="form-email"
-                                                placeholder="Unesite vašu e-mail adresu" onchange="validate_email()">
-                                            <div class="error error-email" id="error-email-sr"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-title contact-form-title">
-                                            <label for="form-subject">Povod vašeg upita?</label>
-                                            <input type="text" name="subject" class="form-control" id="form-subject"
-                                                onchange="validate_subject()">
-                                            <div class="error error-subject" id="error-subject-sr"></div>
-                                        </div>
+                                <div class="col-md-6">
+                                    <div class="form-title contact-form-title">
+                                        <label for="form-surname">Etternavn</label>
+                                        <input type="text" name="surname" class="form-control" id="form-surname"
+                                            placeholder="Skriv ditt etternavn" onchange="validate_surname_no()" > 
+                                        <div class="error error-surname" id="error-surname-no"></div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group contact-form-group">
-                                            <label for="form-message">Poruka</label>
-                                            <textarea  onchange="validate_message()" placeholder="Unesite vašu poruku ovde..." 
-                                                name="message" rows="5" class="form-control" id="form-message"></textarea>
-                                            <div class="error error-message" id="error-message-sr"></div>
-                                        </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-title contact-form-title">
+                                        <label for="form-email">E-post</label>
+                                        <input type="text" name="email" class="form-control" id="form-email"
+                                            placeholder="Skriv din e-post adresse" onchange="validate_email_no()">
+                                        <div class="error error-email" id="error-email-no"></div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <input type="submit" name="send" value="Pošalji" class="btn btn-success">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-title contact-form-title">
+                                        <label for="form-subject">Hva gjelder din henvendelse?</label>
+                                        <input type="text" name="subject" class="form-control" id="form-subject"
+                                            onchange="validate_subject()_no">
+                                        <div class="error error-subject" id="error-subject-no"></div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group contact-form-group">
+                                        <label for="form-message">Melding</label>
+                                        <textarea  onchange="validate_message_no()" placeholder="Skriv din melding her..." 
+                                            name="message" rows="6" class="form-control" id="form-message"></textarea>
+                                        <div class="error error-message" id="error-message-no"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" name="send" value="Send" class="btn btn-success">
                                 </div>
                             </div>
                         </form>
@@ -383,18 +385,18 @@
                 <div class="footer-top">
                     <!-- Footer navigation -->
                     <div class="footer-top-nav">
-                        <h5>Navigacioni meni</h5>
+                        <h5>Navigasjonsmeny</h5>
                         <ul class="list-inline">
-                            <li class="list-inline-item"><a href="#home">Naslovna</a></li>
-                            <li class="list-inline-item"><a href="#about">O nama</a></li>
+                            <li class="list-inline-item"><a href="#home">Hjem</a></li>
+                            <li class="list-inline-item"><a href="#about">Om oss</a></li>
                             <li class="list-inline-item">
-                                <a href="employers.sr.html">
-                                    Poslodavci
+                                <a href="employers_no.html">
+                                    Arbeidsgivere
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="candidates.sr.html">
-                                    Kandidati
+                                <a href="candidates_no.php">
+                                    Kandidater
                                 </a>
                             </li>
                             <li class="list-inline-item"><a href="#contact">Kontakt</a></li>
@@ -403,21 +405,21 @@
                 
                     <!-- Footer social -->
                     <div class="footer-top-social">
-                        <h5>Zapratite nas</h5>
+                        <h5>Følg oss</h5>
                         <ul>
                             <li>
                                 <a href="https://www.facebook.com/Scandina.Consulting.Agency/">
-                                    <img class="zoom" src="images/icon_face.png" alt="Facebook" />
+                                    <img class="zoom" src="images/social/icon_face.png" alt="Facebook" />
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/scandina__/?hl=en">
-                                    <img class="zoom" src="images/icon_insta.png" alt="Instagram" />
+                                    <img class="zoom" src="images/social/icon_insta.png" alt="Instagram" />
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.linkedin.com/company/scandina-consulting-agency">
-                                    <img class="zoom" src="images/icon_linked.png" alt="LinkedIn" />
+                                    <img class="zoom" src="images/social/icon_linked.png" alt="LinkedIn" />
                                 </a>
                             </li>
                         </ul>
@@ -430,13 +432,13 @@
                 <div class="footer-lower">
                     <!-- Footer-lower desktop version -->
                     <div class="footer-lower-desktop">
-                        <p>Copyright © 2020 Scandina | Sva prava su zadržana</p>
+                        <p>Copyright © 2020 Scandina | Alle rettigheter er forbeholdt</p>
                     </div>
                     
                     <!-- Footer-lower mobile version -->
                     <div class="footer-lower-mobile">
                         <p>Copyright © 2020 Scandina</p>
-                        <p>Sva prava su zadržana</p>
+                        <p>Alle rettigheter er forbeholdt</p>
                     </div>
                 </div>
             </div>
@@ -446,20 +448,20 @@
         <!-- COOKIE BANNER -->
         <div class="cookie-banner">
             <div class="container" id="container-cookie-banner">
-                <h5>Cenimo vašu privatnost</h5>
+                <h5>Vi verdsetter ditt personvern</h5>
                 <p>
-                    Scandina je posvećena zaštiti i poštovanju vaše privatnosti. Stoga naša web 
-                    stranica ne koristi kolačiće za prikupljanje ličnih podataka. Jedini način na koji 
-                    prikupljamo vaše podatke je kada nam ih direktno dostavite koristeći naše web 
-                    obrasce. Informacije koje nam dajete se čuvaju u našoj bazi podataka i dele se 
-                    isključivo sa našim partnerima u procesu konsultovanja. Scandina ne koristi 
-                    nijednu analitičku uslugu koja čuva kolačiće na vašem uređaju. Jedini izuzetak 
-                    je YouTube koji čuva podatke o svojim posetiocima kada se pusti video.   
+                    Scandina er forpliktet til å ta godt vare på ditt personvern. Derfor bruker vi 
+                    ikke cookies for å samle inn personlig informasjon om deg. Den eneste måten 
+                    Scandina samler inn dataene dine på er når du oppgir dem direkte via våre 
+                    webskjemaer. Informasjonen du oppgir lagres i databasen og deles kun med våre 
+                    partnere i konsultasjonsprosessen. Scandina bruker ikke webanalytiske tjenester 
+                    som lagrer cookies på enheten din. Unntaket er YouTube som lagrer informasjonen 
+                    om sine besøkende når en video spilles.
                 </p> 
             
                 <div class="cookie-banner-btn">
                     <a class="btn-basic cookie-banner-close" role="button" href="javascript:void(0);">
-                        Razumem
+                        Jeg forstår
                     </a>
                 </div>
             </div>
@@ -475,6 +477,6 @@
         <script src="scripts/counter.js"></script>
         <script src="scripts/nav_scroll.js"></script>
         <script src="scripts/cookie_notice.js"></script>
-        <script src="scripts/client_validation.js"></script>
+        <script src="scripts/contact_form_validation.js"></script>
     </body>
 </html>

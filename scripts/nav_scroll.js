@@ -13,7 +13,7 @@ $(document).scroll(function() {
         document.getElementById("navbar").style.top = "0";
     };
     
-    if(scrollPosition === 0 && screenWidth > 990) {
+    if (scrollPosition === 0 && screenWidth > 990) {
         /* Shows top-bar if scrolled to top and screen width is bigger than 990px */
         $('#top-bar').fadeIn(1);
         document.getElementById("navbar").style.top = "32px";
@@ -21,6 +21,5 @@ $(document).scroll(function() {
         /* Otherwise, the top-bar is not shown */
         $('#top-bar').fadeOut(1);
         document.getElementById("navbar").style.top = "0";
-    }
-    
+    }    
 });

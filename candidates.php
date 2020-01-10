@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="nb">
+<html lang="en">
     <head>
-        <title>Scandina | Kandidater</title>
+        <title>Scandina | Candidates</title>
         
         <!-- Meta tags -->
         <meta charset="UTF-8">
@@ -60,7 +60,7 @@
             <div class="container-fluid">
                 
                 <!-- Logo -->
-                <a class="navbar-brand" href="index.no.html">
+                <a class="navbar-brand" href="index.php">
                     <img class="logo" src="images/logo.png" alt="logo" />
                 </a>
                 
@@ -77,7 +77,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto w-100 justify-content-end">
                         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="index.no.html">Hjem</a>
+                            <a class="nav-link" href="index.php">Home</a>
                         </li>
                         
                         <!-- Navbar menu dropdown item -->
@@ -85,23 +85,23 @@
                             <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown1" 
                             role="button" data-toggle="dropdown" aria-haspopup="true" 
                             aria-expanded="false">
-                                Tjenester
+                                Services
                             </a>
                             
                             <div class="dropdown-menu dropdown-menu-right" 
                                 aria-labelledby="navbarDropdown1">
-                                <a class="dropdown-item" href="employers.no.html">Arbeidsgivere</a>
+                                <a class="dropdown-item" href="employers.html">Employers</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="candidates.no.html">Kandidater</a>
+                                <a class="dropdown-item" href="candidates.php">Candidates</a>
                             </div>
                         </li>
                         
                         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="index.no.html#about">Om oss</a>
+                            <a class="nav-link" href="index.php#about">About</a>
                         </li>
                         
                         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="index.no.html#contact">Kontakt</a>
+                            <a class="nav-link" href="index.php#contact">Contact</a>
                         </li>
                         
                         <!-- Navbar menu dropdown item -->
@@ -113,18 +113,18 @@
                             </a>
                             
                             <div class="dropdown-menu dropdown-menu-right" id="lang-menu" aria-labelledby="navbarDropdown2">
-                                <a class="dropdown-item" href="index.html">
-                                    <img src="images/lang/icon_en.png" alt="english" />English
+                                <a class="dropdown-item" href="candidates_no.php">
+                                    <img src="images/lang/icon_no.png" alt="norsk" />Norsk
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="index.sr.html">
+                                <a class="dropdown-item" href="candidates_sr.php">
                                     <img src="images/lang/icon_sr.png" alt="srpski" />Srpski
                                 </a>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <!-- End navbar -->
+                <!-- End navbar menu -->
             </div>
         </nav>
         <!-- END HEADER -->
@@ -133,54 +133,54 @@
         <!-- Section 1 -->
         <div class="section" id="section1-candidates">
             <div class="container" id="container-section1-candidates">
-                <h2>Tjenester</h2>
+                <h2>Services</h2>
                 <hr class="underline">
                 <p class="second-title">
-                    Under finner du alle tjenester og fordeler vi tilbyr deg som vår kandidat 
+                    Below you will find all the services and benefits we offer you as our candidate 
                 </p>
-            
+                
                 <!-- Info-box -->
                 <div class="wrapper wrapper-infobox">
                     <div class="infobox infobox-candidates" id="infobox-candidates-1">
                         <img src="images/services-can-database.png" alt="Box 1" />
                         <p>
-                            Scandia tilbyr gratis CV-registrering for sine kandidater. Dette sikrer 
-                            at profilen din blir stadig vurdert for relevante jobbtilbud. 
+                            Scandina offers free CV registration for its candidates. This will 
+                            ensure that your profile is constantly evaluated for relevant job offers. 
                         </p>
                     </div>
                     <div class="infobox infobox-candidates" id="infobox-candidates-2">
                         <img src="images/services-can-approved.png" alt="Box 2" />
                         <p>
-                            Hvis profilen din samsvarer med en av stillingsbeskrivelsene, vil vi 
-                            kontakte deg straks for et intervju og forklare prosedyren videre.
+                            If your profile matches one of the job descriptions, we will contact you 
+                            immediately for an interview and explain the further procedure.
                         </p>
                     </div> 
                     <div class="infobox infobox-candidates" id="infobox-candidates-3">
                         <img src="images/services-can-job.png" alt="Box 3" />
                         <p>
-                            Vi tilbyr både fast ansettelse og sessongarbeid (6 måneder) til våre 
-                            kandidater. Tilbudene kan variere avhengig av våre partnernes behov.
+                            We offer both seasonal (6 months) and permanent employment to our 
+                            clients. Offers may vary depending on the needs of our partners.  
                         </p>
                     </div> 
                     <div class="infobox infobox-candidates" id="infobox-candidates-4">
                         <img src="images/services-can-progress.png" alt="Box 4" />
                         <p>
-                            Scandina tilbyr karriereveiledning og profesjonell rådgivning for 
-                            klientene sine. Du kan kontakte oss når som helst for mer informasjon.
+                            Scandina offers career guidance and professional counseling for our 
+                            clients. You can contact us at any time for more information.  
                         </p>
                     </div> 
                     <div class="infobox infobox-candidates" id="infobox-candidates-5">
                         <img src="images/services-can-care.png" alt="Box 5" />
                         <p>
-                            Vi gir deg all nødvendig informasjon under ditt opphold i Skandinavia,
-                            slik at du kan føle deg trygg og komfortabel under oppholdet.
+                            We provide you with all the necessary information during your stay in 
+                            Scandinavia so you can feel safe and comfortable while abroad.
                         </p>
                     </div>
                     <div class="infobox infobox-candidates" id="infobox-candidates-6">
                         <img src="images/services-can-learning.png" alt="Box 6" />
                         <p>
-                            Scandina kan anbefale skoler og onlinekurs for skandinaviske språk, 
-                            og på denne måten hjelpe deg å lære språket så raskt som mulig.
+                            Scandina can recommend you Scandinavian language courses and schools 
+                            in order to help you learn the language ​​as fast as possible.
                         </p>
                     </div>
                 </div>
@@ -195,64 +195,61 @@
                 <!-- File upload form -->
                 <div class="wrapper wrapper-upload-form">
                     <div class="file-upload-form">
-                        <h4>Registrer din CV</h4>
+                        <h4>Register your resume</h4>
                         <p>
-                            Bruk skjemaet under for å laste opp din CV.
-                            De aksepterte filformatene er PDF og DOC/DOCX. 
+                            Use the form below to upload your resume. 
+                            The accepted file formats are PDF and DOC/DOCX.  
                         </p>
                         
-                        <form action="contact.php" method="post">
-                            <div class="controls">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-title upload-form-title">
-                                            <label>Fornavn</label>
-                                            <input type="text" name="firstname" class="form-control" id="form-name"
-                                                placeholder="Skriv ditt fornavn" required="required" data-error="Obligatorisk felt">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-title upload-form-title">
-                                            <label>Etternavn</label>
-                                            <input type="text" name="surname" class="form-control" id="form-surname"
-                                                placeholder="Skriv ditt etternavn" required="required" data-error="Obligatorisk felt"> 
-                                            <div class="help-block with-errors"></div>
-                                        </div>
+                        <form action="candidates.php" method="post" name="myForm" id="upload-form" onsubmit="return validate_all()">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-title upload-form-title">
+                                        <label for="form-name">First name</label>
+                                        <input type="text" name="name" class="form-control" id="form-name"
+                                            placeholder="Enter your first name" onchange="validate_name()">
+                                        <div class="error error-name" id="error-name-en"></div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-title upload-form-title">
-                                            <label>E-post</label>
-                                            <input type="email" name="email" class="form-control" id="form-email"
-                                                placeholder="Skriv din e-post adresse" required="required" data-error="Obligatorisk felt">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-title upload-form-title">
-                                            <label>Telefonnummer</label>
-                                            <input type="text" name="tlf" class="form-control" id="form-tlf"
-                                                placeholder="Skriv ditt telefonnummer" required="required" data-error="Obligatorisk felt">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
+                                <div class="col-md-6">
+                                    <div class="form-title upload-form-title">
+                                        <label for="form-surname">Last name</label>
+                                        <input type="text" name="surname" class="form-control" id="form-surname"
+                                            placeholder="Enter your last name" onchange="validate_surname()"> 
+                                        <div class="error error-surname" id="error-surname-en"></div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-title upload-form-title">
-                                            <label><i class="fas fa-cloud-upload-alt"></i> Velg fil du vil laste opp </label>
-                                            <input type="file" name="upload" class="form-control" id="form-upload"
-                                                required="required" data-error="Endre senere"
-                                                accept="application/pdf,application/msword,
-                                                application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
-                                            <div class="help-block with-errors"></div>
-                                        </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-title upload-form-title">
+                                        <label for="form-email">E-mail</label>
+                                        <input type="email" name="email" class="form-control" id="form-email"
+                                            placeholder="Enter your e-mail address" onchange="validate_email()">
+                                        <div class="error error-email" id="error-email-en"></div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <input type="submit" name="upload" value="Last opp" class="btn btn-success">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-title upload-form-title">
+                                        <label for="form-tlf">Phone number</label>
+                                        <input type="text" name="tlf" class="form-control" id="form-tlf"
+                                            placeholder="Enter your phone number" onchange="validate_tlf()">
+                                        <div class="error error-tlf" id="error-tlf-en"></div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-title upload-form-title">
+                                        <label for="form-upload"><i class="fas fa-cloud-upload-alt"></i> Select a file to upload</label>
+                                        <input type="file" name="upload" class="form-control" id="form-upload"
+                                            
+                                            accept="application/pdf,application/msword,
+                                            application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" name="upload" value="Upload" class="btn btn-success">
                                 </div>
                             </div>
                         </form>
@@ -268,10 +265,10 @@
             <div class="container" id="container-page-redirection">
                 <div class="wrapper wrapper-redirection">
                     <div class="redirection-btn" id="redirection-btn-left">
-                        <a class="btn btn-info" role="button" href="index.no.html">Hjemmeside</a> 
+                        <a class="btn btn-info" role="button" href="index.php">Homepage</a> 
                     </div>
                     <div class="redirection-btn" id="redirection-btn-right">
-                        <a class="btn btn-info" role="button" href="index.no.html#contact">Kontakt oss</a> 
+                        <a class="btn btn-info" role="button" href="index.php#contact">Contact us</a> 
                     </div>
                 </div>     
             </div>
@@ -284,41 +281,41 @@
                 <div class="footer-top">
                     <!-- Footer navigation -->
                     <div class="footer-top-nav">
-                        <h5>Navigasjonsmeny</h5>
+                        <h5>Navigation meny</h5>
                         <ul class="list-inline">
-                            <li class="list-inline-item"><a href="index.no.html#home">Hjem</a></li>
-                            <li class="list-inline-item"><a href="index.no.html#about">Om oss</a></li>
+                            <li class="list-inline-item"><a href="index.php#home">Home</a></li>
+                            <li class="list-inline-item"><a href="index.php#about">About</a></li>
                             <li class="list-inline-item">
-                                <a href="employers.no.html">
-                                    Arbeidsgivere
+                                <a href="employers.html">
+                                    Employers
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="candidates.no.html">
-                                    Kandidater
+                                <a href="candidates.php">
+                                    Candidates
                                 </a>
                             </li>
-                            <li class="list-inline-item"><a href="index.no.html#contact">Kontakt</a></li>
+                            <li class="list-inline-item"><a href="index.php#contact">Contact</a></li>
                         </ul>
                     </div>
                 
                     <!-- Footer social -->
                     <div class="footer-top-social">
-                        <h5>Følg oss</h5>
+                        <h5>Follow us</h5>
                         <ul>
                             <li>
                                 <a href="https://www.facebook.com/Scandina.Consulting.Agency/">
-                                    <img class="zoom" src="images/icon_face.png" alt="Facebook" />
+                                    <img class="zoom" src="images/social/icon_face.png" alt="Facebook" />
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/scandina__/?hl=en">
-                                    <img class="zoom" src="images/icon_insta.png" alt="Instagram" />
+                                    <img class="zoom" src="images/social/icon_insta.png" alt="Instagram" />
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.linkedin.com/company/scandina-consulting-agency">
-                                    <img class="zoom" src="images/icon_linked.png" alt="LinkedIn" />
+                                    <img class="zoom" src="images/social/icon_linked.png" alt="LinkedIn" />
                                 </a>
                             </li>
                         </ul>
@@ -331,13 +328,13 @@
                 <div class="footer-lower">
                     <!-- Footer-lower desktop version -->
                     <div class="footer-lower-desktop">
-                        <p>Copyright © 2020 Scandina | Alle rettigheter er forbeholdt</p>
+                        <p>Copyright © 2020 Scandina | All rights reserved</p>
                     </div>
                     
                     <!-- Footer-lower mobile version -->
                     <div class="footer-lower-mobile">
                         <p>Copyright © 2020 Scandina</p>
-                        <p>Alle rettigheter er forbeholdt</p>
+                        <p>All rights reserved</p>
                     </div>
                 </div>
             </div>
@@ -347,20 +344,21 @@
         <!-- COOKIE BANNER -->
         <div class="cookie-banner">
             <div class="container" id="container-cookie-banner">
-                <h5>Vi verdsetter ditt personvern</h5>
+                <h5>We value your privacy</h5>
                 <p>
-                    Scandina er forpliktet til å ta godt vare på ditt personvern. Derfor bruker vi 
-                    ikke cookies for å samle inn personlig informasjon om deg. Den eneste måten 
-                    Scandina samler inn dataene dine på er når du oppgir dem direkte via våre 
-                    webskjemaer. Informasjonen du oppgir lagres i databasen og deles kun med våre 
-                    partnere i konsultasjonsprosessen. Scandina bruker ikke webanalytiske tjenester 
-                    som lagrer cookies på enheten din. Unntaket er YouTube som lagrer informasjonen 
-                    om sine besøkende når en video spilles.
+                    Scandina is committed to protecting and respecting your privacy. Therefore, our 
+                    website does not use cookies to collect your personal data. The only way we collect 
+                    your data is when you provide it directly using our website forms. The information 
+                    you provide is stored in our database and is only shared with our partners in the 
+                    consulting process. Scandina is not using any web analytic services that stores 
+                    cookies on your device. The only exception is YouTube which stores the information 
+                    about its visitors when a video is played.   
                 </p> 
             
                 <div class="cookie-banner-btn">
-                    <a class="btn-basic cookie-banner-close" role="button" href="javascript:void(0);">
-                        Jeg forstår
+                    <a class="btn-basic cookie-banner-close" role="button" href="javascript:void(0);"
+                       id="cookie-accept">
+                        Understood
                     </a>
                 </div>
             </div>
@@ -375,5 +373,7 @@
         <!-- My linked script files -->
         <script src="scripts/nav_scroll.js"></script>
         <script src="scripts/cookie_notice.js"></script>
+        <script src="scripts/form_validation.js"></script>
     </body>
 </html>
+

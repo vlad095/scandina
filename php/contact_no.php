@@ -25,39 +25,39 @@ if (isset($_POST["send"])) {
             switch ($input) {
                 case "name":
                 if (empty($name)) {
-                    return "* First name is required";   
+                    return "* Fornavn er obligatorisk";   
                 } elseif (!preg_match($pregName, $value)) {
-                    return "* First name must be between 2 and 20 characters long and include only letters";
+                    return "* Fornavnet må være mellom 2 og 20 tegn langt og kun inneholde bokstaver";
                 }
                 break;
                 
                 case "surname":
                 if (empty($surname)) {
-                    return "<br/>* Last name is required";
+                    return "<br/>* Etternavn er obligatorisk";
                 } elseif (!preg_match($pregName, $value)) {
-                    return "<br/>* Last name must be between 2 and 20 characters long and include only letters";
+                    return "<br/>* Etternavnet må være mellom 2 og 20 tegn langt og kun inneholde bokstaver";
                 }
                 break;
                 
                 case "email":
                 if (empty($email)) {
-                    return "<br/>* E-mail address is required";
+                    return "<br/>* E-post adresse er obligatorisk";
                 } elseif (!preg_match($pregEmail, $value)) {
-                    return "<br/>* The e-mail format you entered is invalid";
+                    return "<br/>* E-post formatet du skrev inn er ugyldig";
                 }
                 break;
                 
                 case "subject":
                 if (!preg_match($pregSubject, $value)) {
-                    return "<br/>* The subject input can be at most 50 characters long";
+                    return "<br/>* Emnet for henvendelsen kan være opptil 50 tegn langt";
                 }
                 break;
                 
                 case "message":
                 if (empty($message)) {
-                    return "<br/>* Message is required";
+                    return "<br/>* Meldingen må skrives";
                 } elseif (!preg_match($pregMessage, $value)) {
-                    return "<br/>* The message can be at most 1000 characters long";
+                    return "<br/>* Meldingen kan være opptil 1000 tegn langt";
                 }
                 break;
             }
@@ -81,7 +81,7 @@ if (isset($_POST["send"])) {
         
         if ($responseMessage != "") {
             echo "<p id='errorMessage'>".$responseMessage."</p>";
-            echo "<p id='errorMessage'>Fill in the form again with the correct information.</p>";
+            echo "<p id='errorMessage'>Fyll ut skjemaet igjen med riktig informasjon.</p>";
             $allFieldsOk = false;
         } else {
             $allFieldsOk = true;
@@ -91,10 +91,10 @@ if (isset($_POST["send"])) {
             $toMail = "vmaric1995@gmail.com";
             
             if (mail($toMail, $subject, $message, "From: ".$email)) {
-                $responseMessage = "Your message was sent, thank you for contacting us!";
+                $responseMessage = "Din melding ble sendt, takk for at du tok kontakt med oss!";
                 echo "<p id='successMessage'>".$responseMessage."</p>";
             } else {
-                $responseMessage = "The message could not be sent, please try again later.";
+                $responseMessage = "Meldingen kunne ikke sendes, vennligst prøv igjen senere.";
                 echo "<p id='errorMessage'>".$responseMessage."</p>";
             }
         }

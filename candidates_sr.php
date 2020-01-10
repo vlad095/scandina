@@ -60,7 +60,7 @@
             <div class="container-fluid">
                 
                 <!-- Logo -->
-                <a class="navbar-brand" href="index.sr.html">
+                <a class="navbar-brand" href="index_sr.php">
                     <img class="logo" src="images/logo.png" alt="logo" />
                 </a>
                 
@@ -77,7 +77,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto w-100 justify-content-end">
                         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="index.sr.html">Naslovna</a>
+                            <a class="nav-link" href="index_sr.php">Naslovna</a>
                         </li>
                         
                         <!-- Navbar menu dropdown item -->
@@ -90,18 +90,18 @@
                             
                             <div class="dropdown-menu dropdown-menu-right" 
                                 aria-labelledby="navbarDropdown1">
-                                <a class="dropdown-item" href="employers.sr.html">Poslodavci</a>
+                                <a class="dropdown-item" href="employers_sr.html">Poslodavci</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="candidates.sr.html">Kandidati</a>
+                                <a class="dropdown-item" href="candidates_sr.php">Kandidati</a>
                             </div>
                         </li>
                         
                         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="index.sr.html#about">O nama</a>
+                            <a class="nav-link" href="index_sr.php#about">O nama</a>
                         </li>
                         
                         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="index.sr.html#contact">Kontakt</a>
+                            <a class="nav-link" href="index_sr.php#contact">Kontakt</a>
                         </li>
                         
                         <!-- Navbar menu dropdown item -->
@@ -113,11 +113,11 @@
                             </a>
                             
                             <div class="dropdown-menu dropdown-menu-right" id="lang-menu" aria-labelledby="navbarDropdown2">
-                                <a class="dropdown-item" href="index.html">
+                                <a class="dropdown-item" href="candidates.php">
                                     <img src="images/lang/icon_en.png" alt="english" />English
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="index.no.html">
+                                <a class="dropdown-item" href="candidates_no.php">
                                     <img src="images/lang/icon_no.png" alt="norsk" />Norsk
                                 </a>
                             </div>
@@ -201,58 +201,56 @@
                             Prihvacćeni formati fajlova su PDF i DOC/DOCKS.  
                         </p>
                         
-                        <form action="contact.php" method="post">
-                            <div class="controls">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-title upload-form-title">
-                                            <label>Ime</label>
-                                            <input type="text" name="firstname" class="form-control" id="form-name"
-                                                placeholder="Vaše ime" required="required" data-error="Ime je obavezno">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-title upload-form-title">
-                                            <label>Prezime</label>
-                                            <input type="text" name="surname" class="form-control" id="form-surname"
-                                                placeholder="Vaše prezime" required="required" data-error="Prezime je obavezno"> 
-                                            <div class="help-block with-errors"></div>
-                                        </div>
+                        <form action="candidates.php" method="post" name="myForm" id="upload-form" onsubmit="return validate_all()">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-title upload-form-title">
+                                        <label for="form-name">Ime</label>
+                                        <input type="text" name="name" class="form-control" id="form-name"
+                                            placeholder="Unesite vaše ime" onchange="validate_name()">
+                                        <div class="error error-name" id="error-name-sr"></div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-title upload-form-title">
-                                            <label>E-mail</label>
-                                            <input type="email" name="email" class="form-control" id="form-email"
-                                                placeholder="Vaša e-mail adresa" required="required" data-error="E-mail je obavezan">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-title upload-form-title">
-                                            <label>Broj telefona</label>
-                                            <input type="text" name="tlf" class="form-control" id="form-tlf"
-                                                placeholder="Vaš broj telefona" required="required" data-error="Broj telefona je obavezan">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
+                                <div class="col-md-6">
+                                    <div class="form-title upload-form-title">
+                                        <label for="form-surname">Prezime</label>
+                                        <input type="text" name="surname" class="form-control" id="form-surname"
+                                            placeholder="Unesite vaše prezime" onchange="validate_surname()"> 
+                                        <div class="error error-surname" id="error-surname-sr"></div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-title upload-form-title">
-                                            <label><i class="fas fa-cloud-upload-alt"></i> Izaberite fajl za upload</label>
-                                            <input type="file" name="upload" class="form-control" id="form-upload"
-                                                required="required" data-error="Izmeni kasnije"
-                                                accept="application/pdf,application/msword,
-                                                application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
-                                            <div class="help-block with-errors"></div>
-                                        </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-title upload-form-title">
+                                        <label for="form-email">E-mail</label>
+                                        <input type="email" name="email" class="form-control" id="form-email"
+                                            placeholder="Unesite vašu e-mail adresu" onchange="validate_email()">
+                                        <div class="error error-email" id="error-email-sr"></div>
                                     </div>
-                                    <div class="col-md-12">
-                                        <input type="submit" name="upload" value="Upload" class="btn btn-success">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-title upload-form-title">
+                                        <label for="form-tlf">Broj telefona</label>
+                                        <input type="text" name="tlf" class="form-control" id="form-tlf"
+                                            placeholder="Unesite vaš broj telefona" onchange="validate_tlf()">
+                                        <div class="error error-tlf" id="error-tlf-sr"></div>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-title upload-form-title">
+                                        <label for="form-upload"><i class="fas fa-cloud-upload-alt"></i> Izaberite fajl za upload</label>
+                                        <input type="file" name="upload" class="form-control" id="form-upload" required="required"
+                                            oninvalid="this.setCustomValidity('PDF ili DOC/DOCX fajl mora biti uploadovan')"
+                                            oninput="this.setCustomValidity('')"
+                                            accept="application/pdf,application/msword,
+                                            application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" name="upload" value="Upload" class="btn btn-success">
                                 </div>
                             </div>
                         </form>
@@ -268,10 +266,10 @@
             <div class="container" id="container-page-redirection">
                 <div class="wrapper wrapper-redirection">
                     <div class="redirection-btn" id="redirection-btn-left">
-                        <a class="btn btn-info" role="button" href="index.sr.html">Naslovna</a> 
+                        <a class="btn btn-info" role="button" href="index_sr.php">Naslovna</a> 
                     </div>
                     <div class="redirection-btn" id="redirection-btn-right">
-                        <a class="btn btn-info" role="button" href="index.sr.html#contact">Kontakt</a> 
+                        <a class="btn btn-info" role="button" href="index_sr.php#contact">Kontakt</a> 
                     </div>
                 </div>     
             </div>
@@ -286,19 +284,19 @@
                     <div class="footer-top-nav">
                         <h5>Navigacioni meni</h5>
                         <ul class="list-inline">
-                            <li class="list-inline-item"><a href="index.sr.html#home">Naslovna</a></li>
-                            <li class="list-inline-item"><a href="index.sr.html#about">O nama</a></li>
+                            <li class="list-inline-item"><a href="index_sr.php#home">Naslovna</a></li>
+                            <li class="list-inline-item"><a href="index_sr.php#about">O nama</a></li>
                             <li class="list-inline-item">
-                                <a href="employers.sr.html">
+                                <a href="employers_sr.html">
                                     Poslodavci
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="candidates.sr.html">
+                                <a href="candidates_sr.php">
                                     Kandidati
                                 </a>
                             </li>
-                            <li class="list-inline-item"><a href="index.sr.html#contact">Kontakt</a></li>
+                            <li class="list-inline-item"><a href="index_sr.php#contact">Kontakt</a></li>
                         </ul>
                     </div>
                 
@@ -308,17 +306,17 @@
                         <ul>
                             <li>
                                 <a href="https://www.facebook.com/Scandina.Consulting.Agency/">
-                                    <img class="zoom" src="images/icon_face.png" alt="Facebook" />
+                                    <img class="zoom" src="images/social/icon_face.png" alt="Facebook" />
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/scandina__/?hl=en">
-                                    <img class="zoom" src="images/icon_insta.png" alt="Instagram" />
+                                    <img class="zoom" src="images/social/icon_insta.png" alt="Instagram" />
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.linkedin.com/company/scandina-consulting-agency">
-                                    <img class="zoom" src="images/icon_linked.png" alt="LinkedIn" />
+                                    <img class="zoom" src="images/social/icon_linked.png" alt="LinkedIn" />
                                 </a>
                             </li>
                         </ul>
@@ -375,5 +373,6 @@
         <!-- My linked script files -->
         <script src="scripts/nav_scroll.js"></script>
         <script src="scripts/cookie_notice.js"></script>
+        <script src="scripts/form_validation.js"></script>
     </body>
 </html>

@@ -25,39 +25,39 @@ if (isset($_POST["send"])) {
             switch ($input) {
                 case "name":
                 if (empty($name)) {
-                    return "* First name is required";   
+                    return "* Ime je obavezno";   
                 } elseif (!preg_match($pregName, $value)) {
-                    return "* First name must be between 2 and 20 characters long and include only letters";
+                    return "* Ime mora biti dugačko između 2 i 20 znakova i sadržati samo slova";
                 }
                 break;
                 
                 case "surname":
                 if (empty($surname)) {
-                    return "<br/>* Last name is required";
+                    return "<br/>* Prezime je obavezno";
                 } elseif (!preg_match($pregName, $value)) {
-                    return "<br/>* Last name must be between 2 and 20 characters long and include only letters";
+                    return "<br/>* Prezime mora biti dugačko između 2 i 20 znakova i sadržati samo slova";
                 }
                 break;
                 
                 case "email":
                 if (empty($email)) {
-                    return "<br/>* E-mail address is required";
+                    return "<br/>* E-mail adresa je obavezna";
                 } elseif (!preg_match($pregEmail, $value)) {
-                    return "<br/>* The e-mail format you entered is invalid";
+                    return "<br/>* E-mail format koji ste uneli nije važeći";
                 }
                 break;
                 
                 case "subject":
                 if (!preg_match($pregSubject, $value)) {
-                    return "<br/>* The subject input can be at most 50 characters long";
+                    return "<br/>* Naslov poruke može biti dugačak do 50 znakova";
                 }
                 break;
                 
                 case "message":
                 if (empty($message)) {
-                    return "<br/>* Message is required";
+                    return "<br/>* Poruka je obavezna";
                 } elseif (!preg_match($pregMessage, $value)) {
-                    return "<br/>* The message can be at most 1000 characters long";
+                    return "<br/>* Poruka može biti dugačka do 1000 znakova";
                 }
                 break;
             }
@@ -81,7 +81,7 @@ if (isset($_POST["send"])) {
         
         if ($responseMessage != "") {
             echo "<p id='errorMessage'>".$responseMessage."</p>";
-            echo "<p id='errorMessage'>Fill in the form again with the correct information.</p>";
+            echo "<p id='errorMessage'>Ponovo ispunite obrazac sa tačnim podacima.</p>";
             $allFieldsOk = false;
         } else {
             $allFieldsOk = true;
@@ -91,10 +91,10 @@ if (isset($_POST["send"])) {
             $toMail = "vmaric1995@gmail.com";
             
             if (mail($toMail, $subject, $message, "From: ".$email)) {
-                $responseMessage = "Your message was sent, thank you for contacting us!";
+                $responseMessage = "Vaša poruka je poslata, hvala što ste nas kontaktirali!";
                 echo "<p id='successMessage'>".$responseMessage."</p>";
             } else {
-                $responseMessage = "The message could not be sent, please try again later.";
+                $responseMessage = "Poruka nije poslata, molimo pokušajte ponovo kasnije.";
                 echo "<p id='errorMessage'>".$responseMessage."</p>";
             }
         }
@@ -102,3 +102,4 @@ if (isset($_POST["send"])) {
 }
 
 ?>
+

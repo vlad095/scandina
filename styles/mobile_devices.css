@@ -6,12 +6,11 @@
 
 @media screen and (max-width: 990px) {
 
-    body { font-size: 16px; }
     h2 { font-size: 34px; }
     h4 { font-size: 20px; }
     
     .container { padding: 120px 0; }
-    .second-title { font-size: 17px; }
+    .second-title { font-size: 18px; }
     
     /*************** TOP BAR *****************/
     
@@ -22,9 +21,7 @@
     /**************** HEADER *****************/
     
     /* Logo */
-    #navbar .navbar-brand img {
-        width: 180px;
-    }
+    #navbar .navbar-brand img { width: 180px; }
     
     /* Navbar menu dropdown button */
     .icon-bar {
@@ -107,7 +104,7 @@
     
     /*** Section 3 ***/
     
-    .wrapper-content-section3 h4 { font-size: 20px; }
+    .wrapper-content-section3 h4 { font-size: 18px; }
     
     /* YouTube video */
     .wrapper-video { height: 480px; }
@@ -203,6 +200,7 @@
 
     /* Info-box */
     .infobox-candidates { width: 48%; }
+    .infobox-candidates p { font-size: 16px; }
     
     #infobox-candidates-1,
     #infobox-candidates-3,
@@ -258,10 +256,7 @@
         text-align: center;
     }
 
-    .infobox-employers p {
-        font-size: 14px;
-        text-align: center;
-    }
+    .infobox-employers p { text-align: center; }
     
     /* Changing the order of divs */
     #infobox-employers-1 { order: 1; }
@@ -317,14 +312,6 @@
     body { font-size: 14px; }
     h2 { font-size: 28px; }
     h4 { font-size: 20px; }
-    
-    /* Forms */
-    ::-webkit-input-placeholder { font-size: 12px; }
-    :-moz-placeholder { font-size: 12px; }
-    ::-moz-placeholder { font-size: 12px; }
-    :-ms-input-placeholder { font-size: 12px; }
-    ::placeholder { font-size: 12px; }
-    .error { font-size: 12px; }
     
     .container { padding: 100px 10%; }
     .second-title { font-size: 16px; }
@@ -387,6 +374,7 @@
         margin-right: 0;
     }
     
+    .infobox-candidates p { font-size: 14px; }
     .infobox-candidates img { width: 120px; }
     
     /*** End section 1 ***/
@@ -406,6 +394,7 @@
 
     /* Info-box */
     .infobox-employers-img img { width: 120px; }
+    .infobox-employers p { font-size: 14px; }
 
     /*** End section 1 ***/
     
