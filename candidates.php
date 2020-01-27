@@ -17,7 +17,7 @@
         <link rel="stylesheet" type="text/css" href="styles/mobile_devices.css">
         
         <!-- Add favicon -->
-        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="icon" type="image/png" href="images/brand/favicon.png">
         
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/cb7428d12a.js"></script>
@@ -27,106 +27,108 @@
     </head>
     
     <body>
-        <!-- TOP BAR -->
-        <div class="navbar" id="top-bar">
-            <div class="container-fluid">
-                <ul class="navbar-nav mr-auto" id="top-bar-left">
-                    <li class="nav-item"><i class="far fa-envelope"></i></li>
-                    <li class="nav-item">info@scandina.rs</li>
-                </ul>
-                <ul class="navbar-nav ml-auto" id="top-bar-right">
-                    <li class="nav-item">
-                        <a href="https://www.facebook.com/Scandina.Consulting.Agency/">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://www.instagram.com/scandina__/?hl=en">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://www.linkedin.com/company/scandina-consulting-agency">
-                            <i class="fab fa-linkedin"></i>   
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- END TOP BAR -->
-            
         <!-- HEADER -->
-        <nav class="navbar navbar-expand-lg" id="navbar"> 
-            <div class="container-fluid">
-                
-                <!-- Logo -->
-                <a class="navbar-brand" href="index.php">
-                    <img class="logo" src="images/logo.png" alt="logo" />
-                </a>
-                
-                <!-- Navbar menu dropdown button -->
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" 
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-bar top-bar"></span>
-                    <span class="icon-bar middle-bar"></span>
-                    <span class="icon-bar bottom-bar"></span>				
-                </button>
-                
-                <!-- Navbar menu -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto w-100 justify-content-end">
-                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="index.php">Home</a>
-                        </li>
-                        
-                        <!-- Navbar menu dropdown item -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown1" 
-                            role="button" data-toggle="dropdown" aria-haspopup="true" 
-                            aria-expanded="false">
-                                Services
+        <header class="page-header">
+            <!-- Topbar -->
+            <div class="navbar" id="top-bar">
+                <div class="container-fluid">
+                    <ul class="navbar-nav mr-auto" id="top-bar-left">
+                        <li class="nav-item"><i class="far fa-envelope"></i></li>
+                        <li class="nav-item">info@scandina.rs</li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto" id="top-bar-right">
+                        <li class="nav-item">
+                            <a href="https://www.facebook.com/Scandina.Consulting.Agency/">
+                                <i class="fab fa-facebook-square"></i>
                             </a>
-                            
-                            <div class="dropdown-menu dropdown-menu-right" 
-                                aria-labelledby="navbarDropdown1">
-                                <a class="dropdown-item" href="employers.html">Employers</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="candidates.php">Candidates</a>
-                            </div>
                         </li>
-                        
-                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="index.php#about">About</a>
-                        </li>
-                        
-                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="index.php#contact">Contact</a>
-                        </li>
-                        
-                        <!-- Navbar menu dropdown item -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" 
-                            role="button" data-toggle="dropdown" aria-haspopup="true" 
-                            aria-expanded="false">
-                                <i class="fas fa-globe"></i>
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com/scandina__/?hl=en">
+                                <i class="fab fa-instagram"></i>
                             </a>
-                            
-                            <div class="dropdown-menu dropdown-menu-right" id="lang-menu" aria-labelledby="navbarDropdown2">
-                                <a class="dropdown-item" href="candidates_no.php">
-                                    <img src="images/lang/icon_no.png" alt="norsk" />Norsk
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="candidates_sr.php">
-                                    <img src="images/lang/icon_sr.png" alt="srpski" />Srpski
-                                </a>
-                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.linkedin.com/company/scandina-consulting-agency">
+                                <i class="fab fa-linkedin"></i>   
+                            </a>
                         </li>
                     </ul>
                 </div>
-                <!-- End navbar menu -->
             </div>
-        </nav>
+            <!-- End Topbar -->
+            
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg" id="navbar"> 
+                <div class="container-fluid">
+
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.php">
+                        <img class="logo" src="images/brand/logo.png" alt="logo" />
+                    </a>
+
+                    <!-- Navbar menu dropdown button -->
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" 
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>				
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto w-100 justify-content-end">
+                            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                                <a class="nav-link" href="index.php">Home</a>
+                            </li>
+
+                            <!-- Navbar menu dropdown item -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown1" 
+                                role="button" data-toggle="dropdown" aria-haspopup="true" 
+                                aria-expanded="false">
+                                    Services
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" 
+                                    aria-labelledby="navbarDropdown1">
+                                    <a class="dropdown-item" href="employers.html">Employers</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="candidates.php">Candidates</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                                <a class="nav-link" href="index.php#about">About</a>
+                            </li>
+
+                            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                                <a class="nav-link" href="index.php#contact">Contact</a>
+                            </li>
+
+                            <!-- Navbar menu dropdown item -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" 
+                                role="button" data-toggle="dropdown" aria-haspopup="true" 
+                                aria-expanded="false">
+                                    <i class="fas fa-globe"></i>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" id="lang-menu" aria-labelledby="navbarDropdown2">
+                                    <a class="dropdown-item" href="index_no.php">
+                                        <img src="images/lang/icon_no.png" alt="norsk" />Norsk
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="index_sr.php">
+                                        <img src="images/lang/icon_sr.png" alt="srpski" />Srpski
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+        </header>
         <!-- END HEADER -->
         
         <!-- CANDIDATES -->
@@ -134,7 +136,7 @@
         <div class="section" id="section1-candidates">
             <div class="container" id="container-section1-candidates">
                 <h2>Services</h2>
-                <hr class="underline">
+                <span class="underline"></span>
                 <p class="second-title">
                     Below you will find all the services and benefits we offer you as our candidate 
                 </p>
@@ -142,42 +144,42 @@
                 <!-- Info-box -->
                 <div class="wrapper wrapper-infobox">
                     <div class="infobox infobox-candidates" id="infobox-candidates-1">
-                        <img src="images/services-can-database.png" alt="Box 1" />
+                        <img src="images/others/services-can-database.png" alt="Box 1" />
                         <p>
                             Scandina offers free CV registration for its candidates. This will 
                             ensure that your profile is constantly evaluated for relevant job offers. 
                         </p>
                     </div>
                     <div class="infobox infobox-candidates" id="infobox-candidates-2">
-                        <img src="images/services-can-approved.png" alt="Box 2" />
+                        <img src="images/others/services-can-approved.png" alt="Box 2" />
                         <p>
                             If your profile matches one of the job descriptions, we will contact you 
                             immediately for an interview and explain the further procedure.
                         </p>
                     </div> 
                     <div class="infobox infobox-candidates" id="infobox-candidates-3">
-                        <img src="images/services-can-job.png" alt="Box 3" />
+                        <img src="images/others/services-can-job.png" alt="Box 3" />
                         <p>
                             We offer both seasonal (6 months) and permanent employment to our 
                             clients. Offers may vary depending on the needs of our partners.  
                         </p>
                     </div> 
                     <div class="infobox infobox-candidates" id="infobox-candidates-4">
-                        <img src="images/services-can-progress.png" alt="Box 4" />
+                        <img src="images/others/services-can-progress.png" alt="Box 4" />
                         <p>
                             Scandina offers career guidance and professional counseling for our 
                             clients. You can contact us at any time for more information.  
                         </p>
                     </div> 
                     <div class="infobox infobox-candidates" id="infobox-candidates-5">
-                        <img src="images/services-can-care.png" alt="Box 5" />
+                        <img src="images/others/services-can-care.png" alt="Box 5" />
                         <p>
                             We provide you with all the necessary information during your stay in 
                             Scandinavia so you can feel safe and comfortable while abroad.
                         </p>
                     </div>
                     <div class="infobox infobox-candidates" id="infobox-candidates-6">
-                        <img src="images/services-can-learning.png" alt="Box 6" />
+                        <img src="images/others/services-can-learning.png" alt="Box 6" />
                         <p>
                             Scandina can recommend you Scandinavian language courses and schools 
                             in order to help you learn the language ​​as fast as possible.
@@ -201,22 +203,26 @@
                             The accepted file formats are PDF and DOC/DOCX.  
                         </p>
                         
-                        <form action="candidates.php" method="post" name="myForm" id="upload-form" onsubmit="return validate_all()">
+                        <form action="<?= $_SERVER['PHP_SELF'] . '#section2-candidates'; ?>" method="post" 
+                            name="uploadForm" id="upload-form" enctype="multipart/form-data" onsubmit="return validate_all_en()">
+                            
+                            <?php include('php/upload.php') ?>
+                            
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-title upload-form-title">
                                         <label for="form-name">First name</label>
                                         <input type="text" name="name" class="form-control" id="form-name"
-                                            placeholder="Enter your first name" onchange="validate_name()">
-                                        <div class="error error-name" id="error-name-en"></div>
+                                            placeholder="Enter your first name" onchange="validate_name_en()">
+                                        <div class="error-message" id="error-upload-name-en"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-title upload-form-title">
                                         <label for="form-surname">Last name</label>
                                         <input type="text" name="surname" class="form-control" id="form-surname"
-                                            placeholder="Enter your last name" onchange="validate_surname()"> 
-                                        <div class="error error-surname" id="error-surname-en"></div>
+                                            placeholder="Enter your last name" onchange="validate_surname_en()"> 
+                                        <div class="error-message" id="error-upload-surname-en"></div>
                                     </div>
                                 </div>
                             </div>
@@ -225,27 +231,29 @@
                                     <div class="form-title upload-form-title">
                                         <label for="form-email">E-mail</label>
                                         <input type="email" name="email" class="form-control" id="form-email"
-                                            placeholder="Enter your e-mail address" onchange="validate_email()">
-                                        <div class="error error-email" id="error-email-en"></div>
+                                            placeholder="Enter your e-mail address" onchange="validate_email_en()">
+                                        <div class="error-message" id="error-upload-email-en"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-title upload-form-title">
                                         <label for="form-tlf">Phone number</label>
                                         <input type="text" name="tlf" class="form-control" id="form-tlf"
-                                            placeholder="Enter your phone number" onchange="validate_tlf()">
-                                        <div class="error error-tlf" id="error-tlf-en"></div>
+                                            placeholder="Enter your phone number" 
+                                            onchange="validate_tlf_en()">
+                                        <div class="error-message" id="error-upload-tlf-en"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-title upload-form-title">
-                                        <label for="form-upload"><i class="fas fa-cloud-upload-alt"></i> Select a file to upload</label>
-                                        <input type="file" name="upload" class="form-control" id="form-upload"
-                                            
-                                            accept="application/pdf,application/msword,
-                                            application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+                                        <label for="form-file-upload"><i class="fas fa-cloud-upload-alt">
+                                            </i> Select a file to upload
+                                        </label>
+                                        <input type="file" name="uploaded_file" class="form-control" 
+                                            id="form-file-upload" onchange="validate_file_upload_en()">
+                                        <div class="error-message" id="error-upload-file-en"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -283,7 +291,7 @@
                     <div class="footer-top-nav">
                         <h5>Navigation meny</h5>
                         <ul class="list-inline">
-                            <li class="list-inline-item"><a href="index.php#home">Home</a></li>
+                            <li class="list-inline-item"><a href="index.php">Home</a></li>
                             <li class="list-inline-item"><a href="index.php#about">About</a></li>
                             <li class="list-inline-item">
                                 <a href="employers.html">
@@ -323,7 +331,7 @@
                 </div>
                 
                 <!-- Horizontal separation line -->
-                <hr class="footer-spearation-line">
+                <span class="footer-spearation-line"></span>
                 
                 <div class="footer-lower">
                     <!-- Footer-lower desktop version -->
@@ -373,7 +381,7 @@
         <!-- My linked script files -->
         <script src="scripts/nav_scroll.js"></script>
         <script src="scripts/cookie_notice.js"></script>
-        <script src="scripts/form_validation.js"></script>
+        <script src="scripts/form_validation_upload.js"></script>
     </body>
 </html>
 

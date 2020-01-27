@@ -19,7 +19,7 @@
         <link rel="stylesheet" type="text/css" href="styles/mobile_devices.css">
         
         <!-- Add favicon -->
-        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="icon" type="image/png" href="images/brand/favicon.png">
         
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/cb7428d12a.js"></script>
@@ -29,108 +29,109 @@
     </head>
     
     <body data-spy="scroll" data-target="#navbar">
-        <!-- TOP BAR -->
-        <div class="navbar" id="top-bar">
-            <div class="container-fluid">
-                <ul class="navbar-nav mr-auto" id="top-bar-left">
-                    <li class="nav-item"><i class="far fa-envelope"></i></li>
-                    <li class="nav-item">info@scandina.rs</li>
-                </ul>
-                <ul class="navbar-nav ml-auto" id="top-bar-right">
-                    <li class="nav-item">
-                        <a href="https://www.facebook.com/Scandina.Consulting.Agency/">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://www.instagram.com/scandina__/?hl=en">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://www.linkedin.com/company/scandina-consulting-agency">
-                            <i class="fab fa-linkedin"></i>   
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- END TOP BAR -->
-            
         <!-- HEADER -->
-        <nav class="navbar navbar-expand-lg" id="navbar"> 
-            <div class="container-fluid">
-                
-                <!-- Logo -->
-                <a class="navbar-brand" href="index_sr.php">
-                    <img class="logo" src="images/logo.png" alt="logo" />
-                </a>
-                
-                <!-- Navbar menu dropdown button -->
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" 
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-bar top-bar"></span>
-                    <span class="icon-bar middle-bar"></span>
-                    <span class="icon-bar bottom-bar"></span>				
-                </button>
-                
-                <!-- Navbar menu -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto w-100 justify-content-end">
-                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="#home">Naslovna</a>
-                        </li>
-                        
-                        <!-- Navbar menu dropdown item -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" 
-                            role="button" data-toggle="dropdown" aria-haspopup="true" 
-                            aria-expanded="false">
-                                Usluge
+        <header class="page-header">
+            <!-- Topbar -->
+            <div class="navbar" id="top-bar">
+                <div class="container-fluid">
+                    <ul class="navbar-nav mr-auto" id="top-bar-left">
+                        <li class="nav-item"><i class="far fa-envelope"></i></li>
+                        <li class="nav-item">info@scandina.rs</li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto" id="top-bar-right">
+                        <li class="nav-item">
+                            <a href="https://www.facebook.com/Scandina.Consulting.Agency/">
+                                <i class="fab fa-facebook-square"></i>
                             </a>
-                            
-                            <div class="dropdown-menu dropdown-menu-right" 
-                                aria-labelledby="navbarDropdown1">
-                                <a class="dropdown-item" href="employers_sr.html">Poslodavci</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="candidates_sr.php">Kandidati</a>
-                            </div>
                         </li>
-                        
-                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="#about">O nama</a>
-                        </li>
-                        
-                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="#contact">Kontakt</a>
-                        </li>
-                        
-                        <!-- Navbar menu dropdown item -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" 
-                            role="button" data-toggle="dropdown" aria-haspopup="true" 
-                            aria-expanded="false">
-                                <i class="fas fa-globe"></i>
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com/scandina__/?hl=en">
+                                <i class="fab fa-instagram"></i>
                             </a>
-                            
-                            <div class="dropdown-menu dropdown-menu-right" id="lang-menu" aria-labelledby="navbarDropdown2">
-                                <a class="dropdown-item" href="index.php">
-                                    <img src="images/lang/icon_en.png" alt="english" />English
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="index_no.php">
-                                    <img src="images/lang/icon_no.png" alt="norsk" />Norsk
-                                </a>
-                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.linkedin.com/company/scandina-consulting-agency">
+                                <i class="fab fa-linkedin"></i>   
+                            </a>
                         </li>
                     </ul>
                 </div>
-                <!-- End navbar menu -->
             </div>
-        </nav>
+            <!-- End Topbar -->
+            
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg" id="navbar"> 
+                <div class="container-fluid">
+
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index_sr.php">
+                        <img class="logo" src="images/brand/logo.png" alt="logo" />
+                    </a>
+
+                    <!-- Navbar menu dropdown button -->
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" 
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>				
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto w-100 justify-content-end">
+                            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                                <a class="nav-link" href="#home">Naslovna</a>
+                            </li>
+
+                            <!-- Navbar menu dropdown item -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" 
+                                role="button" data-toggle="dropdown" aria-haspopup="true" 
+                                aria-expanded="false">
+                                    Usluge
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" 
+                                    aria-labelledby="navbarDropdown1">
+                                    <a class="dropdown-item" href="employers_sr.html">Poslodavci</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="candidates_sr.php">Kandidati</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                                <a class="nav-link" href="#about">O nama</a>
+                            </li>
+
+                            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                                <a class="nav-link" href="#contact">Kontakt</a>
+                            </li>
+
+                            <!-- Navbar menu dropdown item -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" 
+                                role="button" data-toggle="dropdown" aria-haspopup="true" 
+                                aria-expanded="false">
+                                    <i class="fas fa-globe"></i>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" id="lang-menu" aria-labelledby="navbarDropdown2">
+                                    <a class="dropdown-item" href="index.php">
+                                        <img src="images/lang/icon_en.png" alt="english" />English
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="index_no.php">
+                                        <img src="images/lang/icon_no.png" alt="norsk" />Norsk
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+        </header>
         <!-- END HEADER -->
-        
         
         <!-- LANDING PAGE -->
         <div class="landing-page" id="home">
@@ -148,7 +149,7 @@
         <!-- Landing page scroll-down arrow -->
         <div class="go-down-arrow">
             <a href="#section1">
-                <img src="images/icon_scroll_down.png" alt="scroll-down" />
+                <img src="images/others/icon_scroll_down.png" alt="scroll-down" />
             </a>
         </div>
         <!-- END LANDING PAGE -->
@@ -158,7 +159,7 @@
         <div class="section" id="section1">
             <div class="container" id="container-section1">
                 <h2>Budite deo pobedničkog tima</h2>
-                <hr class="underline">
+                <span class="underline"></span>
                 <p class="second-title"> 
                     Scandina je konsultantska kompanija koja stvara profesionalne odnose između 
                     predanih radnika i pouzdanih poslodavaca u nordijskim zemljama. Naša vizija je 
@@ -211,7 +212,7 @@
                     <div class="counter" id="counter-center">
                         <i class="fab fa-facebook"></i>
                         <div class="counter-value">
-                            <span class="counter-value-number" data-count="1963">0</span>
+                            <span class="counter-value-number" data-count="2018">0</span>
                         </div>
                         <p>Facebook pratilaca</p>
                     </div>
@@ -219,7 +220,7 @@
                     <div class="counter" id="counter-right">
                         <i class="fas fa-thumbs-up"></i>
                         <div class="counter-value">
-                            <span class="counter-value-number" data-count="1899">0</span>
+                            <span class="counter-value-number" data-count="1951">0</span>
                         </div>
                         <p>Facebook lajkova</p>
                     </div>
@@ -232,7 +233,7 @@
         <div class="section" id="about">
             <div class="container" id="container-section3">
                 <h2>O nama</h2>
-                <hr class="underline">
+                <span class="underline"></span>
                 
                 <div class="wrapper wrapper-content-section3">
                     <!-- YouTube video -->
@@ -289,7 +290,7 @@
         <div class="section" id="contact">
             <div class="container" id="container-section5">
                 <h2>Kontaktirajte nas</h2>
-                <hr class="underline">
+                <span class="underline"></span>
                 <p class="second-title"> 
                     Možete nas kontaktirati putem naše digitalne forme ispod, a mi ćemo vam
                     odgovoriti u najbržem mogućem roku
@@ -317,8 +318,8 @@
                         </div>
                         
                         <!-- Contact form -->
-                        <form action="<?= $_SERVER['PHP_SELF'] . '?#infobox-section5-3'; ?>" method="post" name="contactForm" 
-                            id="contact-form" onsubmit="return validate_all_sr()">
+                        <form action="<?= $_SERVER['PHP_SELF'] . '#infobox-section5-3'; ?>" method="post" 
+                            name="contactForm" id="contact-form" onsubmit="return validate_all_sr()">
                             
                             <?php include('php/contact_sr.php') ?>
                             
@@ -328,7 +329,7 @@
                                         <label for="form-name">Ime</label>
                                         <input type="text" name="name" class="form-control" id="form-name"
                                             placeholder="Unesite vaše ime" onchange="validate_name_sr()">
-                                        <div class="error error-name" id="error-name-sr"></div>
+                                        <div class="error-message" id="error-contact-name-sr"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -336,7 +337,7 @@
                                         <label for="form-surname">Prezime</label>
                                         <input type="text" name="surname" class="form-control" id="form-surname"
                                             placeholder="Unesite vaše prezime" onchange="validate_surname_sr()" > 
-                                        <div class="error error-surname" id="error-surname-sr"></div>
+                                        <div class="error-message" id="error-contact-surname-sr"></div>
                                     </div>
                                 </div>
                             </div>
@@ -346,7 +347,7 @@
                                         <label for="form-email">E-mail</label>
                                         <input type="text" name="email" class="form-control" id="form-email"
                                             placeholder="Unesite vašu e-mail adresu" onchange="validate_email_sr()">
-                                        <div class="error error-email" id="error-email-sr"></div>
+                                        <div class="error-message" id="error-contact-email-sr"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -354,7 +355,7 @@
                                         <label for="form-subject">Povod vašeg upita?</label>
                                         <input type="text" name="subject" class="form-control" id="form-subject"
                                             onchange="validate_subject_sr()">
-                                        <div class="error error-subject" id="error-subject-sr"></div>
+                                        <div class="error-message" id="error-contact-subject-sr"></div>
                                     </div>
                                 </div>
                             </div>
@@ -364,7 +365,7 @@
                                         <label for="form-message">Poruka</label>
                                         <textarea  onchange="validate_message_sr()" placeholder="Unesite vašu poruku ovde..." 
                                             name="message" rows="6" class="form-control" id="form-message"></textarea>
-                                        <div class="error error-message" id="error-message-sr"></div>
+                                        <div class="error-message" id="error-contact-message-sr"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -427,7 +428,7 @@
                 </div>
                 
                 <!-- Horizontal separation line -->
-                <hr class="footer-spearation-line">
+                <span class="footer-spearation-line"></span>
                 
                 <div class="footer-lower">
                     <!-- Footer-lower desktop version -->
@@ -477,7 +478,7 @@
         <script src="scripts/counter.js"></script>
         <script src="scripts/nav_scroll.js"></script>
         <script src="scripts/cookie_notice.js"></script>
-        <script src="scripts/contact_form_validation.js"></script>
+        <script src="scripts/form_validation_contact.js"></script>
     </body>
 </html>
 

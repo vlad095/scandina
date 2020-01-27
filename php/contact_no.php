@@ -88,7 +88,7 @@ if (isset($_POST["send"])) {
         }
         
         if ($allFieldsOk) {
-            $toMail = "vmaric1995@gmail.com";
+            $toMail = "info@scandina.rs";
             
             if (mail($toMail, $subject, $message, "From: ".$email)) {
                 $responseMessage = "Din melding ble sendt, takk for at du tok kontakt med oss!";

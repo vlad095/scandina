@@ -17,7 +17,7 @@
         <link rel="stylesheet" type="text/css" href="styles/mobile_devices.css">
         
         <!-- Add favicon -->
-        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="icon" type="image/png" href="images/brand/favicon.png">
         
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/cb7428d12a.js"></script>
@@ -27,106 +27,108 @@
     </head>
     
     <body>
-        <!-- TOP BAR -->
-        <div class="navbar" id="top-bar">
-            <div class="container-fluid">
-                <ul class="navbar-nav mr-auto" id="top-bar-left">
-                    <li class="nav-item"><i class="far fa-envelope"></i></li>
-                    <li class="nav-item">info@scandina.rs</li>
-                </ul>
-                <ul class="navbar-nav ml-auto" id="top-bar-right">
-                    <li class="nav-item">
-                        <a href="https://www.facebook.com/Scandina.Consulting.Agency/">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://www.instagram.com/scandina__/?hl=en">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://www.linkedin.com/company/scandina-consulting-agency">
-                            <i class="fab fa-linkedin"></i>   
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- END TOP BAR -->
-            
         <!-- HEADER -->
-        <nav class="navbar navbar-expand-lg" id="navbar"> 
-            <div class="container-fluid">
-                
-                <!-- Logo -->
-                <a class="navbar-brand" href="index_sr.php">
-                    <img class="logo" src="images/logo.png" alt="logo" />
-                </a>
-                
-                <!-- Navbar menu dropdown button -->
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" 
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-bar top-bar"></span>
-                    <span class="icon-bar middle-bar"></span>
-                    <span class="icon-bar bottom-bar"></span>				
-                </button>
-                
-                <!-- Navbar menu -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto w-100 justify-content-end">
-                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="index_sr.php">Naslovna</a>
-                        </li>
-                        
-                        <!-- Navbar menu dropdown item -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown1" 
-                            role="button" data-toggle="dropdown" aria-haspopup="true" 
-                            aria-expanded="false">
-                                Usluge
+        <header class="page-header">
+            <!-- Topbar -->
+            <div class="navbar" id="top-bar">
+                <div class="container-fluid">
+                    <ul class="navbar-nav mr-auto" id="top-bar-left">
+                        <li class="nav-item"><i class="far fa-envelope"></i></li>
+                        <li class="nav-item">info@scandina.rs</li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto" id="top-bar-right">
+                        <li class="nav-item">
+                            <a href="https://www.facebook.com/Scandina.Consulting.Agency/">
+                                <i class="fab fa-facebook-square"></i>
                             </a>
-                            
-                            <div class="dropdown-menu dropdown-menu-right" 
-                                aria-labelledby="navbarDropdown1">
-                                <a class="dropdown-item" href="employers_sr.html">Poslodavci</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="candidates_sr.php">Kandidati</a>
-                            </div>
                         </li>
-                        
-                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="index_sr.php#about">O nama</a>
-                        </li>
-                        
-                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="index_sr.php#contact">Kontakt</a>
-                        </li>
-                        
-                        <!-- Navbar menu dropdown item -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" 
-                            role="button" data-toggle="dropdown" aria-haspopup="true" 
-                            aria-expanded="false">
-                                <i class="fas fa-globe"></i>
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com/scandina__/?hl=en">
+                                <i class="fab fa-instagram"></i>
                             </a>
-                            
-                            <div class="dropdown-menu dropdown-menu-right" id="lang-menu" aria-labelledby="navbarDropdown2">
-                                <a class="dropdown-item" href="employers.html">
-                                    <img src="images/lang/icon_en.png" alt="english" />English
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="employers_no.html">
-                                    <img src="images/lang/icon_no.png" alt="norsk" />Norsk
-                                </a>
-                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.linkedin.com/company/scandina-consulting-agency">
+                                <i class="fab fa-linkedin"></i>   
+                            </a>
                         </li>
                     </ul>
                 </div>
-                <!-- End navbar -->
             </div>
-        </nav>
+            <!-- End Topbar -->
+            
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg" id="navbar"> 
+                <div class="container-fluid">
+
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index_sr.php">
+                        <img class="logo" src="images/brand/logo.png" alt="logo" />
+                    </a>
+
+                    <!-- Navbar menu dropdown button -->
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" 
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>				
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto w-100 justify-content-end">
+                            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                                <a class="nav-link" href="index_sr.php">Naslovna</a>
+                            </li>
+
+                            <!-- Navbar menu dropdown item -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown1" 
+                                role="button" data-toggle="dropdown" aria-haspopup="true" 
+                                aria-expanded="false">
+                                    Usluge
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" 
+                                    aria-labelledby="navbarDropdown1">
+                                    <a class="dropdown-item" href="employers_sr.html">Poslodavci</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="candidates_sr.php">Kandidati</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                                <a class="nav-link" href="index_sr.php#about">O nama</a>
+                            </li>
+
+                            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                                <a class="nav-link" href="index_sr.php#contact">Kontakt</a>
+                            </li>
+
+                            <!-- Navbar menu dropdown item -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" 
+                                role="button" data-toggle="dropdown" aria-haspopup="true" 
+                                aria-expanded="false">
+                                    <i class="fas fa-globe"></i>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" id="lang-menu" aria-labelledby="navbarDropdown2">
+                                    <a class="dropdown-item" href="index.php">
+                                        <img src="images/lang/icon_en.png" alt="english" />English
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="index_no.php">
+                                        <img src="images/lang/icon_no.png" alt="norsk" />Norsk
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+        </header>
         <!-- END HEADER -->
         
         <!-- EMPLOYERS -->
@@ -134,7 +136,7 @@
         <div class="section" id="section1-employers">
             <div class="container" id="container-section1-employers">
                 <h2>Usluge</h2>
-                <hr class="underline">
+                <span class="underline"></span>
                 <p class="second-title">
                     Usluge koje pružamo našim klijentima
                 </p>
@@ -143,7 +145,7 @@
                 <div class="wrapper wrapper-infobox">
                     <div class="infobox infobox-employers">
                         <div class="infobox-employers-img" id="infobox-employers-1">
-                        <img src="images/services-emp-candidates.png" alt="Box 1" />    
+                        <img src="images/others/services-emp-candidates.png" alt="Box 1" />    
                         </div>
                         <div class="infobox-employers-txt" id="infobox-employers-2">
                             <h5>Pronalaženje kandidata za vašu kompaniju</h5>
@@ -168,12 +170,12 @@
                             </p>
                         </div>
                         <div class="infobox-employers-img" id="infobox-employers-4">
-                            <img src="images/services-emp-consulting.png" alt="Box 4" />
+                            <img src="images/others/services-emp-consulting.png" alt="Box 4" />
                         </div>
                     </div>
                     <div class="infobox infobox-employers">
                         <div class="infobox-employers-img" id="infobox-employers-5">
-                            <img src="images/services-emp-meeting.png" alt="Box 5" />
+                            <img src="images/others/services-emp-meeting.png" alt="Box 5" />
                         </div>
                         <div class="infobox-employers-txt" id="infobox-employers-6">
                             <h5>Scandina vas dočekuje u Beogradu</h5>
@@ -190,6 +192,38 @@
             </div>
         </div>
         <!-- End section 1 -->
+        
+        <!-- Section 2 -->
+        <div class="section" id="section2-employers">
+            <div class="container" id="container-section2-employers">
+                <h2>Naši partneri</h2>
+                <span class="underline"></span>
+                
+                <div class="wrapper wrapper-partners"> 
+                    <div class="partners-logos zoom" id="partner-logo-1">
+                        <a href="javascript:void(0)">
+                            <img src="images/partners/butler.png" alt="Butler" />
+                        </a>
+                    </div>
+                    <div class="partners-logos zoom" id="partner-logo-2">
+                        <a href="http://www.dokrajasveta.com/">
+                            <img src="images/partners/do_kraja_sveta.png" alt="Do kraja sveta" />
+                        </a>
+                    </div>
+                    <div class="partners-logos zoom" id="partner-logo-3">
+                        <a href="http://www.kineskahrana.rs">
+                            <img src="images/partners/mr_wok.png" alt="Mr Wok" />
+                        </a>
+                    </div>
+                    <div class="partners-logos zoom" id="partner-logo-4">
+                        <a href="javascript:void(0)">
+                            <img src="images/partners/sirix_store.png" alt="SiriX Store" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Section 2 -->
         <!-- END EMPLOYERS -->
         
         <!-- PAGE REDIRECTION -->
@@ -215,7 +249,7 @@
                     <div class="footer-top-nav">
                         <h5>Navigacioni meni</h5>
                         <ul class="list-inline">
-                            <li class="list-inline-item"><a href="index_sr.php#home">Naslovna</a></li>
+                            <li class="list-inline-item"><a href="index_sr.php">Naslovna</a></li>
                             <li class="list-inline-item"><a href="index_sr.php#about">O nama</a></li>
                             <li class="list-inline-item">
                                 <a href="employers_sr.html">
@@ -255,7 +289,7 @@
                 </div>
                 
                 <!-- Horizontal separation line -->
-                <hr class="footer-spearation-line">
+                <span class="footer-spearation-line"></span>
                 
                 <div class="footer-lower">
                     <!-- Footer-lower desktop version -->

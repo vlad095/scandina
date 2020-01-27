@@ -19,7 +19,7 @@
         <link rel="stylesheet" type="text/css" href="styles/mobile_devices.css">
         
         <!-- Add favicon -->
-        <link rel="icon" type="image/png" href="images/favicon.png">
+        <link rel="icon" type="image/png" href="images/brand/favicon.png">
         
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/cb7428d12a.js"></script>
@@ -29,108 +29,109 @@
     </head>
     
     <body data-spy="scroll" data-target="#navbar">
-        <!-- TOP BAR -->
-        <div class="navbar" id="top-bar">
-            <div class="container-fluid">
-                <ul class="navbar-nav mr-auto" id="top-bar-left">
-                    <li class="nav-item"><i class="far fa-envelope"></i></li>
-                    <li class="nav-item">info@scandina.rs</li>
-                </ul>
-                <ul class="navbar-nav ml-auto" id="top-bar-right">
-                    <li class="nav-item">
-                        <a href="https://www.facebook.com/Scandina.Consulting.Agency/">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://www.instagram.com/scandina__/?hl=en">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://www.linkedin.com/company/scandina-consulting-agency">
-                            <i class="fab fa-linkedin"></i>   
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- END TOP BAR -->
-            
         <!-- HEADER -->
-        <nav class="navbar navbar-expand-lg" id="navbar"> 
-            <div class="container-fluid">
-                
-                <!-- Logo -->
-                <a class="navbar-brand" href="index.php">
-                    <img class="logo" src="images/logo.png" alt="logo" />
-                </a>
-                
-                <!-- Navbar menu dropdown button -->
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" 
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icon-bar top-bar"></span>
-                    <span class="icon-bar middle-bar"></span>
-                    <span class="icon-bar bottom-bar"></span>				
-                </button>
-                
-                <!-- Navbar menu -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto w-100 justify-content-end">
-                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        
-                        <!-- Navbar menu dropdown item -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" 
-                            role="button" data-toggle="dropdown" aria-haspopup="true" 
-                            aria-expanded="false">
-                                Services
+        <header class="page-header">
+            <!-- Topbar -->
+            <div class="navbar" id="top-bar">
+                <div class="container-fluid">
+                    <ul class="navbar-nav mr-auto" id="top-bar-left">
+                        <li class="nav-item"><i class="far fa-envelope"></i></li>
+                        <li class="nav-item">info@scandina.rs</li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto" id="top-bar-right">
+                        <li class="nav-item">
+                            <a href="https://www.facebook.com/Scandina.Consulting.Agency/">
+                                <i class="fab fa-facebook-square"></i>
                             </a>
-                            
-                            <div class="dropdown-menu dropdown-menu-right" 
-                                aria-labelledby="navbarDropdown1">
-                                <a class="dropdown-item" href="employers.html">Employers</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="candidates.php">Candidates</a>
-                            </div>
                         </li>
-                        
-                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        
-                        <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                        
-                        <!-- Navbar menu dropdown item -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" 
-                            role="button" data-toggle="dropdown" aria-haspopup="true" 
-                            aria-expanded="false">
-                                <i class="fas fa-globe"></i>
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com/scandina__/?hl=en">
+                                <i class="fab fa-instagram"></i>
                             </a>
-                            
-                            <div class="dropdown-menu dropdown-menu-right" id="lang-menu" aria-labelledby="navbarDropdown2">
-                                <a class="dropdown-item" href="index_no.php">
-                                    <img src="images/lang/icon_no.png" alt="norsk" />Norsk
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="index_sr.php">
-                                    <img src="images/lang/icon_sr.png" alt="srpski" />Srpski
-                                </a>
-                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.linkedin.com/company/scandina-consulting-agency">
+                                <i class="fab fa-linkedin"></i>   
+                            </a>
                         </li>
                     </ul>
                 </div>
-                <!-- End navbar menu -->
             </div>
-        </nav>
+            <!-- End Topbar -->
+            
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg" id="navbar"> 
+                <div class="container-fluid">
+
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="index.php">
+                        <img class="logo" src="images/brand/logo.png" alt="logo" />
+                    </a>
+
+                    <!-- Navbar menu dropdown button -->
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" 
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>				
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto w-100 justify-content-end">
+                            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                                <a class="nav-link" href="#home">Home</a>
+                            </li>
+
+                            <!-- Navbar menu dropdown item -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" 
+                                role="button" data-toggle="dropdown" aria-haspopup="true" 
+                                aria-expanded="false">
+                                    Services
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" 
+                                    aria-labelledby="navbarDropdown1">
+                                    <a class="dropdown-item" href="employers.html">Employers</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="candidates.php">Candidates</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+
+                            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+
+                            <!-- Navbar menu dropdown item -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" 
+                                role="button" data-toggle="dropdown" aria-haspopup="true" 
+                                aria-expanded="false">
+                                    <i class="fas fa-globe"></i>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" id="lang-menu" aria-labelledby="navbarDropdown2">
+                                    <a class="dropdown-item" href="index_no.php">
+                                        <img src="images/lang/icon_no.png" alt="norsk" />Norsk
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="index_sr.php">
+                                        <img src="images/lang/icon_sr.png" alt="srpski" />Srpski
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+        </header>
         <!-- END HEADER -->
-        
         
         <!-- LANDING PAGE -->
         <div class="landing-page" id="home">
@@ -148,7 +149,7 @@
         <!-- Landing page scroll-down arrow -->
         <div class="go-down-arrow">
             <a href="#section1">
-                <img src="images/icon_scroll_down.png" alt="scroll-down" />
+                <img src="images/others/icon_scroll_down.png" alt="scroll-down" />
             </a>
         </div>
         <!-- END LANDING PAGE -->
@@ -158,7 +159,7 @@
         <div class="section" id="section1">
             <div class="container" id="container-section1">
                 <h2>Be a part of a winning team</h2>
-                <hr class="underline">
+                <span class="underline"></span>
                 <p class="second-title"> 
                     Scandina is a consulting agency that creates professional relationships 
                     between dedicated workers and trusted employers in the Nordic countries. 
@@ -192,7 +193,7 @@
             
             </div>
         </div>
-        <!-- End section 1 -->
+        <!-- End Section 1 -->
     
         <!-- Section 2 -->
         <div class="section" id="section2">
@@ -211,7 +212,7 @@
                     <div class="counter" id="counter-center">
                         <i class="fab fa-facebook"></i>
                         <div class="counter-value">
-                            <span class="counter-value-number" data-count="1963">0</span>
+                            <span class="counter-value-number" data-count="2018">0</span>
                         </div>
                         <p>Facebook followers</p>
                     </div>
@@ -219,20 +220,20 @@
                     <div class="counter" id="counter-right">
                         <i class="fas fa-thumbs-up"></i>
                         <div class="counter-value">
-                            <span class="counter-value-number" data-count="1899">0</span>
+                            <span class="counter-value-number" data-count="1951">0</span>
                         </div>
                         <p>Facebook page likes</p>
                     </div>
                 </div> 
             </div>
         </div>
-        <!-- End section 2 -->
+        <!-- End Section 2 -->
         
         <!-- Section 3 -->
         <div class="section" id="about">
             <div class="container" id="container-section3">
                 <h2>About Us</h2>
-                <hr class="underline">
+                <span class="underline"></span>
                 
                 <div class="wrapper wrapper-content-section3">
                     <!-- YouTube video -->
@@ -272,7 +273,7 @@
                 </div>
             </div>
         </div>
-        <!-- End section 3 -->
+        <!-- End Section 3 -->
         
         <!-- Section 4 -->
         <div class="section" id="section4">
@@ -283,13 +284,13 @@
                 </iframe>
             </div>  
         </div>
-        <!-- End section 4 -->
+        <!-- End Section 4 -->
         
         <!-- Section 5 -->
         <div class="section" id="contact">
             <div class="container" id="container-section5">
                 <h2>Contact Us</h2>
-                <hr class="underline">
+                <span class="underline"></span>
                 <p class="second-title"> 
                     Use the contact form below to get in touch with us and we will get back 
                     to you as soon as possible 
@@ -317,8 +318,8 @@
                         </div>
                         
                         <!-- Contact form -->
-                        <form action="<?= $_SERVER['PHP_SELF'] . '?#infobox-section5-3'; ?>" method="post" name="contactForm" 
-                            id="contact-form" onsubmit="return validate_all_en()">
+                        <form action="<?= $_SERVER['PHP_SELF'] . '#infobox-section5-3'; ?>" method="post" 
+                            name="contactForm" id="contact-form" onsubmit="return validate_all_en()">
                             
                             <?php include('php/contact.php') ?>
                             
@@ -328,7 +329,7 @@
                                         <label for="form-name">First name</label>
                                         <input type="text" name="name" class="form-control" id="form-name"
                                             placeholder="Enter your first name" onchange="validate_name_en()">
-                                        <div class="error error-name" id="error-name-en"></div>
+                                        <div class="error-message" id="error-contact-name-en"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -336,7 +337,7 @@
                                         <label for="form-surname">Last name</label>
                                         <input type="text" name="surname" class="form-control" id="form-surname"
                                             placeholder="Enter your last name" onchange="validate_surname_en()" > 
-                                        <div class="error error-surname" id="error-surname-en"></div>
+                                        <div class="error-message" id="error-contact-surname-en"></div>
                                     </div>
                                 </div>
                             </div>
@@ -346,7 +347,7 @@
                                         <label for="form-email">E-mail</label>
                                         <input type="text" name="email" class="form-control" id="form-email"
                                             placeholder="Enter your e-mail address" onchange="validate_email_en()">
-                                        <div class="error error-email" id="error-email-en"></div>
+                                        <div class="error-message" id="error-contact-email-en"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -354,7 +355,7 @@
                                         <label for="form-subject">What concerns your inquiry?</label>
                                         <input type="text" name="subject" class="form-control" id="form-subject"
                                             onchange="validate_subject_en()">
-                                        <div class="error error-subject" id="error-subject-en"></div>
+                                        <div class="error-message" id="error-contact-subject-en"></div>
                                     </div>
                                 </div>
                             </div>
@@ -364,7 +365,7 @@
                                         <label for="form-message">Message</label>
                                         <textarea  onchange="validate_message_en()" placeholder="Write your message here..." 
                                             name="message" rows="6" class="form-control" id="form-message"></textarea>   
-                                        <div class="error error-message" id="error-message-en"></div>
+                                        <div class="error-message" id="error-contact-message-en"></div>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -376,7 +377,7 @@
                 </div>
             </div>
         </div>
-        <!-- End section 5 -->
+        <!-- End Section 5 -->
         <!-- END MAIN -->
         
         <!-- FOOTER -->
@@ -427,7 +428,7 @@
                 </div>
                 
                 <!-- Horizontal separation line -->
-                <hr class="footer-spearation-line">
+                <span class="footer-spearation-line"></span>
                 
                 <div class="footer-lower">
                     <!-- Footer-lower desktop version -->
@@ -478,6 +479,6 @@
         <script src="scripts/counter.js"></script>
         <script src="scripts/nav_scroll.js"></script>
         <script src="scripts/cookie_notice.js"></script>
-        <script src="scripts/contact_form_validation.js"></script>
+        <script src="scripts/form_validation_contact.js"></script>
     </body>
 </html>

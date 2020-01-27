@@ -12,13 +12,21 @@
     .container { padding: 120px 0; }
     .second-title { font-size: 18px; }
     
-    /*************** TOP BAR *****************/
+    /**************** HEADER *****************/
+    
+    /*** Topbar ***/
     
     #top-bar { display: none; }
     
-    /************* END TOP BAR ***************/
+    /*** End Topbar ***/
     
-    /**************** HEADER *****************/
+    /*** Navbar ***/
+
+    #navbar ul { margin-top: 10px; }
+    #navbar ul li { padding: 5px 0; }
+    #navbar ul li .active { border: none; }
+    #navbar ul li a:hover { color: #fff; }
+    #navbar ul li:first-child { margin: 10px 0 0 10px;} 
     
     /* Logo */
     #navbar .navbar-brand img { width: 180px; }
@@ -55,13 +63,6 @@
     .navbar-toggler.collapsed .middle-bar { opacity: 1; }
     .navbar-toggler.collapsed .bottom-bar { transform: rotate(0); }
     
-    /* Navbar menu */
-    #navbar ul { margin-top: 10px; }
-    #navbar ul li { padding: 5px 0; }
-    #navbar ul li .active { border: none; }
-    #navbar ul li a:hover { color: #fff; }
-    #navbar ul li:first-child { margin: 10px 0 0 10px;} 
-    
     /* Navbar menu dropdown item */
     .dropdown-menu {
         background-color: #80101e;
@@ -72,7 +73,9 @@
     
     .dropdown-menu a:hover { background-color: #80101e; }
     
-    /************** END HEADER ***************/
+    /*** End Navbar ***/
+    
+    /*************** END HEADER ***************/
     
     /************** LANDING PAGE **************/
     
@@ -92,7 +95,7 @@
     /* Infobox btn */
     .btn-outline-primary { font-size: 16px; }
     
-    /*** End section 1 ***/
+    /*** End Section 1 ***/
     
     /*** Section 2 ***/
     
@@ -100,7 +103,7 @@
     .counter i { font-size: 5em; }
     .counter p { font-size: 18px; }
     
-    /*** End section 2 ***/
+    /*** End Section 2 ***/
     
     /*** Section 3 ***/
     
@@ -109,14 +112,14 @@
     /* YouTube video */
     .wrapper-video { height: 480px; }
     
-    /*** End section 3 ***/
+    /*** End Section 3 ***/
     
     /*** Section 4 ***/
     
     /* Embedded google map */
     #canvas-map { height: 480px; }
     
-    /*** End section 4 ***/
+    /*** End Section 4 ***/
 
     /**************** END MAIN ****************/
     
@@ -133,7 +136,7 @@
     
     .infobox-candidates p { font-size: 14px; }
     
-    /*** End section 1 ***/
+    /*** End Section 1 ***/
 
     /************* END CANDIDATES *************/
     
@@ -151,7 +154,16 @@
     
     .infobox-employers h5 { line-height: 1.6; }
 
-    /*** End section 1 ***/
+    /*** End Section 1 ***/
+    
+    /*** Section 2 ***/
+    
+    .partners-logos img {
+        width: auto;
+        height: 84px;
+    }
+    
+    /*** End Section 2 ***/
     
     /************* END EMPLOYERS **************/
     
@@ -174,7 +186,7 @@
     /* Info-box btn */
     .btn-outline-primary { font-size: 15px; }
     
-    /*** End section 1 ***/
+    /*** End Section 1 ***/
     
     /*** Section 2 ***/
     
@@ -182,7 +194,7 @@
     .counter .counter-value { font-size: 32px; }
     .counter i { font-size: 4em; }
     
-    /*** End section 2 ***/
+    /*** End Section 2 ***/
     
     /*** Section 5 ***/
     
@@ -190,7 +202,7 @@
     .infobox-section5 { padding: 50px 0; }
     #infobox-section5-2 { padding: 0; }
     
-    /*** End section 5 ***/
+    /*** End Section 5 ***/
     
     /**************** END MAIN ****************/
     
@@ -216,7 +228,7 @@
         margin-right: 0;
     }
     
-    /*** End section 1 ***/
+    /*** End Section 1 ***/
 
     /************* END CANDIDATES *************/
     
@@ -266,7 +278,7 @@
     #infobox-employers-5 { order: 5; }
     #infobox-employers-6 { order: 6; }
 
-    /*** End section 1 ***/
+    /*** End Section 1 ***/
     
     /************* END EMPLOYERS **************/
     
@@ -283,7 +295,7 @@
     
     .footer-top { display: inline; }
     
-    /* Footer Navigation */
+    /* Footer navigation */
     .footer-top-nav { display: none; }
 
     /* Footer social */
@@ -332,7 +344,7 @@
     #infobox-section1-left { margin: 0 0 35px 0; }
     #infobox-section1-right { margin: 35px 0 0 0; }
     
-    /*** End section 1 ***/
+    /*** End Section 1 ***/
     
     /*** Section 2 ***/
     
@@ -343,7 +355,7 @@
     .counter:first-child { margin-top: 0; }
     .counter:last-child { margin-bottom: 0; }
     
-    /*** End section 2 ***/
+    /*** End Section 2 ***/
     
     /*** Section 3 ***/
     
@@ -352,14 +364,14 @@
     /* YouTube video */
     .wrapper-video { height: 400px; }
     
-    /*** End section 3 ***/
+    /*** End Section 3 ***/
     
     /*** Section 4 ***/
     
     /* Embedded google map */
     #canvas-map { height: 400px; }
     
-    /*** End section 4 ***/
+    /*** End Section 4 ***/
     
     /**************** END MAIN ****************/
     
@@ -377,7 +389,7 @@
     .infobox-candidates p { font-size: 14px; }
     .infobox-candidates img { width: 120px; }
     
-    /*** End section 1 ***/
+    /*** End Section 1 ***/
     
     /*** Section 2 ***/
     
@@ -385,6 +397,8 @@
     .file-upload-form { padding: 20px 20px 16px 20px; }
     .file-upload-form h4 { font-size: 18px; }
     .upload-form-title label { font-size: 14px; }
+    
+    /*** End Section 2 ***/
 
     /************* END CANDIDATES *************/
     
@@ -396,7 +410,34 @@
     .infobox-employers-img img { width: 120px; }
     .infobox-employers p { font-size: 14px; }
 
-    /*** End section 1 ***/
+    /*** End Section 1 ***/
+    
+    /*** Section 2 ***/
+
+    .partners-logos { transition: none; }
+    .partners-logos:hover { transform: none; }
+    
+    #partner-logo-1 {
+        width: 50%;
+        order: 2; 
+    }
+    
+    #partner-logo-3 { 
+        width: 50%;
+        order: 3; 
+    }
+    
+    #partner-logo-2 { 
+        width: 100%;
+        order: 1; 
+    }
+    
+    #partner-logo-4 { 
+        width: 100%;
+        order: 4; 
+    }
+
+    /*** End Section 2 ***/
     
     /************* END EMPLOYERS **************/
     

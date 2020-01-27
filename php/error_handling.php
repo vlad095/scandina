@@ -11,7 +11,7 @@ function all_errors_function($errNr, $errStr, $errFile, $errLine ) {
     $errorMessage = $date." ".$errNr." ".$errStr." ".$errFile." ".$errLine."\r\n";
     
     // Logs error message to the file log.txt that is on the server
-    error_log($errorMessage, 3, "log.txt");
+    error_log($errorMessage, 3, "errorLog.txt");
 }
 
 // Handels fatal errors that terminate the running system
@@ -26,7 +26,7 @@ function fatal_errors_function() {
         $errorMessage = $date." FATAL ERROR: ".$lastError["type"]." ";
         $errorMessage .= $lastError["message"]." ".$lastError["file"]."\r\n";
         
-        error_log($errorMessage, 3, "C:\xampp\htdocs\Scandina");
+        error_log($errorMessage, 3, "C:\xampp\htdocs\Scandina\errorLog.txt");
         header("location:error.html"); // redirects to given file
         ob_flush();
     }
