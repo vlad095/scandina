@@ -8,61 +8,61 @@
 
     h2 { font-size: 34px; }
     h4 { font-size: 20px; }
-    
+
     .container { padding: 120px 0; }
     .second-title { font-size: 18px; }
-    
+
     /**************** HEADER *****************/
-    
+
     /*** Topbar ***/
-    
+
     #top-bar { display: none; }
-    
+
     /*** End Topbar ***/
-    
+
     /*** Navbar ***/
 
     #navbar ul { margin-top: 10px; }
     #navbar ul li { padding: 5px 0; }
     #navbar ul li .active { border: none; }
     #navbar ul li a:hover { color: #fff; }
-    #navbar ul li:first-child { margin: 10px 0 0 10px;} 
-    
+    #navbar ul li:first-child { margin: 10px 0 0 10px;}
+
     /* Logo */
     #navbar .navbar-brand img { width: 180px; }
-    
+
     /* Navbar menu dropdown button */
     .icon-bar {
         background-color: #fff;
         display: block;
-	width: 26px; 
+	width: 26px;
 	height: 3px;
 	transition: all 0.2s;
 	margin-top: 4px
     }
- 
+
     .navbar-toggler {
         background: transparent !important;
         margin-top: -4px;
         border: none;
     }
-    
+
     .navbar-toggler .top-bar {
         transform: rotate(45deg);
         transform-origin: 10% 10%;
     }
- 
+
     .navbar-toggler .middle-bar { opacity: 0; }
- 
+
     .navbar-toggler .bottom-bar {
         transform: rotate(-45deg);
         transform-origin: 10% 90%;
     }
- 
+
     .navbar-toggler.collapsed .top-bar { transform: rotate(0); }
     .navbar-toggler.collapsed .middle-bar { opacity: 1; }
     .navbar-toggler.collapsed .bottom-bar { transform: rotate(0); }
-    
+
     /* Navbar menu dropdown item */
     .dropdown-menu {
         background-color: #80101e;
@@ -70,150 +70,150 @@
         border: 1px solid #fff;
         border-radius: 8px;
     }
-    
+
     .dropdown-menu a:hover { background-color: #80101e; }
-    
+
     /*** End Navbar ***/
-    
+
     /*************** END HEADER ***************/
-    
+
     /************** LANDING PAGE **************/
-    
+
     .landing-page h1 { font-size: 5.5em; }
     .landing-page h3 { font-size: 1em; }
     .btn-primary { font-size: 1.1em; }
-    
+
     /* Landing page scroll down arrow */
     .go-down-arrow { display: none; }
-    
+
     /************ END LANDING PAGE ************/
-    
+
     /****************** MAIN ******************/
-    
+
     /*** Section 1 ***/
-    
+
     /* Infobox btn */
     .btn-outline-primary { font-size: 16px; }
-    
+
     /*** End Section 1 ***/
-    
+
     /*** Section 2 ***/
-    
+
     /* Animated social counter */
     .counter i { font-size: 5em; }
     .counter p { font-size: 18px; }
-    
+
     /*** End Section 2 ***/
-    
+
     /*** Section 3 ***/
-    
+
     .wrapper-content-section3 h4 { font-size: 18px; }
-    
+
     /* YouTube video */
     .wrapper-video { height: 480px; }
-    
+
     /*** End Section 3 ***/
-    
+
     /*** Section 4 ***/
-    
+
     /* Embedded google map */
     #canvas-map { height: 480px; }
-    
+
     /*** End Section 4 ***/
 
     /**************** END MAIN ****************/
-    
+
     /*************** CANDIDATES ***************/
-    
+
     /*** Section 1 ***/
     #container-section1-candidates { padding-bottom: 55px; }
-    
+
     /* Info-box */
-    .infobox-candidates { 
-        margin-top: 10px; 
+    .infobox-candidates {
+        margin-top: 10px;
         margin-bottom: 10px;
     }
-    
+
     .infobox-candidates p { font-size: 14px; }
-    
+
     /*** End Section 1 ***/
 
     /************* END CANDIDATES *************/
-    
+
     /*************** EMPLOYERS ****************/
-    
+
     #container-section1-employers { padding-bottom: 50px; }
-    
+
     /*** Section 1 ***/
-    
+
     /* Info-box */
-    .infobox-employers-img img { 
+    .infobox-employers-img img {
         width: 180px;
-        margin-top: 60px; 
+        margin-top: 60px;
     }
-    
+
     .infobox-employers h5 { line-height: 1.6; }
 
     /*** End Section 1 ***/
-    
+
     /*** Section 2 ***/
-    
+
     .partners-logos img {
         width: auto;
         height: 84px;
     }
-    
+
     /*** End Section 2 ***/
-    
+
     /************* END EMPLOYERS **************/
-    
+
     /************ PAGE REDIRECTION ************/
-    
+
     .btn-info { width: 80%; }
 
     /********** END PAGE REDIRECTION **********/
-    
+
 }
 
 @media screen and (max-width: 767px) {
-    
+
     h4 { font-size: 18px; }
-    
+
     /****************** MAIN ******************/
-    
+
     /*** Section 1 ***/
-    
+
     /* Info-box btn */
     .btn-outline-primary { font-size: 15px; }
-    
+
     /*** End Section 1 ***/
-    
+
     /*** Section 2 ***/
-    
+
     /* Animated social counter */
     .counter .counter-value { font-size: 32px; }
     .counter i { font-size: 4em; }
-    
+
     /*** End Section 2 ***/
-    
+
     /*** Section 5 ***/
-    
+
     /* Contact info */
     .infobox-section5 { padding: 50px 0; }
     #infobox-section5-2 { padding: 0; }
-    
+
     /*** End Section 5 ***/
-    
+
     /**************** END MAIN ****************/
-    
+
     /*************** CANDIDATES ***************/
-    
+
     /*** Section 1 ***/
 
     /* Info-box */
     .infobox-candidates { width: 48%; }
     .infobox-candidates p { font-size: 16px; }
-    
+
     #infobox-candidates-1,
     #infobox-candidates-3,
     #infobox-candidates-5
@@ -221,21 +221,21 @@
         margin-right: 4%;
     }
 
-    
+
     #infobox-candidates-2,
     #infobox-candidates-4
     {
         margin-right: 0;
     }
-    
+
     /*** End Section 1 ***/
 
     /************* END CANDIDATES *************/
-    
+
     /*************** EMPLOYERS ****************/
-    
+
     /*** Section 1 ***/
-    
+
     #container-section1-employers { padding-bottom: 20px; }
 
     /* Info-box */
@@ -269,7 +269,7 @@
     }
 
     .infobox-employers p { text-align: center; }
-    
+
     /* Changing the order of divs */
     #infobox-employers-1 { order: 1; }
     #infobox-employers-2 { order: 2; }
@@ -279,131 +279,131 @@
     #infobox-employers-6 { order: 6; }
 
     /*** End Section 1 ***/
-    
+
     /************* END EMPLOYERS **************/
-    
+
     /************ PAGE REDIRECTION ************/
-    
-    .btn-info { 
-        padding: 20px 50px; 
+
+    .btn-info {
+        padding: 20px 50px;
         font-size: 16px;
     }
 
     /********** END PAGE REDIRECTION **********/
-    
+
     /***************** FOOTER *****************/
-    
+
     .footer-top { display: inline; }
-    
+
     /* Footer navigation */
     .footer-top-nav { display: none; }
 
     /* Footer social */
-    .footer-top-social { 
-        text-align: center; 
+    .footer-top-social {
+        text-align: center;
         margin-bottom: 40px;
     }
-    
+
     .footer-top-social img {
         width: 42px;
         height: 42px;
     }
-    
+
     .footer-top-social ul { padding-left: 0; }
     .footer-top-social ul li:first-child { margin-left: 0 }
 
     /* Footer-lower desktop version */
     .footer-lower-desktop { text-align: center; }
-    
+
     /*************** END FOTTER ***************/
-    
+
 }
 
 @media screen and (max-width: 600px) {
-    
+
     body { font-size: 14px; }
     h2 { font-size: 28px; }
     h4 { font-size: 20px; }
-    
+
     .container { padding: 100px 10%; }
     .second-title { font-size: 16px; }
-    
+
     /************** LANDING PAGE **************/
-    
+
     .landing-page h1 { font-size: 5em; }
-    
+
     /************ END LANDING PAGE ************/
-    
+
     /****************** MAIN ******************/
-    
+
     /*** Section 1 ***/
-    
+
     /* Info-box */
     .infobox-section1 { width: 100%; }
-    
+
     #infobox-section1-left { margin: 0 0 35px 0; }
     #infobox-section1-right { margin: 35px 0 0 0; }
-    
+
     /*** End Section 1 ***/
-    
+
     /*** Section 2 ***/
-    
+
     /* Animated social counter */
     #wrapper-counter { flex-direction: column; }
-    
+
     .counter { margin: 4% 0; }
     .counter:first-child { margin-top: 0; }
     .counter:last-child { margin-bottom: 0; }
-    
+
     /*** End Section 2 ***/
-    
+
     /*** Section 3 ***/
-    
+
     .wrapper-content-section3 h4 { font-size: 17px; }
-    
+
     /* YouTube video */
     .wrapper-video { height: 400px; }
-    
+
     /*** End Section 3 ***/
-    
+
     /*** Section 4 ***/
-    
+
     /* Embedded google map */
     #canvas-map { height: 400px; }
-    
+
     /*** End Section 4 ***/
-    
+
     /**************** END MAIN ****************/
-    
+
     /*************** CANDIDATES ***************/
-    
+
     /*** Section 1 ***/
     #container-section1-candidates { padding-bottom: 30px; }
 
     /* Info-box */
-    .infobox-candidates { 
-        width: 100%; 
+    .infobox-candidates {
+        width: 100%;
         margin-right: 0;
     }
-    
+
     .infobox-candidates p { font-size: 14px; }
     .infobox-candidates img { width: 120px; }
-    
+
     /*** End Section 1 ***/
-    
+
     /*** Section 2 ***/
-    
+
     /* File upload form */
     .file-upload-form { padding: 20px 20px 16px 20px; }
     .file-upload-form h4 { font-size: 18px; }
     .upload-form-title label { font-size: 14px; }
-    
+
     /*** End Section 2 ***/
 
     /************* END CANDIDATES *************/
-    
+
     /*************** EMPLOYERS ****************/
-    
+
     /*** Section 1 ***/
 
     /* Info-box */
@@ -411,73 +411,83 @@
     .infobox-employers p { font-size: 14px; }
 
     /*** End Section 1 ***/
-    
+
     /*** Section 2 ***/
 
     .partners-logos { transition: none; }
     .partners-logos:hover { transform: none; }
-    
+
     #partner-logo-1 {
         width: 50%;
-        order: 2; 
+        order: 2;
     }
-    
-    #partner-logo-3 { 
+
+    #partner-logo-2 {
+        width: 100%;
+        order: 1;
+    }
+
+    #partner-logo-3 {
         width: 50%;
-        order: 3; 
+        order: 3;
     }
-    
-    #partner-logo-2 { 
-        width: 100%;
-        order: 1; 
+
+    #partner-logo-4 {
+        width: 50%;
+        order: 4;
     }
-    
-    #partner-logo-4 { 
-        width: 100%;
-        order: 4; 
+
+    #partner-logo-5 {
+      width: 100%;
+      order: 6;
+    }
+
+    #partner-logo-6 {
+      width: 50%;
+      order: 5;
     }
 
     /*** End Section 2 ***/
-    
+
     /************* END EMPLOYERS **************/
-    
+
     /************ PAGE REDIRECTION ************/
-    
+
     .redirection-btn { width: 100%; }
-    
+
     #redirection-btn-left { margin-bottom: 8px; }
     #redirection-btn-right { margin-top: 8px; }
-    
+
     .btn-info {
         width: 100%;
-        font-size: 16px; 
+        font-size: 16px;
     }
-    
+
     /********** END PAGE REDIRECTION **********/
 
     /***************** FOOTER *****************/
-    
+
     /* Horizontal separation line */
     .footer-spearation-line { width: 80%; }
-    
+
     /* Footer-lower desktop version */
     .footer-lower-desktop { display: none; }
-    
+
     /* Footer-lower mobile version */
-    .footer-lower-mobile { 
-        display: inline; 
+    .footer-lower-mobile {
+        display: inline;
         text-align: center;
     }
-    
+
     /*************** END FOTTER ***************/
-    
+
     /************* COOKIE BANNER **************/
 
     #container-cookie-banner { padding: 40px 8%; }
 
     .cookie-banner p { font-size: 12px; }
     .cookie-banner h5 { font-size: 14px; }
-    
+
     .cookie-banner-btn { padding-top: 40px; }
 
     .cookie-banner-btn .btn-basic {
@@ -486,5 +496,5 @@
     }
 
     /*********** END COOKIE BANNER ************/
-    
+
 }
