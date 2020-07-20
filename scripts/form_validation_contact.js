@@ -1,14 +1,19 @@
-/*-----------------------------------------------------*/
-/*------------- Scandina JS Script File ---------------*/
-/*----------- Client-side Form Validation -------------*/
-/*-------------- Author: Vladimir Maric ---------------*/
-/*-----------------------------------------------------*/
+/**
+ * Document info: Scandina JavaScript File
+ *     File name: form_validation_upload.js
+ *        Author: Vladimir Maric
+ *   
+ *   Description: This file includes all the necessary methods for 
+ *                the client-side validation for the contact form.
+ *                
+ *     Copyright: © 2020 Scandina                  
+ */
 
 /* Regular Expression variables */ 
 var REGEX_NAME = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð '-]{2,20}$/;
 var REGEX_EMAIL = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 var REGEX_SUBJECT = /^.{0,50}$/;
-var REGEX_MESSAGE = /^.{1,1000}$/;
+var REGEX_MESSAGE = /^[\s\S]{1,1000}$/;
 
 /* First name validation functions */
 function validate_name_en() {

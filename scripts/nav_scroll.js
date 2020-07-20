@@ -1,8 +1,13 @@
-/*-----------------------------------------------------*/
-/*------------- Scandina JS Script File ---------------*/
-/*------------- Navigation Scroll Rules ---------------*/
-/*-------------- Author: Vladimir Maric ---------------*/
-/*-----------------------------------------------------*/
+/**
+ * Document info: Scandina JavaScript File
+ *     File name: nav_scroll.js
+ *        Author: Vladimir Maric
+ *
+ *   Description: Simple function that changes the appearance 
+ *                of the navbar when scrolled from top.
+ *
+ *     Copyright: © 2020 Scandina
+ */
 
 $(document).scroll(function() {
     var scrollPosition = $(this).scrollTop();

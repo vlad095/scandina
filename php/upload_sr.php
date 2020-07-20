@@ -1,5 +1,16 @@
 <?php
 
+/**
+ * Document info: Scandina PHP File
+ *     File name: upload_sr.php
+ *        Author: Vladimir Maric
+ *   
+ *   Description: PHP functions that sends uploaded file as an
+ *                attachment in email, Serbian language version.
+ *
+ *     Copyright: © 2020 Scandina
+ */
+
 // Includes php file with error handling
 include_once 'error_handling.php';
 
@@ -84,18 +95,18 @@ if (isset($_POST["upload"])) {
         if ($allFieldsOk) {
             $uploadStatus = 1;
 
-            // Upload attachment file
+        // Upload attachment file
             if (!empty($_FILES["uploaded_file"]["name"])) {
-                $fileDir = "uploads/".$name."-".$surname."-(".$tlf.")-";
-                $fileName = basename($_FILES["uploaded_file"]["name"]);
-                $fileFullPath = $fileDir . $fileName;
+                $targetDir = "uploads/";
+                $fileName = $name."_".$surname."_(".$tlf.")_".basename($_FILES["uploaded_file"]["name"]);
+                $fileFullPath = $targetDir.$fileName;
                 $fileType = pathinfo($fileFullPath, PATHINFO_EXTENSION);
                 $allowTypes = array('pdf', 'PDF', 'doc', 'DOC', 'docx', 'DOCX');
                 $maxFileSize = 20000000; // max file size 20MB
-
+                
                 // Allow certain file formats
                 if (in_array($fileType, $allowTypes)) {
-                    // Checks if the file size is valid
+                    // Checks if the file size is valid 
                     if ($_FILES["uploaded_file"]["size"] <= $maxFileSize) {
                         // Checks if uploaded file was moved to new folder created on server
                         if(move_uploaded_file($_FILES["uploaded_file"]["tmp_name"], $fileFullPath)){
@@ -114,57 +125,67 @@ if (isset($_POST["upload"])) {
                     $uploadStatus = 0;
                     $responseMessage = "Samo PDF, DOC i DOCX datoteke se mogu dodati.";
                     echo "<p id='errorMessage'>".$responseMessage."</p>";
-                }
+                }       
             } else {
                 $uploadStatus = 0;
                 $responseMessage = "Nijedan fajl nije odabran.";
                 echo "<p id='errorMessage'>".$responseMessage."</p>";
             }
-
+            
             if ($uploadStatus == 1) {
                 // E-mail related variables
-                $to = "info@scanidna.rs";
+                $to = "info@scandina.rs";
                 $from = $email;
-                $subject = "CV Upload - ".$name." ".$surname." (".$tlf.")";
+                $subject = "CV Upload - ".$name." ".$surname;
+                
+                // Email message content
+                $htmlContent = '<h2>Informacije o kandidatu</h2>
+                    <p><b>Ime: </b>'.$name.'</p>
+                    <p><b>Prezime: </b>'.$surname.'</p>
+                    <p><b>Telefon: </b>'.$tlf.'</p>
+                    <p><b>Email: </b>'.$email.'</p>';
+                                        
+                // Boundary 
+                $semi_rand = md5(time()); 
+                $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x"; 
+                
+                // Header for sender info
+                $headers = "From: $name $surname"." <".$from.">";
 
-                // Getting attachment ready
-                $fileContent = file_get_contents($uploadedFile);
-                $attachment = chunk_split(base64_encode($fileContent));
-
-                // a random hash will be necessary to send mixed content
-                $separator = md5(time());
-
-                // carriage return type (RFC)
-                $eol = "\r\n";
-
-                // Mail configuration
-                $headers = "From: <".$from.">" . $eol;
-                $headers .= "MIME-Version: 1.0" . $eol;
-                $headers .= "Content-Type: multipart/mixed; boundary=\"" . $separator . "\"" . $eol;
-                $headers .= "Content-Transfer-Encoding: 7bit" . $eol;
-                $headers .= "This is a MIME encoded message." . $eol;
-
-                $body = "--" . $separator . $eol;
-                $body .= "Content-Type: text/plain; charset=\"iso-8859-1\"" . $eol;
-                $body .= "Content-Transfer-Encoding: 8bit" . $eol;
-
-                $body .= "--" . $separator . $eol;
-                $body .= "Content-Type: application/octet-stream; name=\"" . $uploadedFile . "\"" . $eol;
-                $body .= "Content-Transfer-Encoding: base64" . $eol;
-                $body .= "Content-Disposition: attachment" . $eol;
-                $body .= $attachment . $eol;
-                $body .= "--" . $separator . "--";
-
+                // Headers for attachment 
+                $headers .= "\nMIME-Version: 1.0\n" . "Content-Type: multipart/mixed;\n" . " boundary=\"{$mime_boundary}\""; 
+                
+                // Multipart boundary 
+                $message = "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"UTF-8\"\n" .
+                "Content-Transfer-Encoding: 7bit\n\n" . $htmlContent . "\n\n"; 
+                
+                // Preparing attachment
+                if(is_file($uploadedFile))
+				{
+                    $message .= "--{$mime_boundary}\n";
+                    $fp =    @fopen($uploadedFile,"rb");
+                    $data =  @fread($fp,filesize($uploadedFile));
+                    @fclose($fp);
+                    $data = chunk_split(base64_encode($data));
+                    $message .= "Content-Type: application/octet-stream; name=\"" . basename($uploadedFile) . "\"\n" . 
+                    "Content-Description: " . basename($uploadedFile) . "\n" .
+                    "Content-Disposition: attachment;\n" . " filename=\"" . basename($uploadedFile)."\"; size=" . filesize($uploadedFile) . ";\n" . 
+                    "Content-Transfer-Encoding: base64\n\n" . $data . "\n\n";
+                }
+                
+                $message .= "--{$mime_boundary}--";
+                $returnpath = "-f" . $email;
+                    
                 // Checks if the mail was sent
-                if (mail($to, $subject, $body, $headers)) {
+                if (mail($to, $subject, $message, $headers, $returnpath)) {
                     $responseMessage = "Vaš CV je uspešno uploadovan!";
                     echo "<p id='successMessage'>".$responseMessage."</p>";
                 } else {
                     $responseMessage = "Vaš CV nije uspeo da se uploaduje, pokušajte ponovo.";
                     echo "<p id='errorMessage'>".$responseMessage."</p>";
                 }
-            }
+            } 
         }
     }
 }
-?>
+?>    

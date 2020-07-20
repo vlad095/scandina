@@ -1,5 +1,15 @@
 <?php
 
+/**
+ * Document info: Scandina PHP File
+ *     File name: error_handling.php
+ *        Author: Vladimir Maric
+ *   
+ *   Description: PHP functions for error handling and logging.
+ *
+ *     Copyright: © 2020 Scandina
+ */
+
 error_reporting(0);
 ob_start();
 

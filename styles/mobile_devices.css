@@ -1,13 +1,19 @@
-/*-----------------------------------------------------*/
-/*-------------- Scandina CSS stylesheet --------------*/
-/*----------- mobile_devices.css stylesheet -----------*/
-/*-------------- Author: Vladimir Maric ---------------*/
-/*-----------------------------------------------------*/
+/**
+ * Document info: Scandina CSS File
+ *     File name: mobile_devices.css
+ *        Author: Vladimir Maric
+ *   
+ *   Description: CSS stylesheet for mobile devices
+ *
+ *     Copyright: © 2020 Scandina
+ */
 
 @media screen and (max-width: 990px) {
 
+    body { font-size: 16px; }
+    
     h2 { font-size: 34px; }
-    h4 { font-size: 20px; }
+    h4 { font-size: 18px; }
 
     .container { padding: 120px 0; }
     .second-title { font-size: 18px; }
@@ -79,9 +85,9 @@
 
     /************** LANDING PAGE **************/
 
-    .landing-page h1 { font-size: 5.5em; }
-    .landing-page h3 { font-size: 1em; }
-    .btn-primary { font-size: 1.1em; }
+    .landing-page h1 { font-size: 6em; }
+    .landing-page h3 { font-size: 1.4em; }
+    .btn-primary { font-size: 1em; }
 
     /* Landing page scroll down arrow */
     .go-down-arrow { display: none; }
@@ -100,7 +106,8 @@
     /*** Section 2 ***/
 
     /* Animated social counter */
-    .counter i { font-size: 5em; }
+    .counter .counter-value { font-size: 30px; }
+    .counter i { font-size: 4.5em; }
     .counter p { font-size: 18px; }
 
     /*** End Section 2 ***/
@@ -133,10 +140,17 @@
         margin-top: 10px;
         margin-bottom: 10px;
     }
-
-    .infobox-candidates p { font-size: 14px; }
-
+    
+    .infobox-candidates img { width: 90px; }
+    .infobox-candidates p { font-size: 16px; }
+    
     /*** End Section 1 ***/
+    
+    /*** Section 2 ***/
+    
+    .file-upload-form h4 { font-size: 20px; }
+    
+    /*** End Section 2 ***/
 
     /************* END CANDIDATES *************/
 
@@ -152,7 +166,10 @@
         margin-top: 60px;
     }
 
-    .infobox-employers h5 { line-height: 1.6; }
+    .infobox-employers h5 { 
+        font-size: 18px;
+        line-height: 1.6; 
+    }
 
     /*** End Section 1 ***/
 
@@ -177,8 +194,6 @@
 
 @media screen and (max-width: 767px) {
 
-    h4 { font-size: 18px; }
-
     /****************** MAIN ******************/
 
     /*** Section 1 ***/
@@ -191,7 +206,7 @@
     /*** Section 2 ***/
 
     /* Animated social counter */
-    .counter .counter-value { font-size: 32px; }
+    .counter .counter-value { font-size: 28px; }
     .counter i { font-size: 4em; }
 
     /*** End Section 2 ***/
@@ -264,7 +279,6 @@
 
     .infobox-employers h5 {
         margin-top: 40px;
-        font-size: 16px;
         text-align: center;
     }
 
@@ -321,16 +335,15 @@
 
 @media screen and (max-width: 600px) {
 
-    body { font-size: 14px; }
+    body { font-size: 15px; }
     h2 { font-size: 28px; }
-    h4 { font-size: 20px; }
 
     .container { padding: 100px 10%; }
     .second-title { font-size: 16px; }
 
     /************** LANDING PAGE **************/
 
-    .landing-page h1 { font-size: 5em; }
+    .landing-page h1 { font-size: 5.2em; }
 
     /************ END LANDING PAGE ************/
 
@@ -359,7 +372,7 @@
 
     /*** Section 3 ***/
 
-    .wrapper-content-section3 h4 { font-size: 17px; }
+    .wrapper-content-section3 h4 { font-size: 16px; }
 
     /* YouTube video */
     .wrapper-video { height: 400px; }
@@ -372,6 +385,23 @@
     #canvas-map { height: 400px; }
 
     /*** End Section 4 ***/
+    
+    /*** Section 5 ***/
+
+    .infobox-section5 p { font-size: 14px; }
+    .infobox-section5 i { font-size: 24px; }
+
+    .contact-form-title label,
+    .contact-form-group label
+    {
+        font-size: 15px;
+    }
+    
+    #successMessage, #errorMessage {
+        font-size: 14px;
+    }
+
+    /*** End Section 5 ***/
 
     /**************** END MAIN ****************/
 
@@ -386,8 +416,8 @@
         margin-right: 0;
     }
 
-    .infobox-candidates p { font-size: 14px; }
-    .infobox-candidates img { width: 120px; }
+    .infobox-candidates img { width: 110px; }
+    .infobox-candidates p { font-size: 15px; }
 
     /*** End Section 1 ***/
 
@@ -395,8 +425,9 @@
 
     /* File upload form */
     .file-upload-form { padding: 20px 20px 16px 20px; }
+    
     .file-upload-form h4 { font-size: 18px; }
-    .upload-form-title label { font-size: 14px; }
+    .upload-form-title label { font-size: 15px; }
 
     /*** End Section 2 ***/
 
@@ -408,7 +439,9 @@
 
     /* Info-box */
     .infobox-employers-img img { width: 120px; }
-    .infobox-employers p { font-size: 14px; }
+    
+    .infobox-employers h5 { font-size: 16px; }
+    .infobox-employers p { font-size: 15px; }
 
     /*** End Section 1 ***/
 

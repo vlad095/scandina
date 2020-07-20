@@ -1,8 +1,13 @@
-/*-----------------------------------------------------*/
-/*------------- Scandina JS Script File ---------------*/
-/*----------- Client-side Form Validation -------------*/
-/*-------------- Author: Vladimir Maric ---------------*/
-/*-----------------------------------------------------*/
+/**
+ * Document info: Scandina JavaScript File
+ *     File name: form_validation_upload.js
+ *        Author: Vladimir Maric
+ *   
+ *   Description: This file includes all the necessary methods for 
+ *                the client-side validation for the upload form.
+ *                
+ *     Copyright: © 2020 Scandina                
+ */
 
 /* Regular Expression variables */ 
 var REGEX_NAME = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð '-]{2,20}$/;

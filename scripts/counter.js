@@ -1,8 +1,13 @@
-/*-----------------------------------------------------*/
-/*------------- Scandina JS Script File ---------------*/
-/*------------- Animated Social Counter ---------------*/
-/*-------------- Author: Vladimir Maric ---------------*/
-/*-----------------------------------------------------*/
+/**
+ * Document info: Scandina JavaScript File
+ *     File name: counter.js
+ *        Author: Vladimir Maric
+ *   
+ *   Description: Simple function that does a count animation  
+ *                of the counter numbers on the index pages.
+ *
+ *     Copyright: © 2020 Scandina
+ */
 
 var counterValue = 0;
 
@@ -29,7 +34,6 @@ $(window).scroll(function() {
         
         counterValue = 1;
     }
-
 });
 
 

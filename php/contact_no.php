@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * Document info: Scandina PHP File
+ *     File name: contact_no.php
+ *        Author: Vladimir Maric
+ *   
+ *   Description: Validates and sends an email which includes the 
+ *                information given in the contact form. The code 
+ *                is written for the contact form on Norwegian page. 
+ *                
+ *     Copyright: © 2020 Scandina
+ */
+
 // Includes php file with error handling
 include_once 'error_handling.php';
 
@@ -20,7 +32,7 @@ if (isset($_POST["send"])) {
             $pregName = "/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð '-]{2,20}$/";
             $pregEmail = "/^(([^<>()\[\]\\.,;:\s@']+(\.[^<>()\[\]\\.,;:\s@']+)*)|('.+'))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/";
             $pregSubject = "/^.{0,50}$/";
-            $pregMessage = "/^.{1,1000}$/";
+            $pregMessage = "/^[\s\S]{1,1000}$/";
             
             switch ($input) {
                 case "name":

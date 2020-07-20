@@ -4,21 +4,21 @@
         <title>Scandina</title>
         
         <!-- Meta tags -->
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- IE8 and IE9 compatible -->
         <!-- Removes the blue styling from phone numbers for Safari Browser -->
         <meta name="format-detection" content="telephone=no"> 
         <meta name="author" content="Vladimir Maric">
         
-        <!-- Bootstrap CSS -->
+        <!-- Bootstrap CSS files -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         
-        <!-- My linked CSS files -->
+        <!-- Linked CSS files -->
         <link rel="stylesheet" type="text/css" href="styles/main.css">
         <link rel="stylesheet" type="text/css" href="styles/mobile_devices.css">
         
-        <!-- Add favicon -->
+        <!-- Favicon -->
         <link rel="icon" type="image/png" href="images/brand/favicon.png">
         
         <!-- Font Awesome -->
@@ -27,7 +27,6 @@
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
     </head>
-    
     <body data-spy="scroll" data-target="#navbar">
         <!-- HEADER -->
         <header class="page-header">
@@ -203,7 +202,7 @@
                     <div class="counter" id="counter-left">
                         <i class="fas fa-handshake"></i>
                         <div class="counter-value">
-                            <span class="counter-value-number" data-count="100">0</span> 
+                            <span class="counter-value-number" data-count="49">0</span> 
                             <span>+</span>
                         </div>
                         <p>Fornøyde klienter</p>
@@ -212,7 +211,7 @@
                     <div class="counter" id="counter-center">
                         <i class="fab fa-facebook"></i>
                         <div class="counter-value">
-                            <span class="counter-value-number" data-count="2018">0</span>
+                            <span class="counter-value-number" data-count="2378">0</span>
                         </div>
                         <p>Facebook følgere</p>
                     </div>
@@ -220,7 +219,7 @@
                     <div class="counter" id="counter-right">
                         <i class="fas fa-thumbs-up"></i>
                         <div class="counter-value">
-                            <span class="counter-value-number" data-count="1951">0</span>
+                            <span class="counter-value-number" data-count="2296">0</span>
                         </div>
                         <p>Facebook likerklikk</p>
                     </div>
@@ -296,7 +295,7 @@
                     deg så snart som mulig 
                 </p>
                 
-                <div class="row" id="myForm">
+                <div class="row">
                     <div class="col-xl-8 offset-xl-2 py-5">
                         <!-- Contact info -->
                         <div class="row" id="contact-info">
@@ -410,17 +409,17 @@
                         <ul>
                             <li>
                                 <a href="https://www.facebook.com/Scandina.Consulting.Agency/">
-                                    <img class="zoom" src="images/social/icon_face.png" alt="Facebook" />
+                                    <img class="zoom-social" src="images/social/icon_face.png" alt="Facebook" />
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/scandina__/?hl=en">
-                                    <img class="zoom" src="images/social/icon_insta.png" alt="Instagram" />
+                                    <img class="zoom-social" src="images/social/icon_insta.png" alt="Instagram" />
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.linkedin.com/company/scandina-consulting-agency">
-                                    <img class="zoom" src="images/social/icon_linked.png" alt="LinkedIn" />
+                                    <img class="zoom-social" src="images/social/icon_linked.png" alt="LinkedIn" />
                                 </a>
                             </li>
                         </ul>
@@ -469,12 +468,12 @@
         </div>
         <!-- END COOKIE BANNER -->
         
-        <!-- Bootstrap script files - jQuery, Popper JS and Bootstrap JS -->
+        <!-- Bootstrap script files (jQuery, Popper JS and Bootstrap JS) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         
-        <!-- My linked script files -->
+        <!-- Linked script files -->
         <script src="scripts/counter.js"></script>
         <script src="scripts/nav_scroll.js"></script>
         <script src="scripts/cookie_notice.js"></script>

@@ -1,9 +1,12 @@
-/*-----------------------------------------------------*/
-/*-------------- Scandina CSS stylesheet --------------*/
-/*---------------- main.css stylesheet ----------------*/
-/*-------------- Author: Vladimir Maric ---------------*/
-/*-----------------------------------------------------*/
-/*-----------------------------------------------------*/
+/**
+ * Document info: Scandina CSS File
+ *     File name: main.css
+ *        Author: Vladimir Maric
+ *   
+ *   Description: General CSS stylesheet
+ *
+ *     Copyright: © 2020 Scandina
+ */
 
 * {
     -webkit-box-sizing: border-box;
@@ -16,9 +19,9 @@
 }
 
 html, body {
+    width: 100%;
     margin: 0;
     padding: 0;
-    width: 100%;
 }
 
 html {
@@ -29,12 +32,49 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     min-height: 100%;
-    font-size: 	17px;
-    letter-spacing: 1px;
+    font-size: 	18px;
 }
 
 ul { list-style-type: none; }
 
+.section {
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.section p {
+    text-align: center;
+    line-height: 2;
+    margin: 0 0 40px 0;
+}
+
+.wrapper {
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.wrapper-infobox { padding: 20px 0 10px 0; }
+
+.underline {
+    background: #b8172b;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 80px;
+    height: 3px;
+    border: 0;
+}
+
+.second-title {
+    color: #4f4f4f;
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Headings and fonts */
 h1 {
     font-family: 'Blinker', sans-serif;
     margin-top: 0;
@@ -44,7 +84,7 @@ h1 {
 h2 {
     margin-top: 0;
     margin-bottom: 25px;
-    font-size: 38px;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -66,30 +106,6 @@ h5 {
     text-transform: uppercase;
 }
 
-.underline {
-    background: #b8172b;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    width: 80px;
-    height: 3px;
-    border: 0;
-}
-
-.second-title {
-    font-style: italic;
-    font-size: 20px;
-}
-
-.wrapper {
-    width: 100%;
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.wrapper-infobox { padding: 20px 0 10px 0; }
-
 /* Buttons */
 .wrapper-btn {
     display: flex;
@@ -110,23 +126,23 @@ button:focus, button:active,
 /* Forms */
 ::-webkit-input-placeholder {
   color: #ccc;
-  font-size: 13px;
+  font-size: 14px;
 }
 :-moz-placeholder {
   color: #ccc;
-  font-size: 13px;
+  font-size: 14px;
 }
 ::-moz-placeholder {
   color: #ccc;
-  font-size: 13px;
+  font-size: 14px;
 }
 :-ms-input-placeholder {
   color: #ccc;
-  font-size: 13px;
+  font-size: 14px;
 }
 ::placeholder {
   color: #ccc;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .form-control:focus {
@@ -145,23 +161,21 @@ form .btn-success {
 
 form .error-message {
     margin-top: 6px;
-    font-size: 13px;
+    font-size: 14px;
     color: red;
 }
 
 form .error-message p { margin-top: 20px; }
 
-.section {
-    background-color: #fff;
-    position: relative;
-    width: 100%;
-    height: auto;
+#successMessage, #errorMessage {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
 }
-.section p {
-    text-align: center;
-    line-height: 2;
-    margin: 0 0 40px 0;
-}
+
+#successMessage { color: green; }
+#errorMessage { color: red; }
 
 /*****************************************/
 /**************** HEADER *****************/
@@ -181,7 +195,8 @@ form .error-message p { margin-top: 20px; }
 
 #top-bar-left li {
     margin: 0 8px;
-    font-size: 12px;
+    font-size: 13px;
+    letter-spacing: 0.6px;
     color: #fff;
     -webkit-user-select: text;
     -moz-user-select: text;
@@ -293,11 +308,11 @@ form .error-message p { margin-top: 20px; }
     z-index: 100;
 }
 
-.landing-page h1 { font-size: 6.5em; }
+.landing-page h1 { font-size: 6.2em; }
 
 .landing-page h3 {
     margin-top: 10px;
-    font-size: 1.1em;
+    font-size: 1.4em;
 }
 
 /* Landing page button */
@@ -306,14 +321,14 @@ form .error-message p { margin-top: 20px; }
 .btn-primary {
     background-color: #b8172b !important;
     border: 2px solid #80101e !important;
-    padding: 10px 12px;
+    padding: 10px 16px;
     border-radius: 8px;
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .btn-primary:hover {
-    background-color: #80101e !important;
+    background-color: #a7151b !important;
     border: 2px solid #80101e !important;
 }
 
@@ -366,7 +381,6 @@ form .error-message p { margin-top: 20px; }
 
 .infobox-section1 h4 {
     margin-top: 25px;
-    letter-spacing: 0.2px;
     font-weight: bold;
 }
 
@@ -436,7 +450,7 @@ form .error-message p { margin-top: 20px; }
 .counter i { font-size: 6em; }
 
 .counter p {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     line-height: 1.5;
 }
@@ -447,11 +461,7 @@ form .error-message p { margin-top: 20px; }
 
 .wrapper-content-section3 { margin-top: 8px; }
 .wrapper-content-section3 p { text-align: left; }
-
-.wrapper-content-section3 h4 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
+.wrapper-content-section3 h4 { margin-bottom: 10px; }
 
 /* YouTube video */
 .wrapper-video {
@@ -491,26 +501,24 @@ form .error-message p { margin-top: 20px; }
 
 /*** Section 5 ***/
 
-.pb-5, .py-5 {
-    padding-top: 20px!important;
-    padding-bottom: 0!important;
+#contactForm {
+    padding-top: 20px !important;
+    padding-bottom: 0 !important;
 }
-
-#conact-info { margin-bottom: 40px; }
 
 /* Contact info */
 #contact-info { padding: 0 15px; }
 
 .infobox-section5 {
     background-color: #b8172b;
-    color: #fff;
     padding: 40px 20px;
+    color: #fff;
     text-align: center;
 }
 
 .infobox-section5 p {
     margin: 4px 0;
-    font-size: 14px;
+    font-size: 15px;
     -webkit-user-select: text;
     -moz-user-select: text;
     -ms-user-select: text;
@@ -544,14 +552,6 @@ form .error-message p { margin-top: 20px; }
     color: #282828;
     padding: 150px 0;
 }
-
-#successMessage, #errorMessage {
-    text-align: left;
-    font-size: 14px;
-}
-
-#successMessage { color: green; }
-#errorMessage { color: red; }
 
 /*** End Section 5 ***/
 
@@ -616,7 +616,6 @@ form .error-message p { margin-top: 20px; }
 }
 
 .file-upload-form h4 {
-    font-size: 24px;
     text-align: left;
     text-transform: uppercase;
 }
@@ -688,7 +687,7 @@ form .error-message p { margin-top: 20px; }
 .infobox-employers h5 {
     margin-bottom: 12px;
     color: #b8172b;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     text-align: left;
 }
@@ -827,7 +826,7 @@ footer h5 { margin-bottom: 20px; }
 .zoom-social { transition: transform .2s; } /* Zoom animation */
 
 /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-.zoom-social:hover { transform: scale(1.5); }
+.zoom-social:hover { transform: scale(1.2); }
 
 /* Footer-lower mobile version */
 .footer-lower-mobile { display: none; }
